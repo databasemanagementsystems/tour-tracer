@@ -46,17 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frm_AdminAnaEkranSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_AdminAnaEkranSayfasi.Designer.cs">
+      <DependentUpon>frm_AdminAnaEkranSayfasi.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_AdminGirisSayfasi.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_AdminGirisSayfasi.Designer.cs">
       <DependentUpon>frm_AdminGirisSayfasi.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_BaslangicEkranş.cs">
+    <Compile Include="frm_BaslangicEkrani.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_BaslangicEkranş.Designer.cs">
-      <DependentUpon>frm_BaslangicEkranş.cs</DependentUpon>
+    <Compile Include="frm_BaslangicEkrani.Designer.cs">
+      <DependentUpon>frm_BaslangicEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MusteriAnaEkranSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_MusteriAnaEkranSayfasi.Designer.cs">
+      <DependentUpon>frm_MusteriAnaEkranSayfasi.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_MusteriGirişSayfasi.cs">
       <SubType>Form</SubType>
@@ -64,22 +76,31 @@
     <Compile Include="frm_MusteriGirişSayfasi.Designer.cs">
       <DependentUpon>frm_MusteriGirişSayfasi.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_MusteriKayıtOlma.cs">
+    <Compile Include="frm_MusteriKayıtOlmaSayfasi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_MusteriKayıtOlma.Designer.cs">
-      <DependentUpon>frm_MusteriKayıtOlma.cs</DependentUpon>
+    <Compile Include="frm_MusteriKayıtOlmaSayfasi.Designer.cs">
+      <DependentUpon>frm_MusteriKayıtOlmaSayfasi.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frm_AdminAnaEkranSayfasi.resx">
+      <DependentUpon>frm_AdminAnaEkranSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_AdminGirisSayfasi.resx">
       <DependentUpon>frm_AdminGirisSayfasi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_BaslangicEkranş.resx">
-      <DependentUpon>frm_BaslangicEkranş.cs</DependentUpon>
+    <EmbeddedResource Include="frm_BaslangicEkrani.resx">
+      <DependentUpon>frm_BaslangicEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_MusteriAnaEkranSayfasi.resx">
+      <DependentUpon>frm_MusteriAnaEkranSayfasi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_MusteriGirişSayfasi.resx">
       <DependentUpon>frm_MusteriGirişSayfasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_MusteriKayıtOlmaSayfasi.resx">
+      <DependentUpon>frm_MusteriKayıtOlmaSayfasi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -105,8 +126,11 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <Content Include="Görseller\admin.png" />
     <Content Include="Görseller\man.png" />
+    <Content Include="Görseller\register.png" />
     <Content Include="Görseller\traveller1.png" />
+    <Content Include="Görseller\website.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

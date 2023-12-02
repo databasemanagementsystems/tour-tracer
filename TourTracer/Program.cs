@@ -16,7 +16,7 @@ namespace TourTracer
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frm_BaslangicEkranş());
+            Application.Run(new frm_BaslangicEkrani());
         }
     }
 }

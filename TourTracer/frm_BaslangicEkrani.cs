@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TourTracer
 {
-    public partial class frm_BaslangicEkranş : Form
+    public partial class frm_BaslangicEkrani : Form
     {
-        public frm_BaslangicEkranş()
+        public frm_BaslangicEkrani()
         {
             InitializeComponent();
         }

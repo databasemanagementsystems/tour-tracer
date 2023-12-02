@@ -1,6 +1,6 @@
 ﻿namespace TourTracer
 {
-    partial class frm_BaslangicEkranş
+    partial class frm_BaslangicEkrani
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_BaslangicEkranş));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_BaslangicEkrani));
             this.label1 = new System.Windows.Forms.Label();
             this.btn_AdminGiris = new System.Windows.Forms.Button();
             this.btn_MusteriGiris = new System.Windows.Forms.Button();
@@ -42,6 +42,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label1.ForeColor = System.Drawing.SystemColors.Desktop;
             this.label1.Location = new System.Drawing.Point(287, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(242, 36);
@@ -104,7 +105,7 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // frm_BaslangicEkranş
+            // frm_BaslangicEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -117,7 +118,7 @@
             this.Controls.Add(this.btn_AdminGiris);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "frm_BaslangicEkranş";
+            this.Name = "frm_BaslangicEkrani";
             this.Text = "frm_Giris";
             this.Load += new System.EventHandler(this.frm_Giris_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

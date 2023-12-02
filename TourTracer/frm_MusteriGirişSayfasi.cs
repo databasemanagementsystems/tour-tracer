@@ -24,13 +24,13 @@ namespace TourTracer
 
         private void btn_GeriDön_Click(object sender, EventArgs e)
         {
-            new frm_BaslangicEkranş().Show();
+            new frm_BaslangicEkrani().Show();
             this.Hide();
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-            new frm_MusteriKayıtOlma().Show();
+            new frm_MusteriKayıtOlmaSayfasi().Show();
             this.Hide();
         }
 
@@ -55,6 +55,12 @@ namespace TourTracer
                txt_MusteriSifre.PasswordChar = '•';
 
             }
+        }
+
+        private void btn_GirisYap_Click(object sender, EventArgs e)
+        {
+            new frm_MusteriAnaEkranSayfasi().Show();
+            this.Hide();
         }
     }
     }

@@ -129,9 +129,10 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(421, 68);
+            this.pictureBox1.Location = new System.Drawing.Point(361, 63);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(271, 121);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 
@@ -146,6 +147,7 @@
             this.btn_GirisYap.TabIndex = 8;
             this.btn_GirisYap.Text = "GİRİŞ YAP";
             this.btn_GirisYap.UseVisualStyleBackColor = false;
+            this.btn_GirisYap.Click += new System.EventHandler(this.btn_GirisYap_Click);
             // 
             // checkbox_SifreyiGoster
             // 
@@ -189,6 +191,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(1061, 670);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btn_Temizle);

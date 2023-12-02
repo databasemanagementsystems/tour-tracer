@@ -19,13 +19,32 @@ namespace TourTracer
 
         private void btn_GeriDön_Click(object sender, EventArgs e)
         {
-            new frm_BaslangicEkranş().Show();
+            new frm_BaslangicEkrani().Show();
             this.Hide();
         }
 
         private void frm_AdminGirisSayfasi_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new frm_BaslangicEkrani().Show();
+            this.Hide();
+        }
+
+        private void btn_Temizle_Click(object sender, EventArgs e)
+        {
+            txt_AdminIsim.Text = "";
+            txt_AdminSifre.Text = "";
+        }
+
+        private void btn_GirisYap_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Giriş Başarılı","HOŞGELDİNİZ",MessageBoxButtons.OK, MessageBoxIcon.Information);
+            new frm_AdminAnaEkranSayfasi().Show();
+            this.Hide();
         }
     }
 }
