@@ -50,6 +50,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frm_AdminGirisSayfasi";
             this.Text = "frm_AdminGirisSayfasi";
+            this.Load += new System.EventHandler(this.frm_AdminGirisSayfasi_Load);
             this.ResumeLayout(false);
 
         }

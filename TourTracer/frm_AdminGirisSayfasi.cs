@@ -22,5 +22,10 @@ namespace TourTracer
             new frm_BaslangicEkranş().Show();
             this.Hide();
         }
+
+        private void frm_AdminGirisSayfasi_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

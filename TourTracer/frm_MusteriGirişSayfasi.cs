@@ -27,5 +27,35 @@ namespace TourTracer
             new frm_BaslangicEkranş().Show();
             this.Hide();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            new frm_MusteriKayıtOlma().Show();
+            this.Hide();
+        }
+
+        private void btn_Temizle_Click(object sender, EventArgs e)
+        {
+            //Girilen Var olan metni silerek boş kutucuk ekrana gösterir.
+            txt_MusteriIsim.Text = "";
+            txt_MusteriSifre.Text = "";
+        }
+
+        private void checkbox_SifreyiGoster_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkbox_SifreyiGoster.Checked)
+            {
+                txt_MusteriIsim.PasswordChar = '\0';
+                txt_MusteriSifre.PasswordChar = '\0';
+
+            }
+            else
+            {
+               
+               txt_MusteriSifre.PasswordChar = '•';
+
+            }
+        }
     }
-}
+    }
+

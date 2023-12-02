@@ -64,6 +64,12 @@
     <Compile Include="frm_MusteriGirişSayfasi.Designer.cs">
       <DependentUpon>frm_MusteriGirişSayfasi.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_MusteriKayıtOlma.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_MusteriKayıtOlma.Designer.cs">
+      <DependentUpon>frm_MusteriKayıtOlma.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frm_AdminGirisSayfasi.resx">
@@ -99,10 +105,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="Görseller\Ekran görüntüsü 2023-12-02 025111.png" />
-    <Content Include="Görseller\icons8-traveler-64.png" />
-    <Content Include="Görseller\tour-guide.png" />
-    <Content Include="Görseller\traveller.png" />
+    <Content Include="Görseller\man.png" />
     <Content Include="Görseller\traveller1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
