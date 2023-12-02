@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TourTracer", "TourTracer.cs
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tour Tracer Project", "Tour Tracer Project", "{28D1F589-F96B-46A9-8D45-B7DF105EC5F2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SQL Kodları", "SQL Kodları", "{081CAA0D-BD2A-4D2C-8905-3B4F218BD008}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace TourTracer
 {
-    public partial class frm_MusterilerGiris : Form
+    public partial class frm_AdminGirisSayfasi : Form
     {
-        public frm_MusterilerGiris()
+        public frm_AdminGirisSayfasi()
         {
             InitializeComponent();
+        }
+
+        private void btn_GeriDön_Click(object sender, EventArgs e)
+        {
+            new frm_BaslangicEkranş().Show();
+            this.Hide();
         }
     }
 }

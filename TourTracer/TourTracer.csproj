@@ -46,25 +46,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frm_AdminGiris.cs">
+    <Compile Include="frm_AdminGirisSayfasi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_AdminGiris.Designer.cs">
-      <DependentUpon>frm_AdminGiris.cs</DependentUpon>
+    <Compile Include="frm_AdminGirisSayfasi.Designer.cs">
+      <DependentUpon>frm_AdminGirisSayfasi.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_MusterilerGiris.cs">
+    <Compile Include="frm_BaslangicEkranş.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_MusterilerGiris.Designer.cs">
-      <DependentUpon>frm_MusterilerGiris.cs</DependentUpon>
+    <Compile Include="frm_BaslangicEkranş.Designer.cs">
+      <DependentUpon>frm_BaslangicEkranş.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_MusteriGirişSayfasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_MusteriGirişSayfasi.Designer.cs">
+      <DependentUpon>frm_MusteriGirişSayfasi.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frm_AdminGiris.resx">
-      <DependentUpon>frm_AdminGiris.cs</DependentUpon>
+    <EmbeddedResource Include="frm_AdminGirisSayfasi.resx">
+      <DependentUpon>frm_AdminGirisSayfasi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_MusterilerGiris.resx">
-      <DependentUpon>frm_MusterilerGiris.cs</DependentUpon>
+    <EmbeddedResource Include="frm_BaslangicEkranş.resx">
+      <DependentUpon>frm_BaslangicEkranş.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_MusteriGirişSayfasi.resx">
+      <DependentUpon>frm_MusteriGirişSayfasi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -87,6 +96,14 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Görseller\Ekran görüntüsü 2023-12-02 025111.png" />
+    <Content Include="Görseller\icons8-traveler-64.png" />
+    <Content Include="Görseller\tour-guide.png" />
+    <Content Include="Görseller\traveller.png" />
+    <Content Include="Görseller\traveller1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

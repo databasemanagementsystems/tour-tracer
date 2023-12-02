@@ -1,6 +1,6 @@
 ﻿namespace TourTracer
 {
-    partial class frm_MusterilerGiris
+    partial class frm_AdminGirisSayfasi
     {
         /// <summary>
         /// Required designer variable.
@@ -28,33 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            this.btn_GeriDön = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // label1
+            // btn_GeriDön
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(340, 200);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Müşteriler Giriş";
+            this.btn_GeriDön.Location = new System.Drawing.Point(322, 305);
+            this.btn_GeriDön.Name = "btn_GeriDön";
+            this.btn_GeriDön.Size = new System.Drawing.Size(144, 23);
+            this.btn_GeriDön.TabIndex = 0;
+            this.btn_GeriDön.Text = "Geri Dön";
+            this.btn_GeriDön.UseVisualStyleBackColor = true;
+            this.btn_GeriDön.Click += new System.EventHandler(this.btn_GeriDön_Click);
             // 
-            // frm_MusterilerGiris
+            // frm_AdminGirisSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
-            this.Name = "frm_MusterilerGiris";
-            this.Text = "frm_MusterilerGiris";
+            this.Controls.Add(this.btn_GeriDön);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Name = "frm_AdminGirisSayfasi";
+            this.Text = "frm_AdminGirisSayfasi";
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_GeriDön;
     }
 }
