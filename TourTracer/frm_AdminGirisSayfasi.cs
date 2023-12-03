@@ -46,5 +46,21 @@ namespace TourTracer
             new frm_AdminAnaEkranSayfasi().Show();
             this.Hide();
         }
+
+        private void checkbox_SifreyiGoster_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkbox_SifreyiGoster.Checked)
+            {
+                txt_AdminIsim.PasswordChar = '\0';
+                txt_AdminSifre.PasswordChar = '\0';
+
+            }
+            else
+            {
+
+                txt_AdminSifre.PasswordChar = '•';
+
+            }
+        }
     }
 }

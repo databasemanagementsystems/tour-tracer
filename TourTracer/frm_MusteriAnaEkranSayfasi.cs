@@ -22,5 +22,10 @@ namespace TourTracer
             new frm_MusteriGirişSayfasi().Show();
             this.Hide();
         }
+
+        private void frm_MusteriAnaEkranSayfasi_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

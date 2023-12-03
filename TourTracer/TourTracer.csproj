@@ -130,7 +130,6 @@
     <Content Include="Görseller\man.png" />
     <Content Include="Görseller\register.png" />
     <Content Include="Görseller\traveller1.png" />
-    <Content Include="Görseller\website.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

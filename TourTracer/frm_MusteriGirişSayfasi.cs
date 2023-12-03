@@ -37,7 +37,7 @@ namespace TourTracer
         private void btn_Temizle_Click(object sender, EventArgs e)
         {
             //Girilen Var olan metni silerek boş kutucuk ekrana gösterir.
-            txt_MusteriIsim.Text = "";
+            txt_MusteriMail.Text = "";
             txt_MusteriSifre.Text = "";
         }
 
@@ -45,7 +45,7 @@ namespace TourTracer
         {
             if (checkbox_SifreyiGoster.Checked)
             {
-                txt_MusteriIsim.PasswordChar = '\0';
+                txt_MusteriMail.PasswordChar = '\0';
                 txt_MusteriSifre.PasswordChar = '\0';
 
             }

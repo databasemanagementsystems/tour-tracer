@@ -38,6 +38,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.checkbox_SifreyiGoster = new System.Windows.Forms.CheckBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,7 +47,7 @@
             this.txt_AdminSifre.BackColor = System.Drawing.Color.LightSteelBlue;
             this.txt_AdminSifre.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txt_AdminSifre.ForeColor = System.Drawing.Color.Red;
-            this.txt_AdminSifre.Location = new System.Drawing.Point(326, 251);
+            this.txt_AdminSifre.Location = new System.Drawing.Point(326, 224);
             this.txt_AdminSifre.Name = "txt_AdminSifre";
             this.txt_AdminSifre.PasswordChar = '•';
             this.txt_AdminSifre.Size = new System.Drawing.Size(261, 29);
@@ -67,7 +68,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.Color.Indigo;
-            this.label4.Location = new System.Drawing.Point(170, 251);
+            this.label4.Location = new System.Drawing.Point(170, 224);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(125, 24);
             this.label4.TabIndex = 8;
@@ -145,12 +146,27 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // checkbox_SifreyiGoster
+            // 
+            this.checkbox_SifreyiGoster.AutoSize = true;
+            this.checkbox_SifreyiGoster.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkbox_SifreyiGoster.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.checkbox_SifreyiGoster.ForeColor = System.Drawing.Color.MediumSlateBlue;
+            this.checkbox_SifreyiGoster.Location = new System.Drawing.Point(420, 259);
+            this.checkbox_SifreyiGoster.Name = "checkbox_SifreyiGoster";
+            this.checkbox_SifreyiGoster.Size = new System.Drawing.Size(167, 28);
+            this.checkbox_SifreyiGoster.TabIndex = 16;
+            this.checkbox_SifreyiGoster.Text = "ŞİFREYİ GÖSTER";
+            this.checkbox_SifreyiGoster.UseVisualStyleBackColor = true;
+            this.checkbox_SifreyiGoster.CheckedChanged += new System.EventHandler(this.checkbox_SifreyiGoster_CheckedChanged);
+            // 
             // frm_AdminGirisSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.checkbox_SifreyiGoster);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
@@ -180,5 +196,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.CheckBox checkbox_SifreyiGoster;
     }
 }

@@ -34,7 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txt_MusteriIsim = new System.Windows.Forms.TextBox();
+            this.txt_MusteriMail = new System.Windows.Forms.TextBox();
             this.txt_MusteriSifre = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_GirisYap = new System.Windows.Forms.Button();
@@ -90,9 +90,9 @@
             this.label3.ForeColor = System.Drawing.Color.Indigo;
             this.label3.Location = new System.Drawing.Point(248, 207);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(133, 24);
+            this.label3.Size = new System.Drawing.Size(139, 24);
             this.label3.TabIndex = 3;
-            this.label3.Text = "MÜŞTERİ İSMİ";
+            this.label3.Text = "MÜŞTERİ MAİL";
             // 
             // label4
             // 
@@ -105,15 +105,15 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "MÜŞTERİ ŞİFRE";
             // 
-            // txt_MusteriIsim
+            // txt_MusteriMail
             // 
-            this.txt_MusteriIsim.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.txt_MusteriIsim.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txt_MusteriIsim.ForeColor = System.Drawing.Color.Red;
-            this.txt_MusteriIsim.Location = new System.Drawing.Point(404, 209);
-            this.txt_MusteriIsim.Name = "txt_MusteriIsim";
-            this.txt_MusteriIsim.Size = new System.Drawing.Size(261, 29);
-            this.txt_MusteriIsim.TabIndex = 5;
+            this.txt_MusteriMail.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.txt_MusteriMail.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txt_MusteriMail.ForeColor = System.Drawing.Color.Red;
+            this.txt_MusteriMail.Location = new System.Drawing.Point(404, 209);
+            this.txt_MusteriMail.Name = "txt_MusteriMail";
+            this.txt_MusteriMail.Size = new System.Drawing.Size(261, 29);
+            this.txt_MusteriMail.TabIndex = 5;
             // 
             // txt_MusteriSifre
             // 
@@ -199,7 +199,7 @@
             this.Controls.Add(this.btn_GirisYap);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txt_MusteriSifre);
-            this.Controls.Add(this.txt_MusteriIsim);
+            this.Controls.Add(this.txt_MusteriMail);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -223,7 +223,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txt_MusteriIsim;
+        private System.Windows.Forms.TextBox txt_MusteriMail;
         private System.Windows.Forms.TextBox txt_MusteriSifre;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_GirisYap;

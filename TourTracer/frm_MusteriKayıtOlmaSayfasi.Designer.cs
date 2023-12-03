@@ -39,7 +39,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.txt_MusteriIsim = new System.Windows.Forms.TextBox();
             this.txt_MusteriSifre = new System.Windows.Forms.TextBox();
-            this.txt_MusteriTel = new System.Windows.Forms.TextBox();
+            this.txt_MusteriMail = new System.Windows.Forms.TextBox();
             this.txt_MusteriSoyisim = new System.Windows.Forms.TextBox();
             this.txt_MusteriSifreTekrar = new System.Windows.Forms.TextBox();
             this.btn_KayitOl = new System.Windows.Forms.Button();
@@ -47,6 +47,8 @@
             this.checkbox_SifreyiGoster = new System.Windows.Forms.CheckBox();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,7 +57,7 @@
             this.btn_GeriDon.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btn_GeriDon.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_GeriDon.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btn_GeriDon.Location = new System.Drawing.Point(448, 579);
+            this.btn_GeriDon.Location = new System.Drawing.Point(448, 596);
             this.btn_GeriDon.Name = "btn_GeriDon";
             this.btn_GeriDon.Size = new System.Drawing.Size(176, 32);
             this.btn_GeriDon.TabIndex = 0;
@@ -95,7 +97,7 @@
             this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.label4.Location = new System.Drawing.Point(307, 350);
+            this.label4.Location = new System.Drawing.Point(307, 385);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(57, 24);
             this.label4.TabIndex = 4;
@@ -107,7 +109,7 @@
             this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.label5.Location = new System.Drawing.Point(307, 391);
+            this.label5.Location = new System.Drawing.Point(307, 426);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(132, 24);
             this.label5.TabIndex = 5;
@@ -131,11 +133,11 @@
             this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label6.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.label6.Location = new System.Drawing.Point(307, 271);
+            this.label6.Location = new System.Drawing.Point(307, 306);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(190, 24);
+            this.label6.Size = new System.Drawing.Size(55, 24);
             this.label6.TabIndex = 7;
-            this.label6.Text = "TELEFON NUMARASI";
+            this.label6.Text = "MAİL";
             // 
             // label7
             // 
@@ -143,7 +145,7 @@
             this.label7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label7.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.label7.Location = new System.Drawing.Point(307, 309);
+            this.label7.Location = new System.Drawing.Point(307, 344);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(147, 24);
             this.label7.TabIndex = 8;
@@ -164,22 +166,22 @@
             this.txt_MusteriSifre.BackColor = System.Drawing.Color.LightSkyBlue;
             this.txt_MusteriSifre.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txt_MusteriSifre.ForeColor = System.Drawing.Color.Red;
-            this.txt_MusteriSifre.Location = new System.Drawing.Point(531, 347);
+            this.txt_MusteriSifre.Location = new System.Drawing.Point(531, 382);
             this.txt_MusteriSifre.Name = "txt_MusteriSifre";
             this.txt_MusteriSifre.PasswordChar = '•';
             this.txt_MusteriSifre.Size = new System.Drawing.Size(245, 29);
             this.txt_MusteriSifre.TabIndex = 10;
             // 
-            // txt_MusteriTel
+            // txt_MusteriMail
             // 
-            this.txt_MusteriTel.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.txt_MusteriTel.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txt_MusteriTel.ForeColor = System.Drawing.Color.Red;
-            this.txt_MusteriTel.Location = new System.Drawing.Point(531, 266);
-            this.txt_MusteriTel.Name = "txt_MusteriTel";
-            this.txt_MusteriTel.Size = new System.Drawing.Size(245, 29);
-            this.txt_MusteriTel.TabIndex = 12;
-            this.txt_MusteriTel.TextChanged += new System.EventHandler(this.txt_MusteriTel_TextChanged);
+            this.txt_MusteriMail.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.txt_MusteriMail.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txt_MusteriMail.ForeColor = System.Drawing.Color.Red;
+            this.txt_MusteriMail.Location = new System.Drawing.Point(531, 301);
+            this.txt_MusteriMail.Name = "txt_MusteriMail";
+            this.txt_MusteriMail.Size = new System.Drawing.Size(245, 29);
+            this.txt_MusteriMail.TabIndex = 12;
+            this.txt_MusteriMail.TextChanged += new System.EventHandler(this.txt_MusteriTel_TextChanged);
             // 
             // txt_MusteriSoyisim
             // 
@@ -196,7 +198,7 @@
             this.txt_MusteriSifreTekrar.BackColor = System.Drawing.Color.LightSkyBlue;
             this.txt_MusteriSifreTekrar.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.txt_MusteriSifreTekrar.ForeColor = System.Drawing.Color.Red;
-            this.txt_MusteriSifreTekrar.Location = new System.Drawing.Point(531, 386);
+            this.txt_MusteriSifreTekrar.Location = new System.Drawing.Point(531, 421);
             this.txt_MusteriSifreTekrar.Name = "txt_MusteriSifreTekrar";
             this.txt_MusteriSifreTekrar.PasswordChar = '•';
             this.txt_MusteriSifreTekrar.Size = new System.Drawing.Size(245, 29);
@@ -207,7 +209,7 @@
             this.btn_KayitOl.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.btn_KayitOl.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_KayitOl.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.btn_KayitOl.Location = new System.Drawing.Point(448, 465);
+            this.btn_KayitOl.Location = new System.Drawing.Point(448, 500);
             this.btn_KayitOl.Name = "btn_KayitOl";
             this.btn_KayitOl.Size = new System.Drawing.Size(161, 35);
             this.btn_KayitOl.TabIndex = 15;
@@ -223,7 +225,7 @@
             this.dateTime_DogumTarihi.CalendarTitleBackColor = System.Drawing.SystemColors.HotTrack;
             this.dateTime_DogumTarihi.CalendarTitleForeColor = System.Drawing.SystemColors.Highlight;
             this.dateTime_DogumTarihi.CalendarTrailingForeColor = System.Drawing.SystemColors.HotTrack;
-            this.dateTime_DogumTarihi.Location = new System.Drawing.Point(531, 309);
+            this.dateTime_DogumTarihi.Location = new System.Drawing.Point(531, 344);
             this.dateTime_DogumTarihi.Name = "dateTime_DogumTarihi";
             this.dateTime_DogumTarihi.Size = new System.Drawing.Size(245, 22);
             this.dateTime_DogumTarihi.TabIndex = 18;
@@ -235,7 +237,7 @@
             this.checkbox_SifreyiGoster.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.checkbox_SifreyiGoster.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.checkbox_SifreyiGoster.ForeColor = System.Drawing.Color.MediumSlateBlue;
-            this.checkbox_SifreyiGoster.Location = new System.Drawing.Point(609, 431);
+            this.checkbox_SifreyiGoster.Location = new System.Drawing.Point(609, 456);
             this.checkbox_SifreyiGoster.Name = "checkbox_SifreyiGoster";
             this.checkbox_SifreyiGoster.Size = new System.Drawing.Size(167, 28);
             this.checkbox_SifreyiGoster.TabIndex = 19;
@@ -248,7 +250,7 @@
             this.button1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.SystemColors.Desktop;
-            this.button1.Location = new System.Drawing.Point(467, 515);
+            this.button1.Location = new System.Drawing.Point(467, 550);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(128, 32);
             this.button1.TabIndex = 20;
@@ -266,12 +268,36 @@
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
             // 
-            // frm_MusteriKayıtOlma
+            // textBox1
+            // 
+            this.textBox1.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.textBox1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.textBox1.ForeColor = System.Drawing.Color.Red;
+            this.textBox1.Location = new System.Drawing.Point(531, 266);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(245, 29);
+            this.textBox1.TabIndex = 23;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.label8.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.label8.ForeColor = System.Drawing.Color.MediumSlateBlue;
+            this.label8.Location = new System.Drawing.Point(307, 271);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(190, 24);
+            this.label8.TabIndex = 22;
+            this.label8.Text = "TELEFON NUMARASI";
+            // 
+            // frm_MusteriKayıtOlmaSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(1079, 640);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.checkbox_SifreyiGoster);
@@ -279,7 +305,7 @@
             this.Controls.Add(this.btn_KayitOl);
             this.Controls.Add(this.txt_MusteriSifreTekrar);
             this.Controls.Add(this.txt_MusteriSoyisim);
-            this.Controls.Add(this.txt_MusteriTel);
+            this.Controls.Add(this.txt_MusteriMail);
             this.Controls.Add(this.txt_MusteriSifre);
             this.Controls.Add(this.txt_MusteriIsim);
             this.Controls.Add(this.label7);
@@ -290,7 +316,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_GeriDon);
-            this.Name = "frm_MusteriKayıtOlma";
+            this.Name = "frm_MusteriKayıtOlmaSayfasi";
             this.Text = "frm_MusteriKayıtOlma";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -310,7 +336,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txt_MusteriIsim;
         private System.Windows.Forms.TextBox txt_MusteriSifre;
-        private System.Windows.Forms.TextBox txt_MusteriTel;
+        private System.Windows.Forms.TextBox txt_MusteriMail;
         private System.Windows.Forms.TextBox txt_MusteriSoyisim;
         private System.Windows.Forms.TextBox txt_MusteriSifreTekrar;
         private System.Windows.Forms.Button btn_KayitOl;
@@ -318,5 +344,7 @@
         private System.Windows.Forms.CheckBox checkbox_SifreyiGoster;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label8;
     }
 }

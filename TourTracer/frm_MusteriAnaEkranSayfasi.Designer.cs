@@ -45,15 +45,16 @@
             this.btn_GeriDön.UseVisualStyleBackColor = false;
             this.btn_GeriDön.Click += new System.EventHandler(this.btn_GeriDön_Click);
             // 
-            // frm_MusteriAnasayfa
+            // frm_MusteriAnaEkranSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btn_GeriDön);
-            this.Name = "frm_MusteriAnasayfa";
+            this.Name = "frm_MusteriAnaEkranSayfasi";
             this.Text = "frm_MusteriAnasayfa";
+            this.Load += new System.EventHandler(this.frm_MusteriAnaEkranSayfasi_Load);
             this.ResumeLayout(false);
 
         }

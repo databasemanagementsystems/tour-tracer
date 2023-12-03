@@ -27,7 +27,7 @@ namespace TourTracer
         {
             txt_MusteriIsim.Text = "";
             txt_MusteriSoyisim.Text = "";
-            txt_MusteriTel.Text = "";
+            txt_MusteriMail.Text = "";
             txt_MusteriSifre.Text = "";
             txt_MusteriSifreTekrar.Text = "";
             dateTime_DogumTarihi.Text = "";
