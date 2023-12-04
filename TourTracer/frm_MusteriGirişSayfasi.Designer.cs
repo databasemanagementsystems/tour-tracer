@@ -114,6 +114,7 @@
             this.txt_MusteriMail.Name = "txt_MusteriMail";
             this.txt_MusteriMail.Size = new System.Drawing.Size(261, 29);
             this.txt_MusteriMail.TabIndex = 5;
+            this.txt_MusteriMail.TextChanged += new System.EventHandler(this.txt_MusteriMail_TextChanged);
             // 
             // txt_MusteriSifre
             // 

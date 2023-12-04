@@ -67,5 +67,10 @@ namespace TourTracer
             new frm_MusteriGirişSayfasi().Show();
             this.Hide();
         }
+
+        private void frm_MusteriKayıtOlmaSayfasi_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

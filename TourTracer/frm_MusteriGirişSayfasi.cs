@@ -59,8 +59,14 @@ namespace TourTracer
 
         private void btn_GirisYap_Click(object sender, EventArgs e)
         {
-            new frm_MusteriAnaEkranSayfasi().Show();
+            new frm_CustomerMainPage().Show();
             this.Hide();
+        }
+
+        private void txt_MusteriMail_TextChanged(object sender, EventArgs e)
+        {
+           
+
         }
     }
     }

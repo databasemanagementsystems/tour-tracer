@@ -318,6 +318,7 @@
             this.Controls.Add(this.btn_GeriDon);
             this.Name = "frm_MusteriKayıtOlmaSayfasi";
             this.Text = "frm_MusteriKayıtOlma";
+            this.Load += new System.EventHandler(this.frm_MusteriKayıtOlmaSayfasi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

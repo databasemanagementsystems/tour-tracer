@@ -10,32 +10,25 @@ using System.Windows.Forms;
 
 namespace TourTracer
 {
-    public partial class frm_AdminAnaEkranSayfasi : Form
+    public partial class frm_CustomerMainPage : Form
     {
-        public frm_AdminAnaEkranSayfasi()
+        public frm_CustomerMainPage()
         {
             InitializeComponent();
         }
 
         private void btn_GeriDön_Click(object sender, EventArgs e)
         {
-            new frm_AdminGirisSayfasi().Show();
+           new frm_MusteriGirişSayfasi().Show();
             this.Hide();
         }
 
         private void btn_ListUsers_Click(object sender, EventArgs e)
         {
-            new frm_UserList().Show();
-            this.Hide();
+            
         }
 
-        private void btn_ViewTours_Click(object sender, EventArgs e)
-        {
-            new frm_TourList().Show();
-            this.Hide();
-        }
-
-        private void frm_AdminAnaEkranSayfasi_Load(object sender, EventArgs e)
+        private void frm_CustomerMainPage_Load(object sender, EventArgs e)
         {
 
         }
