@@ -1,6 +1,6 @@
 ﻿namespace TourTracer
 {
-    partial class frm_UserList
+    partial class frm_CustomerEditProfilePage
     {
         /// <summary>
         /// Required designer variable.
@@ -28,39 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btn_GeriDön = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // btn_GeriDön
+            // label1
             // 
-            this.btn_GeriDön.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.btn_GeriDön.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_GeriDön.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_GeriDön.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.btn_GeriDön.Location = new System.Drawing.Point(320, 359);
-            this.btn_GeriDön.Name = "btn_GeriDön";
-            this.btn_GeriDön.Size = new System.Drawing.Size(155, 36);
-            this.btn_GeriDön.TabIndex = 2;
-            this.btn_GeriDön.Text = "GERİ DÖN";
-            this.btn_GeriDön.UseVisualStyleBackColor = false;
-            this.btn_GeriDön.Click += new System.EventHandler(this.btn_GeriDön_Click);
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(385, 169);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(89, 16);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "profili düzenle";
             // 
-            // frm_UserList
+            // frm_CustomerEditProfilePage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btn_GeriDön);
+            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frm_UserList";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frm_UserList";
+            this.Name = "frm_CustomerEditProfilePage";
+            this.Text = "frm_CustomerEditProfilePage";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button btn_GeriDön;
+        private System.Windows.Forms.Label label1;
     }
 }

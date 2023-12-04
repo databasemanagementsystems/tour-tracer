@@ -36,7 +36,7 @@ namespace TourTracer
 
         private void frm_TourList_Load(object sender, EventArgs e)
         {
-
+            AddControls(new frm_CreateNewTour());
         }
 
         private void btn_GeriDön_Click(object sender, EventArgs e)

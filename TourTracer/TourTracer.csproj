@@ -70,11 +70,35 @@
     <Compile Include="frm_CreateNewTour.Designer.cs">
       <DependentUpon>frm_CreateNewTour.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_CustomerMainPage.cs">
+    <Compile Include="frm_CustomerMainPage\frm_CustomerEditProfilePage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_CustomerMainPage.Designer.cs">
+    <Compile Include="frm_CustomerMainPage\frm_CustomerEditProfilePage.Designer.cs">
+      <DependentUpon>frm_CustomerEditProfilePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CustomerMainPage\frm_CustomerEditTourPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CustomerMainPage\frm_CustomerEditTourPage.Designer.cs">
+      <DependentUpon>frm_CustomerEditTourPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CustomerMainPage\frm_CustomerMainPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CustomerMainPage\frm_CustomerMainPage.Designer.cs">
       <DependentUpon>frm_CustomerMainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CustomerMainPage\frm_CustomerProfilePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CustomerMainPage\frm_CustomerProfilePage.Designer.cs">
+      <DependentUpon>frm_CustomerProfilePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CustomerMainPage\frm_CustomerSelectTourPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CustomerMainPage\frm_CustomerSelectTourPage.Designer.cs">
+      <DependentUpon>frm_CustomerSelectTourPage.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_DeletedTours.cs">
       <SubType>Form</SubType>
@@ -132,8 +156,20 @@
     <EmbeddedResource Include="frm_CreateNewTour.resx">
       <DependentUpon>frm_CreateNewTour.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_CustomerMainPage.resx">
+    <EmbeddedResource Include="frm_CustomerMainPage\frm_CustomerEditProfilePage.resx">
+      <DependentUpon>frm_CustomerEditProfilePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CustomerMainPage\frm_CustomerEditTourPage.resx">
+      <DependentUpon>frm_CustomerEditTourPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CustomerMainPage\frm_CustomerMainPage.resx">
       <DependentUpon>frm_CustomerMainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CustomerMainPage\frm_CustomerProfilePage.resx">
+      <DependentUpon>frm_CustomerProfilePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CustomerMainPage\frm_CustomerSelectTourPage.resx">
+      <DependentUpon>frm_CustomerSelectTourPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_DeletedTours.resx">
       <DependentUpon>frm_DeletedTours.cs</DependentUpon>

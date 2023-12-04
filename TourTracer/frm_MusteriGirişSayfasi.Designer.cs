@@ -207,7 +207,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_GeriDön);
             this.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_MusteriGirişSayfasi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_MusteriGiriş";

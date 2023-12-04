@@ -62,5 +62,10 @@ namespace TourTracer
 
             }
         }
+
+        private void txt_AdminIsim_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -62,6 +62,7 @@
             this.txt_AdminIsim.Name = "txt_AdminIsim";
             this.txt_AdminIsim.Size = new System.Drawing.Size(261, 29);
             this.txt_AdminIsim.TabIndex = 9;
+            this.txt_AdminIsim.TextChanged += new System.EventHandler(this.txt_AdminIsim_TextChanged);
             // 
             // label4
             // 
@@ -176,7 +177,7 @@
             this.Controls.Add(this.txt_AdminIsim);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_AdminGirisSayfasi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_AdminGirisSayfasi";
