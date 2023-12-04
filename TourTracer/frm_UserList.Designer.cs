@@ -52,6 +52,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btn_GeriDön);
             this.Name = "frm_UserList";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_UserList";
             this.ResumeLayout(false);
 

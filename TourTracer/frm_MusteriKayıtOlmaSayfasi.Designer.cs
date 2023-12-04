@@ -317,6 +317,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btn_GeriDon);
             this.Name = "frm_MusteriKayıtOlmaSayfasi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_MusteriKayıtOlma";
             this.Load += new System.EventHandler(this.frm_MusteriKayıtOlmaSayfasi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

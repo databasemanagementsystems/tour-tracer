@@ -209,6 +209,7 @@
             this.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frm_MusteriGirişSayfasi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_MusteriGiriş";
             this.Load += new System.EventHandler(this.frm_MusteriGiriş_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

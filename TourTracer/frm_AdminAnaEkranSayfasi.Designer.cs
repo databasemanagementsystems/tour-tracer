@@ -99,6 +99,7 @@
             this.Controls.Add(this.btn_ViewTours);
             this.Controls.Add(this.btn_GeriDön);
             this.Name = "frm_AdminAnaEkranSayfasi";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_AdminAnaEkranSayfasi";
             this.Load += new System.EventHandler(this.frm_AdminAnaEkranSayfasi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

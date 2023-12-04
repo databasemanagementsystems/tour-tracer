@@ -97,6 +97,7 @@
             this.Controls.Add(this.btn_ViewTours);
             this.Controls.Add(this.btn_GeriDön);
             this.Name = "frm_CustomerMainPage";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_CustomerMainPage";
             this.Load += new System.EventHandler(this.frm_CustomerMainPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

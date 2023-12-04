@@ -119,6 +119,7 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frm_BaslangicEkrani";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_Giris";
             this.Load += new System.EventHandler(this.frm_Giris_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

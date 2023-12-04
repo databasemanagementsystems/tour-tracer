@@ -64,11 +64,35 @@
     <Compile Include="frm_BaslangicEkrani.Designer.cs">
       <DependentUpon>frm_BaslangicEkrani.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_CreateNewTour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CreateNewTour.Designer.cs">
+      <DependentUpon>frm_CreateNewTour.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_CustomerMainPage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_CustomerMainPage.Designer.cs">
       <DependentUpon>frm_CustomerMainPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_DeletedTours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_DeletedTours.Designer.cs">
+      <DependentUpon>frm_DeletedTours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_EditSelectedTours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_EditSelectedTours.Designer.cs">
+      <DependentUpon>frm_EditSelectedTours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_ExpiredTours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_ExpiredTours.Designer.cs">
+      <DependentUpon>frm_ExpiredTours.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_MusteriGirişSayfasi.cs">
       <SubType>Form</SubType>
@@ -105,8 +129,20 @@
     <EmbeddedResource Include="frm_BaslangicEkrani.resx">
       <DependentUpon>frm_BaslangicEkrani.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frm_CreateNewTour.resx">
+      <DependentUpon>frm_CreateNewTour.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_CustomerMainPage.resx">
       <DependentUpon>frm_CustomerMainPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_DeletedTours.resx">
+      <DependentUpon>frm_DeletedTours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_EditSelectedTours.resx">
+      <DependentUpon>frm_EditSelectedTours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_ExpiredTours.resx">
+      <DependentUpon>frm_ExpiredTours.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_MusteriGirişSayfasi.resx">
       <DependentUpon>frm_MusteriGirişSayfasi.cs</DependentUpon>
