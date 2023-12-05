@@ -1,6 +1,6 @@
 ﻿namespace TourTracer
 {
-    partial class frm_AdminAnaEkranSayfasi
+    partial class frm_AdminOptions
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_AdminAnaEkranSayfasi));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_AdminOptions));
             this.btn_GeriDön = new System.Windows.Forms.Button();
             this.btn_ViewTours = new System.Windows.Forms.Button();
             this.btn_ListUsers = new System.Windows.Forms.Button();
@@ -88,7 +88,7 @@
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
-            // frm_AdminAnaEkranSayfasi
+            // frm_AdminPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -98,7 +98,8 @@
             this.Controls.Add(this.btn_ListUsers);
             this.Controls.Add(this.btn_ViewTours);
             this.Controls.Add(this.btn_GeriDön);
-            this.Name = "frm_AdminAnaEkranSayfasi";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "frm_AdminPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_AdminAnaEkranSayfasi";
             this.Load += new System.EventHandler(this.frm_AdminAnaEkranSayfasi_Load);

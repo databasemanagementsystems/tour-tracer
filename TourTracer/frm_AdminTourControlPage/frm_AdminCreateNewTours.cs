@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TourTracer
 {
-    public partial class frm_CreateNewTour : Form
+    public partial class frm_AdminCreateNewTours : Form
     {
-        public frm_CreateNewTour()
+        public frm_AdminCreateNewTours()
         {
             InitializeComponent();
         }

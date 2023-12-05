@@ -10,17 +10,11 @@ using System.Windows.Forms;
 
 namespace TourTracer
 {
-    public partial class frm_UserList : Form
+    public partial class frm_AdminShowDeletedCustomers : Form
     {
-        public frm_UserList()
+        public frm_AdminShowDeletedCustomers()
         {
             InitializeComponent();
-        }
-
-        private void btn_GeriDön_Click(object sender, EventArgs e)
-        {
-            new frm_CustomerMainPage().Show();
-            this.Hide();
         }
     }
 }

@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TourTracer
 {
-    public partial class frm_AdminAnaEkranSayfasi : Form
+    public partial class frm_AdminOptions : Form
     {
-        public frm_AdminAnaEkranSayfasi()
+        public frm_AdminOptions()
         {
             InitializeComponent();
         }
@@ -25,13 +25,13 @@ namespace TourTracer
 
         private void btn_ListUsers_Click(object sender, EventArgs e)
         {
-            new frm_UserList().Show();
+            new frm_AdminEditCustomersPage().Show();
             this.Hide();
         }
 
         private void btn_ViewTours_Click(object sender, EventArgs e)
         {
-            new frm_TourList().Show();
+            new frm_AdminControlsToursPage().Show();
             this.Hide();
         }
 

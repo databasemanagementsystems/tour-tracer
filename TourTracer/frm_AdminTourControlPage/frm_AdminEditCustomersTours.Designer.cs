@@ -1,6 +1,6 @@
 ﻿namespace TourTracer
 {
-    partial class frm_ExpiredTours
+    partial class frm_AdminEditCustomersTours
     {
         /// <summary>
         /// Required designer variable.
@@ -34,21 +34,21 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(257, 216);
+            this.label1.Location = new System.Drawing.Point(318, 188);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(169, 16);
+            this.label1.Size = new System.Drawing.Size(145, 16);
             this.label1.TabIndex = 0;
-            this.label1.Text = "SÜRESİ GEÇMİŞ TURLAR";
+            this.label1.Text = "Müşteri turlarını düzenle";
             // 
-            // frm_ExpiredTours
+            // frm_AdminEditCustomersTours
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frm_ExpiredTours";
-            this.Text = "frm_ExpiredTours";
+            this.Name = "frm_AdminEditCustomersTours";
+            this.Text = "frm_AdminEditCustomerTours";
             this.ResumeLayout(false);
             this.PerformLayout();
 

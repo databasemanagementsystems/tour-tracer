@@ -1,6 +1,6 @@
 ﻿namespace TourTracer
 {
-    partial class frm_TourList
+    partial class frm_AdminEditCustomersPage
     {
         /// <summary>
         /// Required designer variable.
@@ -28,22 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_TourList));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_AdminEditCustomersPage));
             this.panel2 = new System.Windows.Forms.Panel();
             this.button7 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.button6 = new System.Windows.Forms.Button();
-            this.CenterPanel = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btn_GeriDön = new System.Windows.Forms.Button();
+            this.CustomerControl2 = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel4.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.CustomerControl2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel2
@@ -53,7 +54,6 @@
             this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.button4);
             this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.button2);
             this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.pictureBox1);
@@ -61,8 +61,8 @@
             this.panel2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(241, 768);
-            this.panel2.TabIndex = 3;
+            this.panel2.Size = new System.Drawing.Size(241, 800);
+            this.panel2.TabIndex = 5;
             // 
             // button7
             // 
@@ -70,7 +70,7 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button7.ForeColor = System.Drawing.Color.Red;
-            this.button7.Location = new System.Drawing.Point(41, 658);
+            this.button7.Location = new System.Drawing.Point(41, 576);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(155, 36);
             this.button7.TabIndex = 7;
@@ -88,8 +88,9 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(197, 59);
             this.button5.TabIndex = 6;
-            this.button5.Text = "Müşteri Turlarını Düzenle";
+            this.button5.Text = "Müşteri Bilgilerini Düzenle";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button4
             // 
@@ -101,7 +102,7 @@
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(197, 39);
             this.button4.TabIndex = 5;
-            this.button4.Text = "Turları Düzenle";
+            this.button4.Text = "Yeni Admin Ekle\r\n";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
@@ -115,23 +116,9 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(197, 59);
             this.button3.TabIndex = 4;
-            this.button3.Text = "Silinmiş Turları \r\nGörüntüle";
+            this.button3.Text = "Silinmiş Kullanıcıları Görüntüle\r\n";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.SkyBlue;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.button2.Location = new System.Drawing.Point(12, 556);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(197, 60);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "Süresi Geçmiş \r\nTurları Görüntüle";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -143,7 +130,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(197, 39);
             this.button1.TabIndex = 2;
-            this.button1.Text = "Yeni Tur Oluştur";
+            this.button1.Text = "Yeni Müşteri Ekle\r\n";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -155,7 +142,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(173, 48);
             this.label1.TabIndex = 1;
-            this.label1.Text = "            TUR \r\nKONTROL SAYFASI";
+            this.label1.Text = "        MÜŞTERİ \r\nKONTROL SAYFASI";
             // 
             // pictureBox1
             // 
@@ -167,72 +154,82 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // panel4
+            // panel3
             // 
-            this.panel4.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel4.Controls.Add(this.button6);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(241, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(921, 98);
-            this.panel4.TabIndex = 3;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.panel3.Controls.Add(this.btn_GeriDön);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(971, 158);
+            this.panel3.TabIndex = 0;
             // 
-            // button6
+            // btn_GeriDön
             // 
-            this.button6.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button6.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.button6.Location = new System.Drawing.Point(754, 38);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(155, 36);
-            this.button6.TabIndex = 2;
-            this.button6.Text = "GERİ DÖN";
-            this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
+            this.btn_GeriDön.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btn_GeriDön.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_GeriDön.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_GeriDön.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btn_GeriDön.Location = new System.Drawing.Point(786, 73);
+            this.btn_GeriDön.Name = "btn_GeriDön";
+            this.btn_GeriDön.Size = new System.Drawing.Size(155, 36);
+            this.btn_GeriDön.TabIndex = 2;
+            this.btn_GeriDön.Text = "GERİ DÖN";
+            this.btn_GeriDön.UseVisualStyleBackColor = false;
+            this.btn_GeriDön.Click += new System.EventHandler(this.btn_GeriDön_Click);
             // 
-            // CenterPanel
+            // CustomerControl2
             // 
-            this.CenterPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.CenterPanel.Location = new System.Drawing.Point(241, 98);
-            this.CenterPanel.Name = "CenterPanel";
-            this.CenterPanel.Size = new System.Drawing.Size(921, 670);
-            this.CenterPanel.TabIndex = 4;
-            this.CenterPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.CenterPanel_Paint_1);
+            this.CustomerControl2.Controls.Add(this.panel1);
+            this.CustomerControl2.Controls.Add(this.panel3);
+            this.CustomerControl2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.CustomerControl2.Location = new System.Drawing.Point(241, 0);
+            this.CustomerControl2.Name = "CustomerControl2";
+            this.CustomerControl2.Size = new System.Drawing.Size(971, 800);
+            this.CustomerControl2.TabIndex = 7;
+            this.CustomerControl2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // frm_TourList
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 158);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(971, 642);
+            this.panel1.TabIndex = 1;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint_2);
+            // 
+            // frm_AdminEditCustomersPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1162, 768);
-            this.Controls.Add(this.CenterPanel);
-            this.Controls.Add(this.panel4);
+            this.ClientSize = new System.Drawing.Size(1212, 800);
+            this.Controls.Add(this.CustomerControl2);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frm_TourList";
+            this.Name = "frm_AdminEditCustomersPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frm_TourList";
-            this.Load += new System.EventHandler(this.frm_TourList_Load);
+            this.Text = "frm_UserList";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel4.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.CustomerControl2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Panel CenterPanel;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Button btn_GeriDön;
+        private System.Windows.Forms.Panel CustomerControl2;
+        private System.Windows.Forms.Panel panel1;
     }
 }

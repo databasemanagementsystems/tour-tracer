@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TourTracer
 {
-    public partial class frm_TourList : Form
+    public partial class frm_AdminControlsToursPage : Form
     {
-        public frm_TourList()
+        public frm_AdminControlsToursPage()
         {
             InitializeComponent();
         }
@@ -36,7 +36,7 @@ namespace TourTracer
 
         private void frm_TourList_Load(object sender, EventArgs e)
         {
-            AddControls(new frm_CreateNewTour());
+            AddControls(new frm_AdminCreateNewTours());
         }
 
         private void btn_GeriDön_Click(object sender, EventArgs e)
@@ -47,7 +47,7 @@ namespace TourTracer
 
         private void button6_Click(object sender, EventArgs e)
         {
-            new frm_AdminAnaEkranSayfasi().Show();
+            new frm_AdminOptions().Show();
             this.Hide();
         }
 
@@ -66,7 +66,7 @@ namespace TourTracer
 
         {
             //FORM SAYFASINA YÖNLENDİRME İŞLEMİ
-            AddControls(new frm_CreateNewTour());
+            AddControls(new frm_AdminCreateNewTours());
         }
 
         private void CenterPanel_Paint_1(object sender, PaintEventArgs e)
@@ -77,19 +77,24 @@ namespace TourTracer
         private void button2_Click(object sender, EventArgs e)
         {
             //FORM SAYFASINA YÖNLENDİRME İŞLEMİ
-            AddControls(new frm_ExpiredTours());
+            AddControls(new frm_AdminShowsExpiredTours());
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             //FORM SAYFASINA YÖNLENDİRME İŞLEMİ
-            AddControls(new frm_EditSelectedTours());
+            AddControls(new frm_AdminEditTours());
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             //FORM SAYFASINA YÖNLENDİRME İŞLEMİ
-            AddControls(new frm_DeletedTours());
+            AddControls(new frm_AdminShowsDeletedTours());
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            AddControls(new frm_AdminEditCustomersTours());
         }
     }
 }

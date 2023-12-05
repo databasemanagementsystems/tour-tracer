@@ -1,6 +1,6 @@
 ﻿namespace TourTracer
 {
-    partial class frm_EditSelectedTours
+    partial class frm_AdminShowsDeletedTours
     {
         /// <summary>
         /// Required designer variable.
@@ -29,37 +29,26 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(377, 153);
+            this.label1.Location = new System.Drawing.Point(406, 188);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 16);
+            this.label1.Size = new System.Drawing.Size(120, 16);
             this.label1.TabIndex = 0;
-            this.label1.Text = "TURLARI DÜZENLE";
+            this.label1.Text = "SİLİNMİŞ TURLAR";
             // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(232, 199);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(303, 24);
-            this.comboBox1.TabIndex = 1;
-            // 
-            // frm_EditSelectedTours
+            // frm_DeletedTours
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frm_EditSelectedTours";
-            this.Text = "frm_EditSelectedTours";
-            this.Load += new System.EventHandler(this.frm_EditSelectedTours_Load);
+            this.Name = "frm_DeletedTours";
+            this.Text = "frm_DeletedTours";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -68,6 +57,5 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

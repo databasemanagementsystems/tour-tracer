@@ -43,7 +43,7 @@ namespace TourTracer
         private void btn_GirisYap_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Giriş Başarılı","HOŞGELDİNİZ",MessageBoxButtons.OK, MessageBoxIcon.Information);
-            new frm_AdminAnaEkranSayfasi().Show();
+            new frm_AdminOptions().Show();
             this.Hide();
         }
 

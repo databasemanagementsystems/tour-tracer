@@ -31,18 +31,17 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_CustomerMainPage));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button7 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btn_GeriDön = new System.Windows.Forms.Button();
             this.CustomerPanel = new System.Windows.Forms.Panel();
             this.CustomerPanel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.CustomerPanel.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,6 +58,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.BlueViolet;
+            this.panel2.Controls.Add(this.btn_GeriDön);
             this.panel2.Controls.Add(this.button7);
             this.panel2.Controls.Add(this.button5);
             this.panel2.Controls.Add(this.button4);
@@ -70,6 +70,20 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(298, 749);
             this.panel2.TabIndex = 8;
+            // 
+            // button7
+            // 
+            this.button7.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button7.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button7.ForeColor = System.Drawing.Color.Red;
+            this.button7.Location = new System.Drawing.Point(70, 606);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(155, 36);
+            this.button7.TabIndex = 12;
+            this.button7.Text = "ÇIKIŞ YAP";
+            this.button7.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button5
             // 
@@ -127,24 +141,9 @@
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button7.ForeColor = System.Drawing.Color.Red;
-            this.button7.Location = new System.Drawing.Point(70, 606);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(155, 36);
-            this.button7.TabIndex = 12;
-            this.button7.Text = "ÇIKIŞ YAP";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel1.Controls.Add(this.btn_GeriDön);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
@@ -157,7 +156,7 @@
             this.btn_GeriDön.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_GeriDön.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_GeriDön.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.btn_GeriDön.Location = new System.Drawing.Point(643, 37);
+            this.btn_GeriDön.Location = new System.Drawing.Point(70, 552);
             this.btn_GeriDön.Name = "btn_GeriDön";
             this.btn_GeriDön.Size = new System.Drawing.Size(155, 36);
             this.btn_GeriDön.TabIndex = 1;
@@ -199,7 +198,6 @@
             this.Load += new System.EventHandler(this.frm_CustomerMainPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.CustomerPanel.ResumeLayout(false);
             this.ResumeLayout(false);
 
