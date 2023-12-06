@@ -25,7 +25,7 @@ namespace TourTracer
 
         private void btn_ListUsers_Click(object sender, EventArgs e)
         {
-            new frm_AdminEditCustomersPage().Show();
+            new frm_AdminEditCustomerPage().Show();
             this.Hide();
         }
 

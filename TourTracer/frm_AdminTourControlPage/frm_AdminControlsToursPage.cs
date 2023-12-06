@@ -34,7 +34,7 @@ namespace TourTracer
 
         }
 
-        private void frm_TourList_Load(object sender, EventArgs e)
+        private void Frm_AdminControlsToursPaget_Load(object sender, EventArgs e)
         {
             AddControls(new frm_AdminCreateNewTours());
         }

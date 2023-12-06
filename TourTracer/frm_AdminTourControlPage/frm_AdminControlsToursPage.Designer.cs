@@ -194,6 +194,7 @@
             // 
             // CenterPanel
             // 
+            this.CenterPanel.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.CenterPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CenterPanel.Location = new System.Drawing.Point(241, 144);
             this.CenterPanel.Name = "CenterPanel";
@@ -213,7 +214,7 @@
             this.Name = "frm_AdminControlsToursPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_TourList";
-            this.Load += new System.EventHandler(this.frm_TourList_Load);
+            this.Load += new System.EventHandler(this.Frm_AdminControlsToursPaget_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

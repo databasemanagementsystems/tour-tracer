@@ -70,6 +70,12 @@
     <Compile Include="frm_AdminCustomerControlPage\frm_AdminShowDeletedCustomers.Designer.cs">
       <DependentUpon>frm_AdminShowDeletedCustomers.cs</DependentUpon>
     </Compile>
+    <Compile Include="frm_AdminCustomerControlPage\frm_AdminEditCustomerPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_AdminCustomerControlPage\frm_AdminEditCustomerPage.Designer.cs">
+      <DependentUpon>frm_AdminEditCustomerPage.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_AdminTourControlPage\frm_AdminEditCustomersTours.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -166,12 +172,6 @@
     <Compile Include="frm_AdminTourControlPage\frm_AdminControlsToursPage.Designer.cs">
       <DependentUpon>frm_AdminControlsToursPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_AdminCustomerControlPage\frm_AdminEditCustomersPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_AdminCustomerControlPage\frm_AdminEditCustomersPage.Designer.cs">
-      <DependentUpon>frm_AdminEditCustomersPage.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frm_AdminCustomerControlPage\frm_AdminAddNewAdmin.resx">
@@ -185,6 +185,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_AdminCustomerControlPage\frm_AdminShowDeletedCustomers.resx">
       <DependentUpon>frm_AdminShowDeletedCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_AdminCustomerControlPage\frm_AdminEditCustomerPage.resx">
+      <DependentUpon>frm_AdminEditCustomerPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_AdminTourControlPage\frm_AdminEditCustomersTours.resx">
       <DependentUpon>frm_AdminEditCustomersTours.cs</DependentUpon>
@@ -234,9 +237,6 @@
     <EmbeddedResource Include="frm_AdminTourControlPage\frm_AdminControlsToursPage.resx">
       <DependentUpon>frm_AdminControlsToursPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_AdminCustomerControlPage\frm_AdminEditCustomersPage.resx">
-      <DependentUpon>frm_AdminEditCustomersPage.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -267,6 +267,7 @@
     <Content Include="Görseller\analysis.png" />
     <Content Include="Görseller\man.png" />
     <Content Include="Görseller\register.png" />
+    <Content Include="Görseller\service.png" />
     <Content Include="Görseller\traveller1.png" />
     <Content Include="Görseller\user.png" />
   </ItemGroup>
