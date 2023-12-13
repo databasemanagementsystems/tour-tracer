@@ -33,8 +33,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Dapper.2.1.24\lib\net461\Dapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Dapper.Contrib, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\Dapper.Contrib.2.0.78\lib\net461\Dapper.Contrib.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>packages\ExcelDataReader.3.6.0\lib\net45\ExcelDataReader.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelDataReader.DataSet, Version=3.6.0.0, Culture=neutral, PublicKeyToken=93517dbe6a4012fa, processorArchitecture=MSIL">
+      <HintPath>packages\ExcelDataReader.DataSet.3.6.0\lib\net35\ExcelDataReader.DataSet.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.IO.Compression" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,49 +57,34 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="Z.Dapper.Plus, Version=7.2.0.0, Culture=neutral, PublicKeyToken=59b66d028979105b, processorArchitecture=MSIL">
+      <HintPath>packages\Z.Dapper.Plus.7.2.0\lib\net45\Z.Dapper.Plus.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frm_AdminCustomerControlPage\frm_AdminAddNewAdmin.cs">
+    <Compile Include="frm_AdminImportExport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_AdminCustomerControlPage\frm_AdminAddNewAdmin.Designer.cs">
-      <DependentUpon>frm_AdminAddNewAdmin.cs</DependentUpon>
+    <Compile Include="frm_AdminImportExport.Designer.cs">
+      <DependentUpon>frm_AdminImportExport.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_AdminCustomerControlPage\frm_AdminAddNewCustomer.cs">
+    <Compile Include="frm_AdminManagementPage\frm_AdminDashboardPage.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_AdminCustomerControlPage\frm_AdminAddNewCustomer.Designer.cs">
-      <DependentUpon>frm_AdminAddNewCustomer.cs</DependentUpon>
+    <Compile Include="frm_AdminManagementPage\frm_AdminDashboardPage.Designer.cs">
+      <DependentUpon>frm_AdminDashboardPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_AdminCustomerControlPage\frm_AdminEditCustomerInfo.cs">
+    <Compile Include="frm_AdminManagementPage\frm_AdminAddNewUser.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_AdminCustomerControlPage\frm_AdminEditCustomerInfo.Designer.cs">
-      <DependentUpon>frm_AdminEditCustomerInfo.cs</DependentUpon>
+    <Compile Include="frm_AdminManagementPage\frm_AdminAddNewUser.Designer.cs">
+      <DependentUpon>frm_AdminAddNewUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_AdminCustomerControlPage\frm_AdminShowDeletedCustomers.cs">
+    <Compile Include="frm_AdminManagementPage\frm_AdminEditUsers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_AdminCustomerControlPage\frm_AdminShowDeletedCustomers.Designer.cs">
-      <DependentUpon>frm_AdminShowDeletedCustomers.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_AdminCustomerControlPage\frm_AdminEditCustomerPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_AdminCustomerControlPage\frm_AdminEditCustomerPage.Designer.cs">
-      <DependentUpon>frm_AdminEditCustomerPage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_AdminTourControlPage\frm_AdminEditCustomersTours.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_AdminTourControlPage\frm_AdminEditCustomersTours.Designer.cs">
-      <DependentUpon>frm_AdminEditCustomersTours.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_AdminTourControlPage\frm_AdminOptions.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_AdminTourControlPage\frm_AdminOptions.Designer.cs">
-      <DependentUpon>frm_AdminOptions.cs</DependentUpon>
+    <Compile Include="frm_AdminManagementPage\frm_AdminEditUsers.Designer.cs">
+      <DependentUpon>frm_AdminEditUsers.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_LoginRegisterPages\frm_AdminGirisSayfasi.cs">
       <SubType>Form</SubType>
@@ -99,12 +97,6 @@
     </Compile>
     <Compile Include="frm_LoginRegisterPages\frm_BaslangicEkrani.Designer.cs">
       <DependentUpon>frm_BaslangicEkrani.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_AdminTourControlPage\frm_AdminCreateNewTours.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_AdminTourControlPage\frm_AdminCreateNewTours.Designer.cs">
-      <DependentUpon>frm_AdminCreateNewTours.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_CustomerMainPage\frm_CustomerEditProfilePage.cs">
       <SubType>Form</SubType>
@@ -136,23 +128,17 @@
     <Compile Include="frm_CustomerMainPage\frm_CustomerSelectTourPage.Designer.cs">
       <DependentUpon>frm_CustomerSelectTourPage.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_AdminTourControlPage\frm_AdminShowsDeletedTours.cs">
+    <Compile Include="frm_AdminManagementPage\frm_AdminShowsDeletedToursAndCustomers.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_AdminTourControlPage\frm_AdminShowsDeletedTours.Designer.cs">
-      <DependentUpon>frm_AdminShowsDeletedTours.cs</DependentUpon>
+    <Compile Include="frm_AdminManagementPage\frm_AdminShowsDeletedToursAndCustomers.Designer.cs">
+      <DependentUpon>frm_AdminShowsDeletedToursAndCustomers.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_AdminTourControlPage\frm_AdminEditTours.cs">
+    <Compile Include="frm_AdminManagementPage\frm_AdminEditTours.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_AdminTourControlPage\frm_AdminEditTours.Designer.cs">
+    <Compile Include="frm_AdminManagementPage\frm_AdminEditTours.Designer.cs">
       <DependentUpon>frm_AdminEditTours.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_AdminTourControlPage\frm_AdminShowsExpiredTours.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_AdminTourControlPage\frm_AdminShowsExpiredTours.Designer.cs">
-      <DependentUpon>frm_AdminShowsExpiredTours.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_LoginRegisterPages\frm_MusteriGirişSayfasi.cs">
       <SubType>Form</SubType>
@@ -166,43 +152,49 @@
     <Compile Include="frm_LoginRegisterPages\frm_MusteriKayıtOlmaSayfasi.Designer.cs">
       <DependentUpon>frm_MusteriKayıtOlmaSayfasi.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_AdminTourControlPage\frm_AdminControlsToursPage.cs">
+    <Compile Include="frm_PersonalPage\frm_PersonalEditsTours.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_AdminTourControlPage\frm_AdminControlsToursPage.Designer.cs">
-      <DependentUpon>frm_AdminControlsToursPage.cs</DependentUpon>
+    <Compile Include="frm_PersonalPage\frm_PersonalEditsTours.Designer.cs">
+      <DependentUpon>frm_PersonalEditsTours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PersonalPage\frm_PersonalEditsCustomers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PersonalPage\frm_PersonalEditsCustomers.Designer.cs">
+      <DependentUpon>frm_PersonalEditsCustomers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PersonalPage\frm_PersonalControlPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PersonalPage\frm_PersonalControlPage.Designer.cs">
+      <DependentUpon>frm_PersonalControlPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_PersonalPage\frm_PersonalLoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_PersonalPage\frm_PersonalLoginPage.Designer.cs">
+      <DependentUpon>frm_PersonalLoginPage.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frm_AdminCustomerControlPage\frm_AdminAddNewAdmin.resx">
-      <DependentUpon>frm_AdminAddNewAdmin.cs</DependentUpon>
+    <EmbeddedResource Include="frm_AdminImportExport.resx">
+      <DependentUpon>frm_AdminImportExport.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_AdminCustomerControlPage\frm_AdminAddNewCustomer.resx">
-      <DependentUpon>frm_AdminAddNewCustomer.cs</DependentUpon>
+    <EmbeddedResource Include="frm_AdminManagementPage\frm_AdminAddNewUser.resx">
+      <DependentUpon>frm_AdminAddNewUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_AdminCustomerControlPage\frm_AdminEditCustomerInfo.resx">
-      <DependentUpon>frm_AdminEditCustomerInfo.cs</DependentUpon>
+    <EmbeddedResource Include="frm_AdminManagementPage\frm_AdminDashboardPage.resx">
+      <DependentUpon>frm_AdminDashboardPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_AdminCustomerControlPage\frm_AdminShowDeletedCustomers.resx">
-      <DependentUpon>frm_AdminShowDeletedCustomers.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_AdminCustomerControlPage\frm_AdminEditCustomerPage.resx">
-      <DependentUpon>frm_AdminEditCustomerPage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_AdminTourControlPage\frm_AdminEditCustomersTours.resx">
-      <DependentUpon>frm_AdminEditCustomersTours.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_AdminTourControlPage\frm_AdminOptions.resx">
-      <DependentUpon>frm_AdminOptions.cs</DependentUpon>
+    <EmbeddedResource Include="frm_AdminManagementPage\frm_AdminEditUsers.resx">
+      <DependentUpon>frm_AdminEditUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_LoginRegisterPages\frm_AdminGirisSayfasi.resx">
       <DependentUpon>frm_AdminGirisSayfasi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_LoginRegisterPages\frm_BaslangicEkrani.resx">
       <DependentUpon>frm_BaslangicEkrani.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_AdminTourControlPage\frm_AdminCreateNewTours.resx">
-      <DependentUpon>frm_AdminCreateNewTours.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_CustomerMainPage\frm_CustomerEditProfilePage.resx">
       <DependentUpon>frm_CustomerEditProfilePage.cs</DependentUpon>
@@ -219,14 +211,11 @@
     <EmbeddedResource Include="frm_CustomerMainPage\frm_CustomerSelectTourPage.resx">
       <DependentUpon>frm_CustomerSelectTourPage.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_AdminTourControlPage\frm_AdminShowsDeletedTours.resx">
-      <DependentUpon>frm_AdminShowsDeletedTours.cs</DependentUpon>
+    <EmbeddedResource Include="frm_AdminManagementPage\frm_AdminShowsDeletedToursAndCustomers.resx">
+      <DependentUpon>frm_AdminShowsDeletedToursAndCustomers.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_AdminTourControlPage\frm_AdminEditTours.resx">
+    <EmbeddedResource Include="frm_AdminManagementPage\frm_AdminEditTours.resx">
       <DependentUpon>frm_AdminEditTours.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_AdminTourControlPage\frm_AdminShowsExpiredTours.resx">
-      <DependentUpon>frm_AdminShowsExpiredTours.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_LoginRegisterPages\frm_MusteriGirişSayfasi.resx">
       <DependentUpon>frm_MusteriGirişSayfasi.cs</DependentUpon>
@@ -234,8 +223,17 @@
     <EmbeddedResource Include="frm_LoginRegisterPages\frm_MusteriKayıtOlmaSayfasi.resx">
       <DependentUpon>frm_MusteriKayıtOlmaSayfasi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_AdminTourControlPage\frm_AdminControlsToursPage.resx">
-      <DependentUpon>frm_AdminControlsToursPage.cs</DependentUpon>
+    <EmbeddedResource Include="frm_PersonalPage\frm_PersonalEditsTours.resx">
+      <DependentUpon>frm_PersonalEditsTours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PersonalPage\frm_PersonalEditsCustomers.resx">
+      <DependentUpon>frm_PersonalEditsCustomers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PersonalPage\frm_PersonalControlPage.resx">
+      <DependentUpon>frm_PersonalControlPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_PersonalPage\frm_PersonalLoginPage.resx">
+      <DependentUpon>frm_PersonalLoginPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -246,6 +244,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -268,6 +267,7 @@
     <Content Include="Görseller\man.png" />
     <Content Include="Görseller\register.png" />
     <Content Include="Görseller\service.png" />
+    <Content Include="Görseller\teamwork.png" />
     <Content Include="Görseller\traveller1.png" />
     <Content Include="Görseller\user.png" />
   </ItemGroup>

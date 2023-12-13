@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TourTracer
 {
-    public partial class frm_AdminShowsDeletedTours : Form
+    public partial class frm_AdminImportExport : Form
     {
-        public frm_AdminShowsDeletedTours()
+        public frm_AdminImportExport()
         {
             InitializeComponent();
         }

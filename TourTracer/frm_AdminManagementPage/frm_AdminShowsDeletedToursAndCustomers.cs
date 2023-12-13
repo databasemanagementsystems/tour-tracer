@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TourTracer
 {
-    public partial class frm_AdminAddNewAdmin : Form
+    public partial class frm_AdminShowsDeletedToursAndCustomers : Form
     {
-        public frm_AdminAddNewAdmin()
+        public frm_AdminShowsDeletedToursAndCustomers()
         {
             InitializeComponent();
         }

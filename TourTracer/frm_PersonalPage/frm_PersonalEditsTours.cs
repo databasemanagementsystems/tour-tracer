@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace TourTracer
 {
-    public partial class frm_AdminShowDeletedCustomers : Form
+    public partial class frm_PersonalEditsTours : Form
     {
-        public frm_AdminShowDeletedCustomers()
+        public frm_PersonalEditsTours()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

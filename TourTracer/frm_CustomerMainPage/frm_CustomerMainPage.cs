@@ -1,5 +1,6 @@
 ﻿using System.Windows.Forms;
 using System;
+using System.Data.SqlClient;
 
 namespace TourTracer
 {
@@ -9,6 +10,8 @@ namespace TourTracer
         {
             InitializeComponent();
         }
+        
+        
 
         // Form içinde başka form açmak için kullandığımız fonksiyon
         public void AddControls(Form f)
@@ -76,6 +79,21 @@ namespace TourTracer
         private void panel3_Paint_1(object sender, PaintEventArgs e)
         {
             // Buraya uygun işlemleri ekleyin
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

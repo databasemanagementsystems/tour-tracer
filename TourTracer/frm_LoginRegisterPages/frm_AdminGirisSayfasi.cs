@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,7 +17,7 @@ namespace TourTracer
         {
             InitializeComponent();
         }
-
+      
         private void btn_GeriDön_Click(object sender, EventArgs e)
         {
             new frm_BaslangicEkrani().Show();
@@ -36,14 +37,14 @@ namespace TourTracer
 
         private void btn_Temizle_Click(object sender, EventArgs e)
         {
-            txt_AdminIsim.Text = "";
-            txt_AdminSifre.Text = "";
+            txt_AdminName.Text = "";
+            txt_AdminPassword.Text = "";
         }
 
         private void btn_GirisYap_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Giriş Başarılı","HOŞGELDİNİZ",MessageBoxButtons.OK, MessageBoxIcon.Information);
-            new frm_AdminOptions().Show();
+            new frm_AdminDashboardPage().Show();
             this.Hide();
         }
 
@@ -51,14 +52,14 @@ namespace TourTracer
         {
             if (checkbox_SifreyiGoster.Checked)
             {
-                txt_AdminIsim.PasswordChar = '\0';
-                txt_AdminSifre.PasswordChar = '\0';
+                txt_AdminName.PasswordChar = '\0';
+                txt_AdminPassword.PasswordChar = '\0';
 
             }
             else
             {
 
-                txt_AdminSifre.PasswordChar = '•';
+                txt_AdminPassword.PasswordChar = '•';
 
             }
         }

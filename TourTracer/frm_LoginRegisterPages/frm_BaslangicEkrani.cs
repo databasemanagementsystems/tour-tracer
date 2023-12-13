@@ -44,5 +44,11 @@ namespace TourTracer
         {
             
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            new frm_PersonalLoginPage().Show();
+            this.Hide();
+        }
     }
 }
