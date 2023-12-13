@@ -6,5 +6,5 @@ CREATE TABLE tbl_User (
     PhoneNumber varchar(12) NOT NULL,
     Password varchar(50) NOT NULL,
     BirthDate date NOT NULL,
-    Role varchar(8) CHECK (Role IN ('Admin', 'Customer')) NOT NULL
+    Role varchar(8) CHECK (Role IN ('Admin', 'Customer', 'Personal')) NOT NULL
 );
