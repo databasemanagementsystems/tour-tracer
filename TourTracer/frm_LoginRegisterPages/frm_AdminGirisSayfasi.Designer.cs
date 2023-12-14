@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_AdminGirisSayfasi));
             this.txt_AdminPassword = new System.Windows.Forms.TextBox();
-            this.txt_AdminName = new System.Windows.Forms.TextBox();
+            this.txt_AdminMail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btn_Temizle = new System.Windows.Forms.Button();
@@ -55,16 +55,16 @@
             this.txt_AdminPassword.Size = new System.Drawing.Size(270, 29);
             this.txt_AdminPassword.TabIndex = 10;
             // 
-            // txt_AdminName
+            // txt_AdminMail
             // 
-            this.txt_AdminName.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.txt_AdminName.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txt_AdminName.ForeColor = System.Drawing.Color.Red;
-            this.txt_AdminName.Location = new System.Drawing.Point(453, 236);
-            this.txt_AdminName.Name = "txt_AdminName";
-            this.txt_AdminName.Size = new System.Drawing.Size(270, 29);
-            this.txt_AdminName.TabIndex = 9;
-            this.txt_AdminName.TextChanged += new System.EventHandler(this.txt_AdminIsim_TextChanged);
+            this.txt_AdminMail.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.txt_AdminMail.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txt_AdminMail.ForeColor = System.Drawing.Color.Red;
+            this.txt_AdminMail.Location = new System.Drawing.Point(453, 236);
+            this.txt_AdminMail.Name = "txt_AdminMail";
+            this.txt_AdminMail.Size = new System.Drawing.Size(270, 29);
+            this.txt_AdminMail.TabIndex = 9;
+            this.txt_AdminMail.TextChanged += new System.EventHandler(this.txt_AdminIsim_TextChanged);
             // 
             // label4
             // 
@@ -84,9 +84,9 @@
             this.label3.ForeColor = System.Drawing.Color.Indigo;
             this.label3.Location = new System.Drawing.Point(296, 238);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(141, 27);
+            this.label3.Size = new System.Drawing.Size(148, 27);
             this.label3.TabIndex = 7;
-            this.label3.Text = "ADMİN İSMİ";
+            this.label3.Text = "ADMİN MAİL";
             // 
             // btn_Temizle
             // 
@@ -199,7 +199,7 @@
             this.Controls.Add(this.btn_Temizle);
             this.Controls.Add(this.btn_GirisYap);
             this.Controls.Add(this.txt_AdminPassword);
-            this.Controls.Add(this.txt_AdminName);
+            this.Controls.Add(this.txt_AdminMail);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -215,7 +215,7 @@
 
         #endregion
         private System.Windows.Forms.TextBox txt_AdminPassword;
-        private System.Windows.Forms.TextBox txt_AdminName;
+        private System.Windows.Forms.TextBox txt_AdminMail;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btn_Temizle;
