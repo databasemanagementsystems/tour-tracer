@@ -57,6 +57,10 @@
     <Reference Include="Irony, Version=1.0.11.0, Culture=neutral, PublicKeyToken=ca48ace7223ead47, processorArchitecture=MSIL">
       <HintPath>packages\Irony.NetCore.1.0.11\lib\net461\Irony.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
     <Reference Include="SixLabors.Fonts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d998eea7b14cab13, processorArchitecture=MSIL">
       <HintPath>packages\SixLabors.Fonts.1.0.0\lib\netstandard2.0\SixLabors.Fonts.dll</HintPath>
     </Reference>
@@ -137,10 +141,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frm_AdminImportExport.cs">
+    <Compile Include="frm_AdminManagementPage\frm_AdminImportExport.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frm_AdminImportExport.Designer.cs">
+    <Compile Include="frm_AdminManagementPage\frm_AdminImportExport.Designer.cs">
       <DependentUpon>frm_AdminImportExport.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_AdminManagementPage\frm_AdminDashboardPage.cs">
@@ -263,7 +267,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TourTracerDataSet1.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="frm_AdminImportExport.resx">
+    <EmbeddedResource Include="frm_AdminManagementPage\frm_AdminImportExport.resx">
       <DependentUpon>frm_AdminImportExport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_AdminManagementPage\frm_AdminAddNewUser.resx">

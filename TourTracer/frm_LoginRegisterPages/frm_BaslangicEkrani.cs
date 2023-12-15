@@ -53,9 +53,6 @@ namespace TourTracer
             new frm_AdminImportExport().Show();
         }
 
-        private void button2_Click_1(object sender, EventArgs e)
-        {
-            new frm_AdminImportExport().Show();
-        }
+       
     }
 }
