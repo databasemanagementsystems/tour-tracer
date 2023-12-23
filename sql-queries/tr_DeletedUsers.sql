@@ -20,6 +20,6 @@ SELECT @Password=Password FROM deleted
 SELECT @BirthDate=BirthDate FROM deleted
 SELECT @Role=Role FROM deleted
 
-    INSERT INTO DeletedUsers VALUES (@ID, @FirstName, @LastName, @Email, @PhoneNumber, @Password, @BirthDate, @Role)
+    INSERT INTO tbl_DeletedUsers VALUES (@ID, @FirstName, @LastName, @Email, @PhoneNumber, @Password, @BirthDate, @Role)
 END;
 

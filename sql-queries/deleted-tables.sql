@@ -1,4 +1,4 @@
-CREATE TABLE DeletedUsers (
+CREATE TABLE tbl_DeletedUsers (
     ID int,
     FirstName varchar(50),
     LastName varchar(50),
@@ -9,7 +9,7 @@ CREATE TABLE DeletedUsers (
     Role varchar(8)
 );
 
-CREATE TABLE DeletedTours (
+CREATE TABLE tbl_DeletedTours (
     ID int,
     Start_Time date,
     End_Time date,

@@ -16,5 +16,5 @@ SELECT @StaffID=StaffID FROM deleted
 SELECT @Price=Price FROM deleted
 SELECT @CityID=CityID FROM deleted
 
-    INSERT INTO DeletedTours VALUES (@ID, @Start_Time, @End_Time, @StaffID, @Price, @CityID)
+    INSERT INTO tbl_DeletedTours VALUES (@ID, @Start_Time, @End_Time, @StaffID, @Price, @CityID)
 END;

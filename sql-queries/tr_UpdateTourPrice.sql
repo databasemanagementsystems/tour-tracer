@@ -1,3 +1,4 @@
+-- This trigger will run when you try to update the price in the tbl_Tours table.
 CREATE TRIGGER tr_UpdateTourPrice ON tbl_Tours
     INSTEAD OF UPDATE
                    AS
