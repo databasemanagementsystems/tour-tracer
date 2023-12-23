@@ -33,8 +33,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.txt_MusteriMail = new System.Windows.Forms.TextBox();
-            this.txt_MusteriSifre = new System.Windows.Forms.TextBox();
+            this.txt_CustomerMail = new System.Windows.Forms.TextBox();
+            this.txt_CustomerPassword = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_GirisYap = new System.Windows.Forms.Button();
             this.checkbox_SifreyiGoster = new System.Windows.Forms.CheckBox();
@@ -98,27 +98,27 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "MÜŞTERİ ŞİFRE";
             // 
-            // txt_MusteriMail
+            // txt_CustomerMail
             // 
-            this.txt_MusteriMail.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.txt_MusteriMail.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txt_MusteriMail.ForeColor = System.Drawing.Color.Red;
-            this.txt_MusteriMail.Location = new System.Drawing.Point(436, 210);
-            this.txt_MusteriMail.Name = "txt_MusteriMail";
-            this.txt_MusteriMail.Size = new System.Drawing.Size(261, 29);
-            this.txt_MusteriMail.TabIndex = 5;
-            this.txt_MusteriMail.TextChanged += new System.EventHandler(this.txt_MusteriMail_TextChanged);
+            this.txt_CustomerMail.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.txt_CustomerMail.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txt_CustomerMail.ForeColor = System.Drawing.Color.Red;
+            this.txt_CustomerMail.Location = new System.Drawing.Point(436, 210);
+            this.txt_CustomerMail.Name = "txt_CustomerMail";
+            this.txt_CustomerMail.Size = new System.Drawing.Size(261, 29);
+            this.txt_CustomerMail.TabIndex = 5;
+            this.txt_CustomerMail.TextChanged += new System.EventHandler(this.txt_MusteriMail_TextChanged);
             // 
-            // txt_MusteriSifre
+            // txt_CustomerPassword
             // 
-            this.txt_MusteriSifre.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.txt_MusteriSifre.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.txt_MusteriSifre.ForeColor = System.Drawing.Color.Red;
-            this.txt_MusteriSifre.Location = new System.Drawing.Point(436, 301);
-            this.txt_MusteriSifre.Name = "txt_MusteriSifre";
-            this.txt_MusteriSifre.PasswordChar = '•';
-            this.txt_MusteriSifre.Size = new System.Drawing.Size(261, 29);
-            this.txt_MusteriSifre.TabIndex = 6;
+            this.txt_CustomerPassword.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.txt_CustomerPassword.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.txt_CustomerPassword.ForeColor = System.Drawing.Color.Red;
+            this.txt_CustomerPassword.Location = new System.Drawing.Point(436, 301);
+            this.txt_CustomerPassword.Name = "txt_CustomerPassword";
+            this.txt_CustomerPassword.PasswordChar = '•';
+            this.txt_CustomerPassword.Size = new System.Drawing.Size(261, 29);
+            this.txt_CustomerPassword.TabIndex = 6;
             // 
             // pictureBox1
             // 
@@ -227,8 +227,8 @@
             this.Controls.Add(this.checkbox_SifreyiGoster);
             this.Controls.Add(this.btn_GirisYap);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.txt_MusteriSifre);
-            this.Controls.Add(this.txt_MusteriMail);
+            this.Controls.Add(this.txt_CustomerPassword);
+            this.Controls.Add(this.txt_CustomerMail);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
@@ -251,8 +251,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txt_MusteriMail;
-        private System.Windows.Forms.TextBox txt_MusteriSifre;
+        private System.Windows.Forms.TextBox txt_CustomerMail;
+        private System.Windows.Forms.TextBox txt_CustomerPassword;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btn_GirisYap;
         private System.Windows.Forms.CheckBox checkbox_SifreyiGoster;

@@ -36,6 +36,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,7 +75,7 @@
             this.btn_MusteriGiris.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_MusteriGiris.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_MusteriGiris.ForeColor = System.Drawing.Color.Transparent;
-            this.btn_MusteriGiris.Location = new System.Drawing.Point(428, 437);
+            this.btn_MusteriGiris.Location = new System.Drawing.Point(428, 509);
             this.btn_MusteriGiris.Name = "btn_MusteriGiris";
             this.btn_MusteriGiris.Size = new System.Drawing.Size(220, 70);
             this.btn_MusteriGiris.TabIndex = 2;
@@ -89,7 +90,7 @@
             this.btn_CikisYap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_CikisYap.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_CikisYap.ForeColor = System.Drawing.Color.Transparent;
-            this.btn_CikisYap.Location = new System.Drawing.Point(470, 538);
+            this.btn_CikisYap.Location = new System.Drawing.Point(471, 594);
             this.btn_CikisYap.Name = "btn_CikisYap";
             this.btn_CikisYap.Size = new System.Drawing.Size(138, 44);
             this.btn_CikisYap.TabIndex = 3;
@@ -125,6 +126,21 @@
             this.panel2.Size = new System.Drawing.Size(200, 670);
             this.panel2.TabIndex = 6;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.SlateBlue;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("MS Reference Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.Color.Transparent;
+            this.button1.Location = new System.Drawing.Point(428, 432);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(220, 62);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "PERSONEL GİRİŞ";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // frm_BaslangicEkrani
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -132,6 +148,7 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.EnablePreventFocusChange;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(1061, 670);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btn_CikisYap);
@@ -159,5 +176,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Button button1;
     }
 }
