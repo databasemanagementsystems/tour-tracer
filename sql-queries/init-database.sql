@@ -1,5 +1,5 @@
 -- Create database
-CREATE DATABASE TourTracer;
+CREATE DATABASE TourTracer COLLATE Turkish_CI_AS;
 GO
 
 -- Use the database
@@ -7,27 +7,26 @@ USE TourTracer;
 GO
 
 -- create the tbl_User table
-CREATE TABLE tbl_User (
-                          CustomerID int PRIMARY KEY IDENTITY(1,1),
-                          FirstName varchar(50) NOT NULL,
-                          LastName varchar(50) NOT NULL,
-                          Email varchar(50) NOT NULL CHECK (Email LIKE '%_@_%._%'),
-                          PhoneNumber varchar(12) NOT NULL,
-                          Password varchar(50) NOT NULL,
-                          BirthDate date NOT NULL,
-                          Role varchar(8) CHECK (Role IN ('Admin', 'Customer', 'Personal')) NOT NULL
+CREATE TABLE tbl_Users (
+    ID int PRIMARY KEY IDENTITY(1,1),
+    FirstName varchar(50) NOT NULL,
+    LastName varchar(50) NOT NULL,
+    Email varchar(50) NOT NULL CHECK (Email LIKE '%_@_%._%'),
+    PhoneNumber varchar(12) NOT NULL,
+    Password varchar(50) NOT NULL,
+    BirthDate date NOT NULL,
+    Role varchar(8) CHECK (Role IN ('Admin', 'Customer', 'Staff')) NOT NULL
 );
 GO
 
 -- add an admin to the tbl_User table
-INSERT INTO tbl_User (FirstName, LastName, Email, PhoneNumber, Password, BirthDate, Role)
+INSERT INTO tbl_Users (FirstName, LastName, Email, PhoneNumber, Password, BirthDate, Role)
 VALUES ('Admin', 'User', 'admin@example.com', '1234567890', 'AdminPassword', '1970-01-01', 'Admin');
 GO
 
--- create table tbl_Cities
 CREATE TABLE tbl_Cities (
-                            PlateNumber int PRIMARY KEY IDENTITY(1,1),
-                            CityName varchar(30) NOT NULL,
+    PlateNumber int PRIMARY KEY IDENTITY(1,1),
+    CityName varchar(30) COLLATE Turkish_CI_AS NOT NULL,
 );
 GO
 
@@ -46,3 +45,8 @@ VALUES
 ('Bayburt'), ('Karaman'), ('Kırıkkale'), ('Batman'), ('Şırnak'), ('Bartın'), ('Ardahan'), 
 ('Iğdır'), ('Yalova'), ('Karabük'), ('Kilis'), ('Osmaniye'), ('Düzce');
 GO
+
+
+-- if you want to delete the database
+-- ALTER DATABASE TourTracer SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+-- DROP DATABASE TourTracer;
