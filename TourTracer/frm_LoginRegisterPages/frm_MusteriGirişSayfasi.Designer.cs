@@ -107,7 +107,6 @@
             this.txt_CustomerMail.Name = "txt_CustomerMail";
             this.txt_CustomerMail.Size = new System.Drawing.Size(261, 29);
             this.txt_CustomerMail.TabIndex = 5;
-            this.txt_CustomerMail.TextChanged += new System.EventHandler(this.txt_MusteriMail_TextChanged);
             // 
             // txt_CustomerPassword
             // 
@@ -198,7 +197,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(200, 670);
             this.panel2.TabIndex = 13;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
             // label6
             // 
@@ -239,7 +237,6 @@
             this.Name = "frm_MusteriGirişSayfasi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_MusteriGiriş";
-            this.Load += new System.EventHandler(this.frm_MusteriGiriş_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

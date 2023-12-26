@@ -24,11 +24,6 @@ namespace TourTracer
             this.Hide();
         }
 
-        private void frm_AdminGirisSayfasi_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             new frm_BaslangicEkrani().Show();
@@ -123,16 +118,6 @@ namespace TourTracer
             {
                 conn.Close();
             }
-        }
-
-        private void txt_AdminIsim_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

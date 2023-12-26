@@ -46,16 +46,12 @@ namespace TourTracer
             date_Birthdate.Value = DateTime.Now;
         }
 
-        // DateTimePicker'ın değeri değiştiğinde
-        private void dateTime_DogumTarihi_ValueChanged(object sender, EventArgs e)
-        {
-            // (Opsiyonel: Bu olaya dair başka işlemler eklenebilir)
-        }
+       
 
         // Telefon numarası text kutusunda metin değiştiğinde
         private void txt_MusteriTel_TextChanged(object sender, EventArgs e)
         {
-            // (Opsiyonel: Bu olaya dair başka işlemler eklenebilir)
+           
         }
 
         // "Şifreyi Göster" checkbox'u durum değiştirdiğinde
@@ -162,13 +158,5 @@ namespace TourTracer
             return true;
         }
 
-        // Form yüklendiğinde
-        private void frm_MusteriKayıtOlmaSayfasi_Load(object sender, EventArgs e){
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
     }
 }

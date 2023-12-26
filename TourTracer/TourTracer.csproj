@@ -177,12 +177,6 @@
     <Compile Include="frm_LoginRegisterPages\frm_BaslangicEkrani.Designer.cs">
       <DependentUpon>frm_BaslangicEkrani.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_CustomerMainPage\frm_CustomerEditProfilePage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_CustomerMainPage\frm_CustomerEditProfilePage.Designer.cs">
-      <DependentUpon>frm_CustomerEditProfilePage.cs</DependentUpon>
-    </Compile>
     <Compile Include="frm_CustomerMainPage\frm_CustomerEditTourPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -272,9 +266,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_LoginRegisterPages\frm_BaslangicEkrani.resx">
       <DependentUpon>frm_BaslangicEkrani.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_CustomerMainPage\frm_CustomerEditProfilePage.resx">
-      <DependentUpon>frm_CustomerEditProfilePage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_CustomerMainPage\frm_CustomerEditTourPage.resx">
       <DependentUpon>frm_CustomerEditTourPage.cs</DependentUpon>

@@ -64,7 +64,6 @@
             this.txt_AdminMail.Name = "txt_AdminMail";
             this.txt_AdminMail.Size = new System.Drawing.Size(270, 29);
             this.txt_AdminMail.TabIndex = 9;
-            this.txt_AdminMail.TextChanged += new System.EventHandler(this.txt_AdminIsim_TextChanged);
             // 
             // label4
             // 
@@ -160,7 +159,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(200, 670);
             this.panel1.TabIndex = 17;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // panel2
             // 
@@ -207,7 +205,6 @@
             this.Name = "frm_AdminGirisSayfasi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_AdminGirisSayfasi";
-            this.Load += new System.EventHandler(this.frm_AdminGirisSayfasi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

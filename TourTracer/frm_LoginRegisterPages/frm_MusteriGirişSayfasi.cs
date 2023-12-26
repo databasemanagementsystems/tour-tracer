@@ -13,10 +13,7 @@ namespace TourTracer
             InitializeComponent();
         }
 
-        private void frm_MusteriGiriş_Load(object sender, EventArgs e)
-        {
-            // (Opsiyonel: Form yüklendiğinde yapılacak işlemler)
-        }
+      
 
         private void btn_GeriDön_Click(object sender, EventArgs e)
         {
@@ -67,16 +64,6 @@ namespace TourTracer
                 // Giriş başarısızsa hata mesajı göster
                 MessageBox.Show("E-posta veya şifre hatalı!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void txt_MusteriMail_TextChanged(object sender, EventArgs e)
-        {
-            // (Opsiyonel: E-posta text kutusunda metin değiştiğinde yapılacak işlemler)
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private bool CheckLogin(string email, string password)
