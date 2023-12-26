@@ -113,7 +113,7 @@ namespace TourTracer
                 conn.Open();
 
                 // Insert sorgusuyla kullanıcıyı kaydet
-                string register = "INSERT INTO tbl_User (FirstName, LastName, Email, PhoneNumber, Password, BirthDate, Role) " +
+                string register = "INSERT INTO tbl_Users (FirstName, LastName, Email, PhoneNumber, Password, BirthDate, Role) " +
                                   "VALUES (@FirstName, @LastName, @Email, @PhoneNumber, @Password, @BirthDate, @Role)";
                 using (SqlCommand cmd = new SqlCommand(register, conn))
                 {

@@ -61,9 +61,13 @@
             // 
             this.cmbox_Export.FormattingEnabled = true;
             this.cmbox_Export.Items.AddRange(new object[] {
+            "tbl_Bookings",
             "tbl_Cities",
-            "tbl_deneme",
-            "tbl_User"});
+            "tbl_DeletedUsers",
+            "tbl_DeletedTours",
+            "tbl_Tours",
+            "tbl_Users",
+            ""});
             this.cmbox_Export.Location = new System.Drawing.Point(317, 443);
             this.cmbox_Export.Name = "cmbox_Export";
             this.cmbox_Export.Size = new System.Drawing.Size(182, 24);
@@ -107,10 +111,13 @@
             // 
             // dataGridView_Import
             // 
+            this.dataGridView_Import.AllowUserToAddRows = false;
+            this.dataGridView_Import.AllowUserToDeleteRows = false;
             this.dataGridView_Import.BackgroundColor = System.Drawing.SystemColors.Info;
             this.dataGridView_Import.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_Import.Location = new System.Drawing.Point(649, 96);
             this.dataGridView_Import.Name = "dataGridView_Import";
+            this.dataGridView_Import.ReadOnly = true;
             this.dataGridView_Import.RowHeadersWidth = 51;
             this.dataGridView_Import.RowTemplate.Height = 24;
             this.dataGridView_Import.Size = new System.Drawing.Size(540, 335);
@@ -177,10 +184,10 @@
             // 
             this.cmbox_import.FormattingEnabled = true;
             this.cmbox_import.Items.AddRange(new object[] {
-            "tbl_deneme",
-            "tbl_User",
+            "tbl_Bookings",
             "tbl_Cities",
-            "tbl_Tours"});
+            "tbl_Tours",
+            "tbl_Users"});
             this.cmbox_import.Location = new System.Drawing.Point(889, 514);
             this.cmbox_import.Name = "cmbox_import";
             this.cmbox_import.Size = new System.Drawing.Size(245, 24);

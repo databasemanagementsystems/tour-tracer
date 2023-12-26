@@ -79,7 +79,7 @@ namespace TourTracer
             try
             {
                 conn.Open();
-                string query = "SELECT * FROM tbl_User WHERE Email=@Email AND Password=@Password";
+                string query = "SELECT * FROM tbl_Users WHERE Email=@Email AND Password=@Password";
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@Email", email);

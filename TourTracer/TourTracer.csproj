@@ -231,18 +231,6 @@
     <Compile Include="frm_LoginRegisterPages\frm_MusteriKayıtOlmaSayfasi.Designer.cs">
       <DependentUpon>frm_MusteriKayıtOlmaSayfasi.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_PersonalPage\frm_PersonalEditsTours.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_PersonalPage\frm_PersonalEditsTours.Designer.cs">
-      <DependentUpon>frm_PersonalEditsTours.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_PersonalPage\frm_PersonalEditsCustomers.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_PersonalPage\frm_PersonalEditsCustomers.Designer.cs">
-      <DependentUpon>frm_PersonalEditsCustomers.cs</DependentUpon>
-    </Compile>
     <Compile Include="frm_PersonalPage\frm_PersonalControlPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -312,12 +300,6 @@
     <EmbeddedResource Include="frm_LoginRegisterPages\frm_MusteriKayıtOlmaSayfasi.resx">
       <DependentUpon>frm_MusteriKayıtOlmaSayfasi.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_PersonalPage\frm_PersonalEditsTours.resx">
-      <DependentUpon>frm_PersonalEditsTours.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_PersonalPage\frm_PersonalEditsCustomers.resx">
-      <DependentUpon>frm_PersonalEditsCustomers.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frm_PersonalPage\frm_PersonalControlPage.resx">
       <DependentUpon>frm_PersonalControlPage.cs</DependentUpon>
     </EmbeddedResource>
@@ -369,9 +351,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="SQL Kodları\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Görseller\admin.png" />
     <Content Include="Görseller\analysis.png" />
