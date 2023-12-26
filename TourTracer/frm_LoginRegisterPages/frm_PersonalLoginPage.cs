@@ -20,11 +20,6 @@ namespace TourTracer
         SqlConnection conn = new SqlConnection("Data Source=localhost;Initial Catalog=TourTracer;Integrated Security=True");
 
 
-        private void frm_PersonalPage_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void checkbox_SifreyiGoster_CheckedChanged(object sender, EventArgs e)
         {
             if (checkbox_SifreyiGoster.Checked)

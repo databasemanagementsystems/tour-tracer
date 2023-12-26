@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -16,19 +17,14 @@ namespace TourTracer
         {
             InitializeComponent();
         }
+        SqlConnection conn = new SqlConnection("Data Source=localhost;Initial Catalog=TourTracer;Integrated Security=True");
 
-        private void label3_Click(object sender, EventArgs e)
+        private void frm_AdminShowsDeletedToursAndCustomers_Load(object sender, EventArgs e)
         {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void dataGridView3_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
+            // TODO: This line of code loads data into the 'tourTracerDataSet5.tbl_DeletedUsers' table. You can move, or remove it, as needed.
+            this.tbl_DeletedUsersTableAdapter1.Fill(this.tourTracerDataSet5.tbl_DeletedUsers);
+            // TODO: This line of code loads data into the 'tourTracerDataSet4.tbl_DeletedTours' table. You can move, or remove it, as needed.
+            this.tbl_DeletedToursTableAdapter1.Fill(this.tourTracerDataSet4.tbl_DeletedTours);
 
         }
     }
