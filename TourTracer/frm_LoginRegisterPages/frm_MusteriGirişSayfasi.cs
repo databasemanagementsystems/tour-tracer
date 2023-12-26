@@ -6,7 +6,7 @@ namespace TourTracer
 {
     public partial class frm_MusteriGirişSayfasi : Form
     {
-        SqlConnection conn = new SqlConnection("Data Source=localhost;Initial Catalog=TourTracer;Integrated Security=True");
+       SqlConnection conn = new SqlConnection("Data Source=localhost;Initial Catalog=TourTracer;Integrated Security=True");
 
         public frm_MusteriGirişSayfasi()
         {
@@ -55,10 +55,10 @@ namespace TourTracer
 
         private void btn_GirisYap_Click(object sender, EventArgs e)
         {
-            // Kullanıcı giriş bilgilerini kontrol et
+            //Kullanıcı giriş bilgilerini kontrol et
             if (CheckLogin(txt_CustomerMail.Text, txt_CustomerPassword.Text))
             {
-                // Giriş başarılıysa müşteri ana sayfasını aç
+               // Giriş başarılıysa müşteri ana sayfasını aç
                 new frm_CustomerMainPage().Show();
                 this.Hide();
             }
@@ -72,6 +72,11 @@ namespace TourTracer
         private void txt_MusteriMail_TextChanged(object sender, EventArgs e)
         {
             // (Opsiyonel: E-posta text kutusunda metin değiştiğinde yapılacak işlemler)
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
         private bool CheckLogin(string email, string password)

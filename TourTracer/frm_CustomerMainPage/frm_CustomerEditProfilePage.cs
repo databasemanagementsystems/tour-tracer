@@ -16,5 +16,10 @@ namespace TourTracer
         {
             InitializeComponent();
         }
+
+        private void frm_CustomerEditProfilePage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

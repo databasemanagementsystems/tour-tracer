@@ -10,19 +10,14 @@ using System.Windows.Forms;
 
 namespace TourTracer
 {
-    public partial class frm_CustomerSelectTourPage : Form
+    public partial class frm_PersonalEditsCustomers : Form
     {
-        public frm_CustomerSelectTourPage()
+        public frm_PersonalEditsCustomers()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void frm_CustomerSelectTourPage_Load(object sender, EventArgs e)
+        private void frm_PersonalEditsCustomers_Load(object sender, EventArgs e)
         {
 
         }
