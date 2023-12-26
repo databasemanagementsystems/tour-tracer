@@ -11,69 +11,51 @@ using System.Windows.Forms;
 
 namespace TourTracer
 {
-    public partial class frm_AdminGirisSayfasi : Form
+    public partial class frm_PersonalLoginPage : Form
     {
-        public frm_AdminGirisSayfasi()
+        public frm_PersonalLoginPage()
         {
             InitializeComponent();
         }
         SqlConnection conn = new SqlConnection("Data Source=localhost;Initial Catalog=TourTracer;Integrated Security=True");
-        private void btn_GeriDön_Click(object sender, EventArgs e)
-        {
-            new frm_BaslangicEkrani().Show();
-            this.Hide();
-        }
 
-        private void frm_AdminGirisSayfasi_Load(object sender, EventArgs e)
+
+        private void frm_PersonalPage_Load(object sender, EventArgs e)
         {
 
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            new frm_BaslangicEkrani().Show();
-            this.Hide();
-        }
-
-        private void btn_Temizle_Click(object sender, EventArgs e)
-        {
-            txt_AdminMail.Text = "";
-            txt_AdminPassword.Text = "";
-        }
-
-        private void btn_GirisYap_Click(object sender, EventArgs e)
-        {
-            // Kullanıcı giriş bilgilerini kontrol et
-            if (CheckLogin(txt_AdminMail.Text, txt_AdminPassword.Text))
-            {
-                // Giriş başarılıysa müşteri ana sayfasını aç
-                new frm_AdminDashboardPage().Show();
-                this.Hide(); 
-                MessageBox.Show("Giriş Başarılı","HOŞGELDİNİZ",MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-            else
-            {
-                // Giriş başarısızsa hata mesajı göster
-                MessageBox.Show("Tekrar Deneyiniz!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-           
-            
         }
 
         private void checkbox_SifreyiGoster_CheckedChanged(object sender, EventArgs e)
         {
             if (checkbox_SifreyiGoster.Checked)
             {
-                txt_AdminMail.PasswordChar = '\0';
-                txt_AdminPassword.PasswordChar = '\0';
+                txt_PersoMail.PasswordChar = '\0';
+                txt_PersoPassword.PasswordChar = '\0';
 
             }
             else
             {
 
-                txt_AdminPassword.PasswordChar = '•';
+                txt_PersoPassword.PasswordChar = '•';
 
             }
+        }
+
+        private void btn_GirisYap_Click(object sender, EventArgs e)
+        {
+            // Kullanıcı giriş bilgilerini kontrol et
+            if (CheckLogin(txt_PersoMail.Text, txt_PersoPassword.Text))
+            {
+                // Giriş başarılıysa müşteri ana sayfasını aç
+                new frm_PersonalControlPage().Show();
+                this.Hide();
+            }
+            else
+            {
+                // Giriş başarısızsa hata mesajı göster
+                MessageBox.Show("E-posta veya şifre hatalı!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
         private bool CheckLogin(string email, string password)
         {
@@ -95,14 +77,14 @@ namespace TourTracer
                             string role = reader["Role"].ToString();
 
                             // Kullanıcının rolü "Admin" ise giriş yapabilir
-                            if (role.Equals("Admin", StringComparison.OrdinalIgnoreCase))
+                            if (role.Equals("Personal", StringComparison.OrdinalIgnoreCase))
                             {
                                 return true;
                             }
                             else
                             {
                                 // Diğer roller için hata mesajı göster
-                                MessageBox.Show("Giriş izni yok. Sadece Admin giriş yapabilir.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                                MessageBox.Show("Giriş izni yok. Sadece Personal giriş yapabilir.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
                                 return false;
                             }
                         }
@@ -124,15 +106,16 @@ namespace TourTracer
                 conn.Close();
             }
         }
-
-        private void txt_AdminIsim_TextChanged(object sender, EventArgs e)
+            private void btn_Temizle_Click(object sender, EventArgs e)
         {
-
+            txt_PersoMail.Text = "";
+            txt_PersoPassword.Text = "";
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            new frm_BaslangicEkrani().Show();
+            this.Hide();
         }
     }
 }
