@@ -48,11 +48,15 @@ namespace TourTracer
             this.Hide();
         }
 
+ 
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
         private void button2_Click(object sender, EventArgs e)
         {
             new frm_AdminImportExport().Show();
         }
 
-       
     }
 }

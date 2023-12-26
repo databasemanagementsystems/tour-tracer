@@ -16,5 +16,15 @@ namespace TourTracer
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void frm_CustomerSelectTourPage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

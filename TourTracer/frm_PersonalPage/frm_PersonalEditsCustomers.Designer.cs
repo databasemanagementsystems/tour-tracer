@@ -61,6 +61,7 @@
             this.Name = "frm_PersonalEditsCustomers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_PersonalAddTour";
+            this.Load += new System.EventHandler(this.frm_PersonalEditsCustomers_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
