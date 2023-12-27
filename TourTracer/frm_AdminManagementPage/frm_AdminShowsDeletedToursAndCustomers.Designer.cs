@@ -151,7 +151,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1042, 185);
+            this.dataGridView1.Size = new System.Drawing.Size(1099, 185);
             this.dataGridView1.TabIndex = 3;
             // 
             // ıDDataGridViewTextBoxColumn
@@ -234,7 +234,7 @@
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(1029, 174);
+            this.dataGridView2.Size = new System.Drawing.Size(1086, 174);
             this.dataGridView2.TabIndex = 4;
             // 
             // ıDDataGridViewTextBoxColumn1

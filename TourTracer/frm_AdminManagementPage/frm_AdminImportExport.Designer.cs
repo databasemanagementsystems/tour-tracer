@@ -68,7 +68,7 @@
             "tbl_Tours",
             "tbl_Users",
             ""});
-            this.cmbox_Export.Location = new System.Drawing.Point(317, 443);
+            this.cmbox_Export.Location = new System.Drawing.Point(366, 442);
             this.cmbox_Export.Name = "cmbox_Export";
             this.cmbox_Export.Size = new System.Drawing.Size(182, 24);
             this.cmbox_Export.TabIndex = 3;
@@ -79,7 +79,7 @@
             this.btn_Export.BackColor = System.Drawing.SystemColors.Info;
             this.btn_Export.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_Export.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.btn_Export.Location = new System.Drawing.Point(317, 484);
+            this.btn_Export.Location = new System.Drawing.Point(366, 482);
             this.btn_Export.Name = "btn_Export";
             this.btn_Export.Size = new System.Drawing.Size(105, 38);
             this.btn_Export.TabIndex = 4;
@@ -136,7 +136,7 @@
             // btn_Browse
             // 
             this.btn_Browse.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btn_Browse.Location = new System.Drawing.Point(1140, 437);
+            this.btn_Browse.Location = new System.Drawing.Point(1161, 438);
             this.btn_Browse.Name = "btn_Browse";
             this.btn_Browse.Size = new System.Drawing.Size(39, 32);
             this.btn_Browse.TabIndex = 10;
@@ -149,7 +149,7 @@
             this.btn_Import.BackColor = System.Drawing.SystemColors.Info;
             this.btn_Import.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btn_Import.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btn_Import.Location = new System.Drawing.Point(933, 548);
+            this.btn_Import.Location = new System.Drawing.Point(947, 552);
             this.btn_Import.Name = "btn_Import";
             this.btn_Import.Size = new System.Drawing.Size(170, 40);
             this.btn_Import.TabIndex = 11;
@@ -163,7 +163,7 @@
             // 
             // txt_FileName
             // 
-            this.txt_FileName.Location = new System.Drawing.Point(889, 442);
+            this.txt_FileName.Location = new System.Drawing.Point(910, 444);
             this.txt_FileName.Name = "txt_FileName";
             this.txt_FileName.Size = new System.Drawing.Size(245, 22);
             this.txt_FileName.TabIndex = 13;
@@ -188,7 +188,7 @@
             "tbl_Cities",
             "tbl_Tours",
             "tbl_Users"});
-            this.cmbox_import.Location = new System.Drawing.Point(889, 514);
+            this.cmbox_import.Location = new System.Drawing.Point(910, 512);
             this.cmbox_import.Name = "cmbox_import";
             this.cmbox_import.Size = new System.Drawing.Size(245, 24);
             this.cmbox_import.TabIndex = 15;
