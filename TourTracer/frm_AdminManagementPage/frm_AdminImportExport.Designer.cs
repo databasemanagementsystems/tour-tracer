@@ -42,6 +42,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.cmbox_import = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btn_backup = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Export)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_Import)).BeginInit();
             this.SuspendLayout();
@@ -203,12 +205,37 @@
             this.label5.TabIndex = 16;
             this.label5.Text = "Hangi Tabloya İmport \r\nEtmek istersiniz";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(90, 598);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(319, 24);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "Veri Tabanını Yedeklemek İçin Tıkla:";
+            // 
+            // btn_backup
+            // 
+            this.btn_backup.BackColor = System.Drawing.SystemColors.Info;
+            this.btn_backup.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_backup.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.btn_backup.Location = new System.Drawing.Point(415, 591);
+            this.btn_backup.Name = "btn_backup";
+            this.btn_backup.Size = new System.Drawing.Size(105, 38);
+            this.btn_backup.TabIndex = 18;
+            this.btn_backup.Text = "EXPORT";
+            this.btn_backup.UseVisualStyleBackColor = false;
+            this.btn_backup.Click += new System.EventHandler(this.btn_backup_Click);
+            // 
             // frm_AdminImportExport
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1254, 667);
+            this.ClientSize = new System.Drawing.Size(1254, 728);
+            this.Controls.Add(this.btn_backup);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.cmbox_import);
             this.Controls.Add(this.label4);
@@ -248,5 +275,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox cmbox_import;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button btn_backup;
     }
 }

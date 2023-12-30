@@ -61,6 +61,11 @@
       <HintPath>packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionDlg.AadAuthenticationProvider, Version=17.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.ConnectionDlg.Core, Version=17.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.ConnectionDlg.UI, Version=17.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.ConnectionDlg.VS, Version=17.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.FileSystemTask, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="SixLabors.Fonts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d998eea7b14cab13, processorArchitecture=MSIL">
       <HintPath>packages\SixLabors.Fonts.1.0.0\lib\netstandard2.0\SixLabors.Fonts.dll</HintPath>
     </Reference>
@@ -164,6 +169,12 @@
     </Compile>
     <Compile Include="frm_AdminManagementPage\frm_AdminEditUsers.Designer.cs">
       <DependentUpon>frm_AdminEditUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_BackupAndRestore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_BackupAndRestore.Designer.cs">
+      <DependentUpon>frm_BackupAndRestore.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_LoginRegisterPages\frm_AdminGirisSayfasi.cs">
       <SubType>Form</SubType>
@@ -280,6 +291,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_AdminManagementPage\frm_AdminEditUsers.resx">
       <DependentUpon>frm_AdminEditUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_BackupAndRestore.resx">
+      <DependentUpon>frm_BackupAndRestore.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_LoginRegisterPages\frm_AdminGirisSayfasi.resx">
       <DependentUpon>frm_AdminGirisSayfasi.cs</DependentUpon>

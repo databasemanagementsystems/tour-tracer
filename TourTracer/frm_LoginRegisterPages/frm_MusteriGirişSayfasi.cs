@@ -6,7 +6,8 @@ namespace TourTracer
 {
     public partial class frm_MusteriGirişSayfasi : Form
     {
-       SqlConnection conn = new SqlConnection("Data Source=localhost;Initial Catalog=TourTracer;Integrated Security=True");
+        // Veritabanı bağlantısı için SqlConnection nesnesi oluşturma
+        SqlConnection conn = new SqlConnection("Data Source=localhost;Initial Catalog=TourTracer;Integrated Security=True");
 
         public frm_MusteriGirişSayfasi()
         {

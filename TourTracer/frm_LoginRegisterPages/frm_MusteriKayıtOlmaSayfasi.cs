@@ -13,7 +13,7 @@ namespace TourTracer
 {
     public partial class frm_MusteriKayıtOlmaSayfasi : Form
     {
-        // Veritabanı bağlantısı için SqlConnection nesnesi
+        // Veritabanı bağlantısı için SqlConnection nesnesi oluşturma
         SqlConnection conn = new SqlConnection("Data Source=localhost;Initial Catalog=TourTracer;Integrated Security=True");
 
         // SqlCommand ve SqlDataAdapter nesneleri

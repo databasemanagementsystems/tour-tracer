@@ -180,6 +180,48 @@ namespace TourTracer
                 MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
- 
+        //BACKUP İŞLEMİ
+        private void btn_backup_Click(object sender, EventArgs e)
+        {
+            string connectionString = "Data Source=localhost;Initial Catalog=TourTracer;Integrated Security=True";
+            try
+            {
+                // C:\BackupAndRestoreTourTracer klasörüne yedekleme dosyasını kaydet
+                string backupFolder = @"C:\BackupAndRestoreTourTracer\";
+                string backupFileName = "TourTracerBackup.bak";
+                string backupPath = Path.Combine(backupFolder, backupFileName);
+
+                // Dosya zaten var mı kontrol et
+                int counter = 1;
+                while (File.Exists(backupPath))
+                {
+                    // Dosya adına numara ekleyerek tekrar oluştur
+                    backupFileName = $"TourTracerBackup_{counter}.bak";
+                    backupPath = Path.Combine(backupFolder, backupFileName);
+                    counter++;
+                }
+
+                // Veritabanı yedeği alma işlemi
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    // Yedekleme sorgusu
+                    string backupQuery = $"BACKUP DATABASE [TourTracer] TO DISK = '{backupPath}'";
+
+                    using (SqlCommand command = new SqlCommand(backupQuery, connection))
+                    {
+                        command.ExecuteNonQuery();
+                    }
+
+                    MessageBox.Show("Veritabanı yedeği başarıyla alındı.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata: " + ex.Message);
+            }
+        }
     }
-}
+    }
+

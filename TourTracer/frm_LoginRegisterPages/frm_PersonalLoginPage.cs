@@ -17,11 +17,13 @@ namespace TourTracer
         {
             InitializeComponent();
         }
+        // Veritabanı bağlantısı için SqlConnection nesnesi oluşturma
         SqlConnection conn = new SqlConnection("Data Source=localhost;Initial Catalog=TourTracer;Integrated Security=True");
 
-
+        //Şifreyi göster butonuna basıldığında 
         private void checkbox_SifreyiGoster_CheckedChanged(object sender, EventArgs e)
         {
+            //Eğer checkbox seçili ise
             if (checkbox_SifreyiGoster.Checked)
             {
                 txt_PersoMail.PasswordChar = '\0';
@@ -101,14 +103,16 @@ namespace TourTracer
                 conn.Close();
             }
         }
+            //Temizle butonuna basılınca 
             private void btn_Temizle_Click(object sender, EventArgs e)
-        {
+        {   //İlglili kısımları boş hale getir
             txt_PersoMail.Text = "";
             txt_PersoPassword.Text = "";
         }
-
+        //Geri Dön butonuna basılınca 
         private void button1_Click(object sender, EventArgs e)
-        {
+        {   
+            //Başlangıç ekranında git
             new frm_BaslangicEkrani().Show();
             this.Hide();
         }
