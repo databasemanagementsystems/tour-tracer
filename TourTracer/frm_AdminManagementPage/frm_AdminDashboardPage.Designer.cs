@@ -37,6 +37,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.adminPanel = new System.Windows.Forms.Panel();
+            this.button6 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -44,6 +45,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button4);
@@ -53,13 +55,13 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1251, 137);
+            this.panel1.Size = new System.Drawing.Size(1337, 137);
             this.panel1.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1097, 22);
+            this.pictureBox1.Location = new System.Drawing.Point(1143, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(142, 99);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -73,11 +75,11 @@
             this.button5.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button5.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.Location = new System.Drawing.Point(862, 36);
+            this.button5.Location = new System.Drawing.Point(774, 36);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(171, 75);
             this.button5.TabIndex = 4;
-            this.button5.Text = "İmport-Export\r\n";
+            this.button5.Text = "İmport-Export\r\nBackup-Restore";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -87,7 +89,7 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button4.Location = new System.Drawing.Point(661, 36);
+            this.button4.Location = new System.Drawing.Point(579, 36);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(171, 75);
             this.button4.TabIndex = 3;
@@ -101,7 +103,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button3.Location = new System.Drawing.Point(451, 36);
+            this.button3.Location = new System.Drawing.Point(388, 36);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(168, 75);
             this.button3.TabIndex = 2;
@@ -115,7 +117,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button2.Location = new System.Drawing.Point(241, 36);
+            this.button2.Location = new System.Drawing.Point(196, 36);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(170, 75);
             this.button2.TabIndex = 1;
@@ -129,7 +131,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button1.Location = new System.Drawing.Point(31, 36);
+            this.button1.Location = new System.Drawing.Point(12, 36);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(166, 75);
             this.button1.TabIndex = 0;
@@ -143,15 +145,27 @@
             this.adminPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.adminPanel.Location = new System.Drawing.Point(0, 137);
             this.adminPanel.Name = "adminPanel";
-            this.adminPanel.Size = new System.Drawing.Size(1251, 605);
+            this.adminPanel.Size = new System.Drawing.Size(1337, 715);
             this.adminPanel.TabIndex = 1;
             this.adminPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.Bisque;
+            this.button6.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button6.Location = new System.Drawing.Point(998, 49);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(107, 52);
+            this.button6.TabIndex = 8;
+            this.button6.Text = "GERİ DÖN";
+            this.button6.UseVisualStyleBackColor = false;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // frm_AdminDashboardPage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1251, 742);
+            this.ClientSize = new System.Drawing.Size(1337, 852);
             this.Controls.Add(this.adminPanel);
             this.Controls.Add(this.panel1);
             this.Name = "frm_AdminDashboardPage";
@@ -174,5 +188,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button6;
     }
 }

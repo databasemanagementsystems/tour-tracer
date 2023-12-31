@@ -222,6 +222,47 @@ namespace TourTracer
                 MessageBox.Show("Hata: " + ex.Message);
             }
         }
+
+        private void btn_restore_Click(object sender, EventArgs e)
+        {
+            string connectionString = "Data Source=localhost;Initial Catalog=TourTracer;Integrated Security=True";
+            try
+            {
+                // Restore işlemi için dosya seçme penceresi
+                OpenFileDialog openFileDialog = new OpenFileDialog();
+                openFileDialog.Filter = "SQL Backup Files (*.bak)|*.bak";
+                openFileDialog.Title = "Veritabanı Yedeği Seç";
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string backupPath = openFileDialog.FileName;
+
+                    // Veritabanı ismi
+                    string databaseName = "TourTracer";
+
+                    // Veritabanı restore işlemi
+                    using (SqlConnection connection = new SqlConnection(connectionString))
+                    {
+                        connection.Open();
+
+                        // Restore sorgusu
+                        string restoreQuery = $"USE master; RESTORE DATABASE [{databaseName}] FROM DISK = '{backupPath}' WITH REPLACE;";
+
+                        using (SqlCommand command = new SqlCommand(restoreQuery, connection))
+                        {
+                            command.ExecuteNonQuery();
+                        }
+
+                        MessageBox.Show("Veritabanı başarıyla geri yüklendi.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata: " + ex.Message);
+            }
+        }
+
     }
-    }
+}
 
