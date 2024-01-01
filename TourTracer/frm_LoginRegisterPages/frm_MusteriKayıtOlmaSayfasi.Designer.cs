@@ -159,7 +159,6 @@
             this.date_Birthdate.Name = "date_Birthdate";
             this.date_Birthdate.Size = new System.Drawing.Size(245, 22);
             this.date_Birthdate.TabIndex = 18;
-            this.date_Birthdate.ValueChanged += new System.EventHandler(this.dateTime_DogumTarihi_ValueChanged);
             // 
             // checkbox_SifreyiGoster
             // 
@@ -335,7 +334,6 @@
             this.Name = "frm_MusteriKayıtOlmaSayfasi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_MusteriKayıtOlma";
-            this.Load += new System.EventHandler(this.frm_MusteriKayıtOlmaSayfasi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

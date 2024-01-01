@@ -13,7 +13,7 @@ namespace TourTracer
 {
     public partial class frm_MusteriKayıtOlmaSayfasi : Form
     {
-        // Veritabanı bağlantısı için SqlConnection nesnesi
+        // Veritabanı bağlantısı için SqlConnection nesnesi oluşturma
         SqlConnection conn = new SqlConnection("Data Source=localhost;Initial Catalog=TourTracer;Integrated Security=True");
 
         // SqlCommand ve SqlDataAdapter nesneleri
@@ -46,16 +46,12 @@ namespace TourTracer
             date_Birthdate.Value = DateTime.Now;
         }
 
-        // DateTimePicker'ın değeri değiştiğinde
-        private void dateTime_DogumTarihi_ValueChanged(object sender, EventArgs e)
-        {
-            // (Opsiyonel: Bu olaya dair başka işlemler eklenebilir)
-        }
+       
 
         // Telefon numarası text kutusunda metin değiştiğinde
         private void txt_MusteriTel_TextChanged(object sender, EventArgs e)
         {
-            // (Opsiyonel: Bu olaya dair başka işlemler eklenebilir)
+           
         }
 
         // "Şifreyi Göster" checkbox'u durum değiştirdiğinde
@@ -113,7 +109,7 @@ namespace TourTracer
                 conn.Open();
 
                 // Insert sorgusuyla kullanıcıyı kaydet
-                string register = "INSERT INTO tbl_User (FirstName, LastName, Email, PhoneNumber, Password, BirthDate, Role) " +
+                string register = "INSERT INTO tbl_Users (FirstName, LastName, Email, PhoneNumber, Password, BirthDate, Role) " +
                                   "VALUES (@FirstName, @LastName, @Email, @PhoneNumber, @Password, @BirthDate, @Role)";
                 using (SqlCommand cmd = new SqlCommand(register, conn))
                 {
@@ -162,8 +158,5 @@ namespace TourTracer
             return true;
         }
 
-        // Form yüklendiğinde
-        private void frm_MusteriKayıtOlmaSayfasi_Load(object sender, EventArgs e){
-        }
     }
 }

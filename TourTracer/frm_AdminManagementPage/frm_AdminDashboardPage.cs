@@ -59,5 +59,19 @@ namespace TourTracer
         {
             AddControls(new frm_AdminImportExport());
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show("Geri dönmek istediğinizden emin misiniz?", "Uyarı", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+            if (result == DialogResult.Yes)
+            {
+                
+                new frm_AdminGirisSayfasi().Show();
+                this.Close();
+            }
+            
+        }
+
     }
 }

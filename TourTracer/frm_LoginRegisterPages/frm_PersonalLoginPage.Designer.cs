@@ -238,7 +238,6 @@
             this.Name = "frm_PersonalLoginPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_PersonalPage";
-            this.Load += new System.EventHandler(this.frm_PersonalPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

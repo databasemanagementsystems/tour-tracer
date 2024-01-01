@@ -66,10 +66,7 @@ namespace TourTracer
             AddControls(new frm_CustomerEditTourPage());
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-            AddControls(new frm_CustomerEditProfilePage());
-        }
+       
 
         private void button6_Click(object sender, EventArgs e)
         {
@@ -92,6 +89,11 @@ namespace TourTracer
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

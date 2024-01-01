@@ -16,41 +16,35 @@ namespace TourTracer
         {
             InitializeComponent();
         }
-
+        //Admin Giriş Butonuna Tıklanıldığında
         private void btn_AdminGiris_Click(object sender, EventArgs e)
         {
+            //Admin Giriş sayfasına yönlendir
             new frm_AdminGirisSayfasi().Show();
             this.Hide();
         }
-
-        private void frm_Giris_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        //Müşteri Giriş Butonuna Tıklanıldığında
         private void btn_MusteriGiris_Click(object sender, EventArgs e)
         {
+            //Müşteri Giriş sayfasına yönlendir
             new frm_MusteriGirişSayfasi().Show();
             this.Hide();
         }
-
+        //Çıkış yap butonuna basıldığında
         private void button1_Click(object sender, EventArgs e)
         {
+            //İlgili Formu kapat
             this.Close();
             
         }
 
       
-
+        //Personel Giriş butonuna basıldığında
         private void button1_Click_1(object sender, EventArgs e)
         {
+            //Personel sayfasına yönlendir
             new frm_PersonalLoginPage().Show();
             this.Hide();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            new frm_AdminImportExport().Show();
         }
 
        

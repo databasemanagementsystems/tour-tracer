@@ -35,7 +35,7 @@ namespace TourTracer
         private void button2_Click(object sender, EventArgs e)
         {
            
-            AddControls(new frm_PersonalEditsTours());
+            AddControls(new frm_AdminEditTours());
         }
 
         private void btn_GeriDön_Click(object sender, EventArgs e)
@@ -50,21 +50,18 @@ namespace TourTracer
             this.Close();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
+       
 
         private void button1_Click(object sender, EventArgs e)
         {
-            AddControls(new frm_PersonalEditsCustomers());
+            AddControls(new frm_AdminEditUsers());
            
             
         }
 
         private void frm_PersonalControlPage_Load(object sender, EventArgs e)
         {
-            AddControls(new frm_PersonalEditsCustomers());
+            AddControls(new frm_AdminEditUsers());
         }
     }
 }

@@ -13,74 +13,64 @@ namespace TourTracer
 {
     public partial class frm_AdminGirisSayfasi : Form
     {
+        // Veritabanı bağlantısı
+        SqlConnection conn = new SqlConnection("Data Source=localhost;Initial Catalog=TourTracer;Integrated Security=True");
+
         public frm_AdminGirisSayfasi()
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection("Data Source=localhost;Initial Catalog=TourTracer;Integrated Security=True");
-        private void btn_GeriDön_Click(object sender, EventArgs e)
-        {
-            new frm_BaslangicEkrani().Show();
-            this.Hide();
-        }
+       
 
-        private void frm_AdminGirisSayfasi_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            new frm_BaslangicEkrani().Show();
-            this.Hide();
-        }
-
+        // Temizle butonu tıklandığında
         private void btn_Temizle_Click(object sender, EventArgs e)
         {
+            // Giriş bilgilerini temizle
             txt_AdminMail.Text = "";
             txt_AdminPassword.Text = "";
         }
 
+        // Giriş Yap butonu tıklandığında
         private void btn_GirisYap_Click(object sender, EventArgs e)
         {
             // Kullanıcı giriş bilgilerini kontrol et
             if (CheckLogin(txt_AdminMail.Text, txt_AdminPassword.Text))
             {
-                // Giriş başarılıysa müşteri ana sayfasını aç
+                // Giriş başarılıysa yönetici ana sayfasını göster
                 new frm_AdminDashboardPage().Show();
-                this.Hide(); 
-                MessageBox.Show("Giriş Başarılı","HOŞGELDİNİZ",MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Hide();
+                MessageBox.Show("Giriş Başarılı", "HOŞGELDİNİZ", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
                 // Giriş başarısızsa hata mesajı göster
                 MessageBox.Show("Tekrar Deneyiniz!", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-           
-            
         }
 
+        // Şifreyi Göster checkbox'u değiştiğinde
         private void checkbox_SifreyiGoster_CheckedChanged(object sender, EventArgs e)
         {
             if (checkbox_SifreyiGoster.Checked)
             {
+                // Şifreyi göster
                 txt_AdminMail.PasswordChar = '\0';
                 txt_AdminPassword.PasswordChar = '\0';
-
             }
             else
             {
-
+                // Şifreyi gizle
                 txt_AdminPassword.PasswordChar = '•';
-
             }
         }
+
+        // Kullanıcı girişini kontrol eden fonksiyon
         private bool CheckLogin(string email, string password)
         {
             try
             {
                 conn.Open();
-                string query = "SELECT * FROM tbl_User WHERE Email=@Email AND Password=@Password";
+                string query = "SELECT * FROM tbl_Users WHERE Email=@Email AND Password=@Password";
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@Email", email);
@@ -116,18 +106,22 @@ namespace TourTracer
             }
             catch (Exception ex)
             {
+                // Hata durumunda hata mesajı göster
                 MessageBox.Show("Hata oluştu: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
             finally
             {
+                // Veritabanı bağlantısını kapat
                 conn.Close();
             }
         }
-
-        private void txt_AdminIsim_TextChanged(object sender, EventArgs e)
+        //Geri Dön Butonuna Basıldığında
+        private void btn_GeriDön_Click(object sender, EventArgs e)
         {
-
+            //Başlangıç ekranına yönlendirme
+            new frm_BaslangicEkrani().Show();
+            this.Hide();
         }
     }
 }

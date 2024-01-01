@@ -148,6 +148,9 @@ namespace TourTracer
             }
         }
 
+
+
+
         private void btn_Import_Click(object sender, EventArgs e)
         {
             try
@@ -177,6 +180,89 @@ namespace TourTracer
                 MessageBox.Show($"Error: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
- 
+        //BACKUP İŞLEMİ
+        private void btn_backup_Click(object sender, EventArgs e)
+        {
+            string connectionString = "Data Source=localhost;Initial Catalog=TourTracer;Integrated Security=True";
+            try
+            {
+                // C:\BackupAndRestoreTourTracer klasörüne yedekleme dosyasını kaydet
+                string backupFolder = @"C:\BackupAndRestoreTourTracer\";
+                string backupFileName = "TourTracerBackup.bak";
+                string backupPath = Path.Combine(backupFolder, backupFileName);
+
+                // Dosya zaten var mı kontrol et
+                int counter = 1;
+                while (File.Exists(backupPath))
+                {
+                    // Dosya adına numara ekleyerek tekrar oluştur
+                    backupFileName = $"TourTracerBackup_{counter}.bak";
+                    backupPath = Path.Combine(backupFolder, backupFileName);
+                    counter++;
+                }
+
+                // Veritabanı yedeği alma işlemi
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+
+                    // Yedekleme sorgusu
+                    string backupQuery = $"BACKUP DATABASE [TourTracer] TO DISK = '{backupPath}'";
+
+                    using (SqlCommand command = new SqlCommand(backupQuery, connection))
+                    {
+                        command.ExecuteNonQuery();
+                    }
+
+                    MessageBox.Show("Veritabanı yedeği başarıyla alındı.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata: " + ex.Message);
+            }
+        }
+
+        private void btn_restore_Click(object sender, EventArgs e)
+        {
+            string connectionString = "Data Source=localhost;Initial Catalog=TourTracer;Integrated Security=True";
+            try
+            {
+                // Restore işlemi için dosya seçme penceresi
+                OpenFileDialog openFileDialog = new OpenFileDialog();
+                openFileDialog.Filter = "SQL Backup Files (*.bak)|*.bak";
+                openFileDialog.Title = "Veritabanı Yedeği Seç";
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    string backupPath = openFileDialog.FileName;
+
+                    // Veritabanı ismi
+                    string databaseName = "TourTracer";
+
+                    // Veritabanı restore işlemi
+                    using (SqlConnection connection = new SqlConnection(connectionString))
+                    {
+                        connection.Open();
+
+                        // Restore sorgusu
+                        string restoreQuery = $"USE master; RESTORE DATABASE [{databaseName}] FROM DISK = '{backupPath}' WITH REPLACE;";
+
+                        using (SqlCommand command = new SqlCommand(restoreQuery, connection))
+                        {
+                            command.ExecuteNonQuery();
+                        }
+
+                        MessageBox.Show("Veritabanı başarıyla geri yüklendi.");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata: " + ex.Message);
+            }
+        }
+
     }
 }
+

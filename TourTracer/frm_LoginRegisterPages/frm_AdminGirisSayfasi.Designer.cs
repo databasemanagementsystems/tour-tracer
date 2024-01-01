@@ -36,11 +36,11 @@
             this.btn_Temizle = new System.Windows.Forms.Button();
             this.btn_GirisYap = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.checkbox_SifreyiGoster = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
+            this.btn_GeriDön = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -64,7 +64,6 @@
             this.txt_AdminMail.Name = "txt_AdminMail";
             this.txt_AdminMail.Size = new System.Drawing.Size(270, 29);
             this.txt_AdminMail.TabIndex = 9;
-            this.txt_AdminMail.TextChanged += new System.EventHandler(this.txt_AdminIsim_TextChanged);
             // 
             // label4
             // 
@@ -124,20 +123,6 @@
             this.pictureBox1.TabIndex = 14;
             this.pictureBox1.TabStop = false;
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.InactiveBorder;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.button1.Location = new System.Drawing.Point(453, 595);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(148, 32);
-            this.button1.TabIndex = 15;
-            this.button1.Text = "GERİ DÖN";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // checkbox_SifreyiGoster
             // 
             this.checkbox_SifreyiGoster.AutoSize = true;
@@ -184,17 +169,31 @@
             this.label1.TabIndex = 19;
             this.label1.Text = "ADMİN GİRİŞ EKRANI";
             // 
+            // btn_GeriDön
+            // 
+            this.btn_GeriDön.BackColor = System.Drawing.SystemColors.InactiveBorder;
+            this.btn_GeriDön.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_GeriDön.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btn_GeriDön.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btn_GeriDön.Location = new System.Drawing.Point(453, 578);
+            this.btn_GeriDön.Name = "btn_GeriDön";
+            this.btn_GeriDön.Size = new System.Drawing.Size(155, 36);
+            this.btn_GeriDön.TabIndex = 20;
+            this.btn_GeriDön.Text = "GERİ DÖN";
+            this.btn_GeriDön.UseVisualStyleBackColor = false;
+            this.btn_GeriDön.Click += new System.EventHandler(this.btn_GeriDön_Click);
+            // 
             // frm_AdminGirisSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(1061, 670);
+            this.Controls.Add(this.btn_GeriDön);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.checkbox_SifreyiGoster);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btn_Temizle);
             this.Controls.Add(this.btn_GirisYap);
@@ -206,7 +205,6 @@
             this.Name = "frm_AdminGirisSayfasi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_AdminGirisSayfasi";
-            this.Load += new System.EventHandler(this.frm_AdminGirisSayfasi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -221,10 +219,10 @@
         private System.Windows.Forms.Button btn_Temizle;
         private System.Windows.Forms.Button btn_GirisYap;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.CheckBox checkbox_SifreyiGoster;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btn_GeriDön;
     }
 }

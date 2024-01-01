@@ -61,6 +61,11 @@
       <HintPath>packages\Microsoft.Office.Interop.Excel.15.0.4795.1001\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </Reference>
+    <Reference Include="Microsoft.SqlServer.ConnectionDlg.AadAuthenticationProvider, Version=17.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.ConnectionDlg.Core, Version=17.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.ConnectionDlg.UI, Version=17.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.ConnectionDlg.VS, Version=17.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SqlServer.FileSystemTask, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
     <Reference Include="SixLabors.Fonts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d998eea7b14cab13, processorArchitecture=MSIL">
       <HintPath>packages\SixLabors.Fonts.1.0.0\lib\netstandard2.0\SixLabors.Fonts.dll</HintPath>
     </Reference>
@@ -177,12 +182,6 @@
     <Compile Include="frm_LoginRegisterPages\frm_BaslangicEkrani.Designer.cs">
       <DependentUpon>frm_BaslangicEkrani.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_CustomerMainPage\frm_CustomerEditProfilePage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_CustomerMainPage\frm_CustomerEditProfilePage.Designer.cs">
-      <DependentUpon>frm_CustomerEditProfilePage.cs</DependentUpon>
-    </Compile>
     <Compile Include="frm_CustomerMainPage\frm_CustomerEditTourPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -231,18 +230,6 @@
     <Compile Include="frm_LoginRegisterPages\frm_MusteriKayıtOlmaSayfasi.Designer.cs">
       <DependentUpon>frm_MusteriKayıtOlmaSayfasi.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_PersonalPage\frm_PersonalEditsTours.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_PersonalPage\frm_PersonalEditsTours.Designer.cs">
-      <DependentUpon>frm_PersonalEditsTours.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_PersonalPage\frm_PersonalEditsCustomers.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_PersonalPage\frm_PersonalEditsCustomers.Designer.cs">
-      <DependentUpon>frm_PersonalEditsCustomers.cs</DependentUpon>
-    </Compile>
     <Compile Include="frm_PersonalPage\frm_PersonalControlPage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -267,6 +254,26 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TourTracerDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="TourTracerDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TourTracerDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TourTracerDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TourTracerDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TourTracerDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TourTracerDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TourTracerDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TourTracerDataSet5.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frm_AdminManagementPage\frm_AdminImportExport.resx">
       <DependentUpon>frm_AdminImportExport.cs</DependentUpon>
     </EmbeddedResource>
@@ -284,9 +291,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_LoginRegisterPages\frm_BaslangicEkrani.resx">
       <DependentUpon>frm_BaslangicEkrani.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_CustomerMainPage\frm_CustomerEditProfilePage.resx">
-      <DependentUpon>frm_CustomerEditProfilePage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_CustomerMainPage\frm_CustomerEditTourPage.resx">
       <DependentUpon>frm_CustomerEditTourPage.cs</DependentUpon>
@@ -311,12 +315,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_LoginRegisterPages\frm_MusteriKayıtOlmaSayfasi.resx">
       <DependentUpon>frm_MusteriKayıtOlmaSayfasi.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_PersonalPage\frm_PersonalEditsTours.resx">
-      <DependentUpon>frm_PersonalEditsTours.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_PersonalPage\frm_PersonalEditsCustomers.resx">
-      <DependentUpon>frm_PersonalEditsCustomers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_PersonalPage\frm_PersonalControlPage.resx">
       <DependentUpon>frm_PersonalControlPage.cs</DependentUpon>
@@ -365,13 +363,55 @@
     <None Include="TourTracerDataSet1.xss">
       <DependentUpon>TourTracerDataSet1.xsd</DependentUpon>
     </None>
+    <None Include="TourTracerDataSet2.xsc">
+      <DependentUpon>TourTracerDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="TourTracerDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TourTracerDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TourTracerDataSet2.xss">
+      <DependentUpon>TourTracerDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="TourTracerDataSet3.xsc">
+      <DependentUpon>TourTracerDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="TourTracerDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TourTracerDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TourTracerDataSet3.xss">
+      <DependentUpon>TourTracerDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="TourTracerDataSet4.xsc">
+      <DependentUpon>TourTracerDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="TourTracerDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TourTracerDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TourTracerDataSet4.xss">
+      <DependentUpon>TourTracerDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="TourTracerDataSet5.xsc">
+      <DependentUpon>TourTracerDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="TourTracerDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TourTracerDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TourTracerDataSet5.xss">
+      <DependentUpon>TourTracerDataSet5.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="SQL Kodları\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Görseller\admin.png" />
     <Content Include="Görseller\analysis.png" />
