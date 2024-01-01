@@ -222,7 +222,7 @@ namespace TourTracer
                 MessageBox.Show("Hata: " + ex.Message);
             }
         }
-
+        //RESTORE BUTONU
         private void btn_restore_Click(object sender, EventArgs e)
         {
             string connectionString = "Data Source=localhost;Initial Catalog=TourTracer;Integrated Security=True";

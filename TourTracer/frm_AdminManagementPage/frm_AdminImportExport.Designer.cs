@@ -236,9 +236,9 @@
             this.label7.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(71, 593);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(266, 24);
+            this.label7.Size = new System.Drawing.Size(294, 24);
             this.label7.TabIndex = 19;
-            this.label7.Text = "Yedekten Yüklemek İçin Tıkla:";
+            this.label7.Text = "Yedekten Geri Dönmek İçin Tıkla:";
             // 
             // btn_restore
             // 
