@@ -146,6 +146,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frm_AdminManagementPage\frm_AdminAddNewTours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_AdminManagementPage\frm_AdminAddNewTours.Designer.cs">
+      <DependentUpon>frm_AdminAddNewTours.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_AdminManagementPage\frm_AdminImportExport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -274,6 +280,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TourTracerDataSet5.xsd</DependentUpon>
     </Compile>
+    <Compile Include="TourTracerDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TourTracerDataSet6.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frm_AdminManagementPage\frm_AdminAddNewTours.resx">
+      <DependentUpon>frm_AdminAddNewTours.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_AdminManagementPage\frm_AdminImportExport.resx">
       <DependentUpon>frm_AdminImportExport.cs</DependentUpon>
     </EmbeddedResource>
@@ -406,6 +420,17 @@
     </None>
     <None Include="TourTracerDataSet5.xss">
       <DependentUpon>TourTracerDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="TourTracerDataSet6.xsc">
+      <DependentUpon>TourTracerDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="TourTracerDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TourTracerDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TourTracerDataSet6.xss">
+      <DependentUpon>TourTracerDataSet6.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
