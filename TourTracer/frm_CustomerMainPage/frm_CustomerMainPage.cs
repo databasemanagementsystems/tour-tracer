@@ -6,8 +6,10 @@ namespace TourTracer
 {
     public partial class frm_CustomerMainPage : Form
     {
-        public frm_CustomerMainPage()
+        User user;
+        public frm_CustomerMainPage(User user)
         {
+            this.user = user;
             InitializeComponent();
         }
         
@@ -37,7 +39,7 @@ namespace TourTracer
         private void frm_CustomerMainPage_Load(object sender, EventArgs e)
         {
             // Sayfa yüklendiğinde "frm_CustomerProfilePage" formunu aç
-            AddControls(new frm_CustomerProfilePage());
+            AddControls(new frm_CustomerProfilePage(user));
         }
 
         private void btn_ViewTours_Click(object sender, EventArgs e)
@@ -58,7 +60,7 @@ namespace TourTracer
 
         private void button5_Click(object sender, EventArgs e)
         {
-            AddControls(new frm_CustomerSelectTourPage());
+            AddControls(new frm_CustomerSelectTourPage(user));
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -73,7 +75,7 @@ namespace TourTracer
 
         private void button6_Click(object sender, EventArgs e)
         {
-            AddControls(new frm_CustomerProfilePage());
+            AddControls(new frm_CustomerProfilePage(user));
         }
 
         private void panel3_Paint_1(object sender, PaintEventArgs e)

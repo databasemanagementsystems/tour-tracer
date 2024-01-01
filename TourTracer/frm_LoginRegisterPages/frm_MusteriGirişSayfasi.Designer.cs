@@ -43,6 +43,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -119,6 +120,7 @@
             this.txt_CustomerPassword.PasswordChar = '•';
             this.txt_CustomerPassword.Size = new System.Drawing.Size(261, 29);
             this.txt_CustomerPassword.TabIndex = 6;
+            this.txt_CustomerPassword.TextChanged += new System.EventHandler(this.txt_CustomerPassword_TextChanged);
             // 
             // pictureBox1
             // 
@@ -214,12 +216,26 @@
             this.label6.TabIndex = 14;
             this.label6.Text = "MÜŞTERİ GİRİŞ EKRANI";
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button1.Location = new System.Drawing.Point(470, 245);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(180, 32);
+            this.button1.TabIndex = 15;
+            this.button1.Text = "Hileli giriş";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frm_MusteriGirişSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(1061, 670);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -262,5 +278,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Button button1;
     }
 }

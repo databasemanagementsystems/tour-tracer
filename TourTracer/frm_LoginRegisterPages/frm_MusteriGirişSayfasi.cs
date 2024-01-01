@@ -6,6 +6,7 @@ namespace TourTracer
 {
     public partial class frm_MusteriGirişSayfasi : Form
     {
+        User user;
        SqlConnection conn = new SqlConnection("Data Source=localhost;Initial Catalog=TourTracer;Integrated Security=True");
 
         public frm_MusteriGirişSayfasi()
@@ -58,8 +59,9 @@ namespace TourTracer
             //Kullanıcı giriş bilgilerini kontrol et
             if (CheckLogin(txt_CustomerMail.Text, txt_CustomerPassword.Text))
             {
-               // Giriş başarılıysa müşteri ana sayfasını aç
-                new frm_CustomerMainPage().Show();
+                // Giriş başarılıysa müşteri ana sayfasını aç
+                user = GetUserByEmailAndPassword(txt_CustomerMail.Text, txt_CustomerPassword.Text);
+                new frm_CustomerMainPage(user).Show();
                 this.Hide();
             }
             else
@@ -84,7 +86,7 @@ namespace TourTracer
             try
             {
                 conn.Open();
-                string query = "SELECT * FROM tbl_User WHERE Email=@Email AND Password=@Password";
+                string query = "SELECT * FROM tbl_Users WHERE Email=@Email AND Password=@Password";
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@Email", email);
@@ -106,6 +108,66 @@ namespace TourTracer
             {
                 conn.Close();
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new frm_CustomerMainPage(user).Show();
+            this.Hide();
+        }
+
+        private User GetUserByEmailAndPassword(string email, string password)
+        {
+            try
+            {
+                conn.Open();
+                string query = "SELECT * FROM tbl_Users WHERE Email=@Email AND Password=@Password";
+                using (SqlCommand cmd = new SqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@Email", email);
+                    cmd.Parameters.AddWithValue("@Password", password);
+
+                    using (SqlDataReader reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            // Eğer kullanıcı varsa, User nesnesini doldur
+                            User user = new User
+                            {
+                                ID = Convert.ToInt32(reader["ID"]),
+                                FirstName = reader["FirstName"].ToString(),
+                                LastName = reader["LastName"].ToString(),
+                                Email = reader["Email"].ToString(),
+                                PhoneNumber = reader["PhoneNumber"].ToString(),
+                                Password = reader["Password"].ToString(),
+                                BirthDate = Convert.ToDateTime(reader["BirthDate"]),
+                                Role = reader["Role"].ToString()
+                            };
+
+                            return user;
+                        }
+                        else
+                        {
+                            // Kullanıcı bulunamazsa null döndür
+                            return null;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata oluştu: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return null;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        private void txt_CustomerPassword_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
