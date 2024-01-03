@@ -55,14 +55,14 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1337, 137);
+            this.panel1.Size = new System.Drawing.Size(1457, 137);
             this.panel1.TabIndex = 0;
             // 
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.Bisque;
             this.button6.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button6.Location = new System.Drawing.Point(1064, 49);
+            this.button6.Location = new System.Drawing.Point(1000, 47);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(107, 52);
             this.button6.TabIndex = 8;
@@ -73,9 +73,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1183, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(1153, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(142, 99);
+            this.pictureBox1.Size = new System.Drawing.Size(172, 119);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 5;
             this.pictureBox1.TabStop = false;
@@ -87,9 +87,9 @@
             this.button5.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button5.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button5.Location = new System.Drawing.Point(884, 36);
+            this.button5.Location = new System.Drawing.Point(783, 34);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(171, 75);
+            this.button5.Size = new System.Drawing.Size(171, 77);
             this.button5.TabIndex = 4;
             this.button5.Text = "İmport-Export\r\nBackup-Restore";
             this.button5.UseVisualStyleBackColor = false;
@@ -101,9 +101,9 @@
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Microsoft YaHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button4.Location = new System.Drawing.Point(707, 36);
+            this.button4.Location = new System.Drawing.Point(596, 34);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(171, 75);
+            this.button4.Size = new System.Drawing.Size(171, 77);
             this.button4.TabIndex = 3;
             this.button4.Text = "Silinmiş Kullanıcıları\r\n/Turları Görüntüle\r\n";
             this.button4.UseVisualStyleBackColor = false;
@@ -115,11 +115,11 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button3.Location = new System.Drawing.Point(478, 36);
+            this.button3.Location = new System.Drawing.Point(408, 34);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(168, 75);
+            this.button3.Size = new System.Drawing.Size(168, 79);
             this.button3.TabIndex = 2;
-            this.button3.Text = "Turları Düzenle";
+            this.button3.Text = "Tur ekle ve düzenle";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
@@ -129,9 +129,9 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button2.Location = new System.Drawing.Point(301, 36);
+            this.button2.Location = new System.Drawing.Point(214, 34);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(170, 75);
+            this.button2.Size = new System.Drawing.Size(170, 79);
             this.button2.TabIndex = 1;
             this.button2.Text = "Kullanıcıları Düzenle\r\n";
             this.button2.UseVisualStyleBackColor = false;
@@ -143,9 +143,9 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button1.Location = new System.Drawing.Point(131, 36);
+            this.button1.Location = new System.Drawing.Point(25, 33);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(166, 75);
+            this.button1.Size = new System.Drawing.Size(166, 80);
             this.button1.TabIndex = 0;
             this.button1.Text = "Yeni Kullanıcı Ekle\r\n";
             this.button1.UseVisualStyleBackColor = false;
@@ -157,7 +157,7 @@
             this.adminPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.adminPanel.Location = new System.Drawing.Point(0, 137);
             this.adminPanel.Name = "adminPanel";
-            this.adminPanel.Size = new System.Drawing.Size(1337, 715);
+            this.adminPanel.Size = new System.Drawing.Size(1457, 759);
             this.adminPanel.TabIndex = 1;
             this.adminPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
             // 
@@ -165,9 +165,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1337, 852);
+            this.ClientSize = new System.Drawing.Size(1457, 896);
             this.Controls.Add(this.adminPanel);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frm_AdminDashboardPage";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_AdminDashboardPage";

@@ -54,11 +54,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(539, 23);
+            this.label1.Location = new System.Drawing.Point(570, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(267, 37);
+            this.label1.Size = new System.Drawing.Size(319, 37);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Yeni Kullanıcı Ekle";
+            this.label1.Text = "YENİ KULLANICI EKLE";
             // 
             // panel1
             // 
@@ -66,14 +66,14 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-43, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1441, 87);
+            this.panel1.Size = new System.Drawing.Size(1619, 87);
             this.panel1.TabIndex = 1;
             // 
             // txt_NewCustomerName
             // 
             this.txt_NewCustomerName.BackColor = System.Drawing.Color.LightSkyBlue;
             this.txt_NewCustomerName.ForeColor = System.Drawing.Color.Red;
-            this.txt_NewCustomerName.Location = new System.Drawing.Point(523, 161);
+            this.txt_NewCustomerName.Location = new System.Drawing.Point(616, 213);
             this.txt_NewCustomerName.Name = "txt_NewCustomerName";
             this.txt_NewCustomerName.Size = new System.Drawing.Size(328, 22);
             this.txt_NewCustomerName.TabIndex = 2;
@@ -83,7 +83,7 @@
             // 
             this.txt_NewCustomerLastName.BackColor = System.Drawing.Color.LightSkyBlue;
             this.txt_NewCustomerLastName.ForeColor = System.Drawing.Color.Red;
-            this.txt_NewCustomerLastName.Location = new System.Drawing.Point(523, 187);
+            this.txt_NewCustomerLastName.Location = new System.Drawing.Point(616, 239);
             this.txt_NewCustomerLastName.Name = "txt_NewCustomerLastName";
             this.txt_NewCustomerLastName.Size = new System.Drawing.Size(328, 22);
             this.txt_NewCustomerLastName.TabIndex = 3;
@@ -92,7 +92,7 @@
             // 
             this.txt_NewCustomerMail.BackColor = System.Drawing.Color.LightSkyBlue;
             this.txt_NewCustomerMail.ForeColor = System.Drawing.Color.Red;
-            this.txt_NewCustomerMail.Location = new System.Drawing.Point(523, 215);
+            this.txt_NewCustomerMail.Location = new System.Drawing.Point(616, 267);
             this.txt_NewCustomerMail.Name = "txt_NewCustomerMail";
             this.txt_NewCustomerMail.Size = new System.Drawing.Size(328, 22);
             this.txt_NewCustomerMail.TabIndex = 4;
@@ -101,7 +101,7 @@
             // 
             this.txt_NewCustomerPhone.BackColor = System.Drawing.Color.LightSkyBlue;
             this.txt_NewCustomerPhone.ForeColor = System.Drawing.Color.Red;
-            this.txt_NewCustomerPhone.Location = new System.Drawing.Point(521, 242);
+            this.txt_NewCustomerPhone.Location = new System.Drawing.Point(614, 294);
             this.txt_NewCustomerPhone.Name = "txt_NewCustomerPhone";
             this.txt_NewCustomerPhone.Size = new System.Drawing.Size(328, 22);
             this.txt_NewCustomerPhone.TabIndex = 5;
@@ -109,7 +109,7 @@
             // txt_NewCustomerPassword
             // 
             this.txt_NewCustomerPassword.BackColor = System.Drawing.Color.SkyBlue;
-            this.txt_NewCustomerPassword.Location = new System.Drawing.Point(521, 300);
+            this.txt_NewCustomerPassword.Location = new System.Drawing.Point(614, 352);
             this.txt_NewCustomerPassword.Name = "txt_NewCustomerPassword";
             this.txt_NewCustomerPassword.Size = new System.Drawing.Size(328, 22);
             this.txt_NewCustomerPassword.TabIndex = 6;
@@ -119,7 +119,7 @@
             this.Yeni.AutoSize = true;
             this.Yeni.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Yeni.ForeColor = System.Drawing.Color.Indigo;
-            this.Yeni.Location = new System.Drawing.Point(270, 160);
+            this.Yeni.Location = new System.Drawing.Point(363, 212);
             this.Yeni.Name = "Yeni";
             this.Yeni.Size = new System.Drawing.Size(166, 24);
             this.Yeni.TabIndex = 7;
@@ -130,7 +130,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label2.ForeColor = System.Drawing.Color.Indigo;
-            this.label2.Location = new System.Drawing.Point(270, 187);
+            this.label2.Location = new System.Drawing.Point(363, 239);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(187, 24);
             this.label2.TabIndex = 8;
@@ -141,7 +141,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label3.ForeColor = System.Drawing.Color.Indigo;
-            this.label3.Location = new System.Drawing.Point(273, 213);
+            this.label3.Location = new System.Drawing.Point(366, 265);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(184, 24);
             this.label3.TabIndex = 9;
@@ -152,7 +152,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label4.ForeColor = System.Drawing.Color.Indigo;
-            this.label4.Location = new System.Drawing.Point(270, 242);
+            this.label4.Location = new System.Drawing.Point(363, 294);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(195, 24);
             this.label4.TabIndex = 10;
@@ -163,7 +163,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label5.ForeColor = System.Drawing.Color.Indigo;
-            this.label5.Location = new System.Drawing.Point(270, 269);
+            this.label5.Location = new System.Drawing.Point(363, 321);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(247, 24);
             this.label5.TabIndex = 11;
@@ -174,7 +174,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.label6.ForeColor = System.Drawing.Color.Indigo;
-            this.label6.Location = new System.Drawing.Point(270, 296);
+            this.label6.Location = new System.Drawing.Point(363, 348);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(169, 24);
             this.label6.TabIndex = 12;
@@ -182,7 +182,7 @@
             // 
             // date_Birthdate
             // 
-            this.date_Birthdate.Location = new System.Drawing.Point(521, 271);
+            this.date_Birthdate.Location = new System.Drawing.Point(614, 323);
             this.date_Birthdate.Name = "date_Birthdate";
             this.date_Birthdate.Size = new System.Drawing.Size(330, 22);
             this.date_Birthdate.TabIndex = 13;
@@ -191,7 +191,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Bisque;
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.Location = new System.Drawing.Point(267, 351);
+            this.button1.Location = new System.Drawing.Point(360, 403);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(144, 85);
             this.button1.TabIndex = 14;
@@ -203,7 +203,7 @@
             // 
             this.button2.BackColor = System.Drawing.Color.Bisque;
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button2.Location = new System.Drawing.Point(423, 351);
+            this.button2.Location = new System.Drawing.Point(516, 403);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(137, 85);
             this.button2.TabIndex = 15;
@@ -215,7 +215,7 @@
             // 
             this.button3.BackColor = System.Drawing.Color.Bisque;
             this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button3.Location = new System.Drawing.Point(575, 351);
+            this.button3.Location = new System.Drawing.Point(668, 403);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(147, 85);
             this.button3.TabIndex = 16;
@@ -227,7 +227,7 @@
             // 
             this.button4.BackColor = System.Drawing.Color.Bisque;
             this.button4.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button4.Location = new System.Drawing.Point(749, 361);
+            this.button4.Location = new System.Drawing.Point(842, 413);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(119, 64);
             this.button4.TabIndex = 17;
@@ -239,7 +239,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1241, 543);
+            this.ClientSize = new System.Drawing.Size(1420, 543);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);

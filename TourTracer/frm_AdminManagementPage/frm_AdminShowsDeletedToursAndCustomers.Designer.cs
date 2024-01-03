@@ -88,21 +88,21 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(12, 18);
+            this.label1.Location = new System.Drawing.Point(641, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(228, 31);
+            this.label1.Size = new System.Drawing.Size(291, 31);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Silinen Kullanıcılar";
+            this.label1.Text = "SİLİNEN KULLANICILAR";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(25, 294);
+            this.label3.Location = new System.Drawing.Point(689, 367);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(168, 31);
+            this.label3.Size = new System.Drawing.Size(211, 31);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Silinen Turlar";
+            this.label3.Text = "SİLİNEN TURLAR";
             // 
             // tourTracerDataSetBindingSource
             // 
@@ -129,11 +129,11 @@
             this.birthDateDataGridViewTextBoxColumn,
             this.roleDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.tblDeletedUsersBindingSource2;
-            this.dataGridView1.Location = new System.Drawing.Point(18, 61);
+            this.dataGridView1.Location = new System.Drawing.Point(200, 71);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1112, 209);
+            this.dataGridView1.Size = new System.Drawing.Size(1099, 258);
             this.dataGridView1.TabIndex = 3;
             // 
             // ıDDataGridViewTextBoxColumn
@@ -222,11 +222,11 @@
             this.staffIDDataGridViewTextBoxColumn,
             this.priceDataGridViewTextBoxColumn});
             this.dataGridView2.DataSource = this.tblDeletedToursBindingSource2;
-            this.dataGridView2.Location = new System.Drawing.Point(31, 328);
+            this.dataGridView2.Location = new System.Drawing.Point(200, 420);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(1099, 192);
+            this.dataGridView2.Size = new System.Drawing.Size(1099, 228);
             this.dataGridView2.TabIndex = 4;
             // 
             // ıDDataGridViewTextBoxColumn1
@@ -348,7 +348,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1155, 532);
+            this.ClientSize = new System.Drawing.Size(1482, 648);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label3);

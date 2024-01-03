@@ -84,19 +84,20 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(424, 33);
+            this.label1.Location = new System.Drawing.Point(426, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(283, 37);
+            this.label1.Size = new System.Drawing.Size(336, 37);
             this.label1.TabIndex = 0;
-            this.label1.Text = "TURLARI DÜZENLE";
+            this.label1.Text = "TUR EKLE VE DÜZENLE";
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.panel1.Controls.Add(this.label1);
+            this.panel1.Font = new System.Drawing.Font("Microsoft YaHei UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.panel1.Location = new System.Drawing.Point(-1, -2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1247, 89);
+            this.panel1.Size = new System.Drawing.Size(1553, 89);
             this.panel1.TabIndex = 2;
             // 
             // tourdatagrid
@@ -113,11 +114,11 @@
             this.departureCityIDDataGridViewTextBoxColumn,
             this.destinationCityIDDataGridViewTextBoxColumn});
             this.tourdatagrid.DataSource = this.tblToursBindingSource2;
-            this.tourdatagrid.Location = new System.Drawing.Point(608, 109);
+            this.tourdatagrid.Location = new System.Drawing.Point(613, 115);
             this.tourdatagrid.Name = "tourdatagrid";
             this.tourdatagrid.RowHeadersWidth = 51;
             this.tourdatagrid.RowTemplate.Height = 24;
-            this.tourdatagrid.Size = new System.Drawing.Size(626, 302);
+            this.tourdatagrid.Size = new System.Drawing.Size(473, 302);
             this.tourdatagrid.TabIndex = 8;
             this.tourdatagrid.SelectionChanged += new System.EventHandler(this.tourdatagrid_SelectionChanged);
             // 
@@ -357,7 +358,7 @@
             this.GÜNCELLE.BackColor = System.Drawing.Color.DarkOrange;
             this.GÜNCELLE.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.GÜNCELLE.ForeColor = System.Drawing.SystemColors.Info;
-            this.GÜNCELLE.Location = new System.Drawing.Point(338, 342);
+            this.GÜNCELLE.Location = new System.Drawing.Point(204, 342);
             this.GÜNCELLE.Name = "GÜNCELLE";
             this.GÜNCELLE.Size = new System.Drawing.Size(170, 49);
             this.GÜNCELLE.TabIndex = 57;
@@ -374,7 +375,7 @@
             this.DELETE.BackColor = System.Drawing.Color.OrangeRed;
             this.DELETE.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.DELETE.ForeColor = System.Drawing.SystemColors.Info;
-            this.DELETE.Location = new System.Drawing.Point(338, 397);
+            this.DELETE.Location = new System.Drawing.Point(380, 342);
             this.DELETE.Name = "DELETE";
             this.DELETE.Size = new System.Drawing.Size(170, 49);
             this.DELETE.TabIndex = 58;
@@ -401,7 +402,7 @@
             this.turekle.BackColor = System.Drawing.Color.Chartreuse;
             this.turekle.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.turekle.ForeColor = System.Drawing.SystemColors.Info;
-            this.turekle.Location = new System.Drawing.Point(146, 342);
+            this.turekle.Location = new System.Drawing.Point(28, 342);
             this.turekle.Name = "turekle";
             this.turekle.Size = new System.Drawing.Size(170, 49);
             this.turekle.TabIndex = 59;
@@ -414,7 +415,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1246, 487);
+            this.ClientSize = new System.Drawing.Size(1520, 548);
             this.Controls.Add(this.turekle);
             this.Controls.Add(this.DELETE);
             this.Controls.Add(this.GÜNCELLE);
