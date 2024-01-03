@@ -123,5 +123,11 @@ namespace TourTracer
             new frm_BaslangicEkrani().Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new frm_AdminDashboardPage().Show();
+            this.Hide();
+        }
     }
 }

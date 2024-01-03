@@ -37,12 +37,19 @@
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.tourTracerDataSet6 = new TourTracer.TourTracerDataSet6();
             this.tblCitiesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tbl_CitiesTableAdapter = new TourTracer.TourTracerDataSet6TableAdapters.tbl_CitiesTableAdapter();
+            this.tourTracerDataSet9 = new TourTracer.TourTracerDataSet9();
+            this.tblToursBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tbl_ToursTableAdapter = new TourTracer.TourTracerDataSet9TableAdapters.tbl_ToursTableAdapter();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblCitiesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblToursBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -122,6 +129,16 @@
             this.button2.Text = "GERİ DÖN";
             this.button2.UseVisualStyleBackColor = false;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(652, 109);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(511, 302);
+            this.dataGridView1.TabIndex = 8;
+            // 
             // tourTracerDataSet6
             // 
             this.tourTracerDataSet6.DataSetName = "TourTracerDataSet6";
@@ -136,12 +153,27 @@
             // 
             this.tbl_CitiesTableAdapter.ClearBeforeFill = true;
             // 
+            // tourTracerDataSet9
+            // 
+            this.tourTracerDataSet9.DataSetName = "TourTracerDataSet9";
+            this.tourTracerDataSet9.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblToursBindingSource
+            // 
+            this.tblToursBindingSource.DataMember = "tbl_Tours";
+            this.tblToursBindingSource.DataSource = this.tourTracerDataSet9;
+            // 
+            // tbl_ToursTableAdapter
+            // 
+            this.tbl_ToursTableAdapter.ClearBeforeFill = true;
+            // 
             // frm_AdminEditTours
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(1175, 487);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label3);
@@ -157,8 +189,11 @@
             this.Load += new System.EventHandler(this.frm_EditSelectedTours_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblCitiesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblToursBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,5 +212,9 @@
         private TourTracerDataSet6 tourTracerDataSet6;
         private System.Windows.Forms.BindingSource tblCitiesBindingSource;
         private TourTracerDataSet6TableAdapters.tbl_CitiesTableAdapter tbl_CitiesTableAdapter;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private TourTracerDataSet9 tourTracerDataSet9;
+        private System.Windows.Forms.BindingSource tblToursBindingSource;
+        private TourTracerDataSet9TableAdapters.tbl_ToursTableAdapter tbl_ToursTableAdapter;
     }
 }

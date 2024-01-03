@@ -69,7 +69,9 @@
     <Reference Include="SixLabors.Fonts, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d998eea7b14cab13, processorArchitecture=MSIL">
       <HintPath>packages\SixLabors.Fonts.1.0.0\lib\netstandard2.0\SixLabors.Fonts.dll</HintPath>
     </Reference>
-    <Reference Include="System" />
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
     </Reference>
@@ -285,6 +287,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TourTracerDataSet6.xsd</DependentUpon>
     </Compile>
+    <Compile Include="TourTracerDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TourTracerDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TourTracerDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TourTracerDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TourTracerDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TourTracerDataSet9.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frm_AdminManagementPage\frm_AdminAddNewTours.resx">
       <DependentUpon>frm_AdminAddNewTours.cs</DependentUpon>
     </EmbeddedResource>
@@ -431,6 +448,39 @@
     </None>
     <None Include="TourTracerDataSet6.xss">
       <DependentUpon>TourTracerDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="TourTracerDataSet7.xsc">
+      <DependentUpon>TourTracerDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="TourTracerDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TourTracerDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TourTracerDataSet7.xss">
+      <DependentUpon>TourTracerDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="TourTracerDataSet8.xsc">
+      <DependentUpon>TourTracerDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="TourTracerDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TourTracerDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TourTracerDataSet8.xss">
+      <DependentUpon>TourTracerDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="TourTracerDataSet9.xsc">
+      <DependentUpon>TourTracerDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="TourTracerDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TourTracerDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TourTracerDataSet9.xss">
+      <DependentUpon>TourTracerDataSet9.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
