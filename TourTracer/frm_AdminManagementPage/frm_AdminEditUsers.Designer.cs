@@ -76,7 +76,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label1.Location = new System.Drawing.Point(612, 49);
+            this.label1.Location = new System.Drawing.Point(683, 50);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(338, 37);
             this.label1.TabIndex = 0;
@@ -88,7 +88,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(-138, -25);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1409, 118);
+            this.panel1.Size = new System.Drawing.Size(1717, 118);
             this.panel1.TabIndex = 3;
             // 
             // button3
@@ -239,7 +239,7 @@
             this.guncelletablosu.Name = "guncelletablosu";
             this.guncelletablosu.RowHeadersWidth = 51;
             this.guncelletablosu.RowTemplate.Height = 24;
-            this.guncelletablosu.Size = new System.Drawing.Size(581, 344);
+            this.guncelletablosu.Size = new System.Drawing.Size(778, 344);
             this.guncelletablosu.TabIndex = 33;
             this.guncelletablosu.SelectionChanged += new System.EventHandler(this.guncelletablosu_SelectionChanged);
             // 
@@ -394,7 +394,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1305, 500);
+            this.ClientSize = new System.Drawing.Size(1535, 500);
             this.Controls.Add(this.DELETEUSER);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.userID);
