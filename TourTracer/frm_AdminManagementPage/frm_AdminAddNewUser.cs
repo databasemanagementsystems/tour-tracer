@@ -86,7 +86,7 @@ namespace TourTracer
 
         private void button2_Click(object sender, EventArgs e)
         {
-            selectedRole = "Staf";
+            selectedRole = "Staff";
             SaveUser();
         }
 

@@ -31,14 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.tblDeletedUsersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tourTracerDataSet2 = new TourTracer.TourTracerDataSet2();
             this.tourTracerDataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tourTracerDataSet = new TourTracer.TourTracerDataSet();
-            this.tblDeletedToursBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tourTracerDataSet3 = new TourTracer.TourTracerDataSet3();
-            this.tbl_DeletedUsersTableAdapter = new TourTracer.TourTracerDataSet2TableAdapters.tbl_DeletedUsersTableAdapter();
-            this.tbl_DeletedToursTableAdapter = new TourTracer.TourTracerDataSet3TableAdapters.tbl_DeletedToursTableAdapter();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.ıDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.firstNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -48,31 +42,46 @@
             this.passwordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.birthDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.roleDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblDeletedUsersBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.tourTracerDataSet10 = new TourTracer.TourTracerDataSet10();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.ıDDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.startTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.endTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.staffIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cityIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tourTracerDataSet4 = new TourTracer.TourTracerDataSet4();
+            this.tblDeletedToursBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.tourTracerDataSet11 = new TourTracer.TourTracerDataSet11();
+            this.tbl_DeletedUsersTableAdapter2 = new TourTracer.TourTracerDataSet10TableAdapters.tbl_DeletedUsersTableAdapter();
+            this.tbl_DeletedToursTableAdapter2 = new TourTracer.TourTracerDataSet11TableAdapters.tbl_DeletedToursTableAdapter();
             this.tblDeletedToursBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.tbl_DeletedToursTableAdapter1 = new TourTracer.TourTracerDataSet4TableAdapters.tbl_DeletedToursTableAdapter();
-            this.tourTracerDataSet5 = new TourTracer.TourTracerDataSet5();
+            this.tourTracerDataSet4 = new TourTracer.TourTracerDataSet4();
             this.tblDeletedUsersBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.tourTracerDataSet5 = new TourTracer.TourTracerDataSet5();
+            this.tblDeletedUsersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tourTracerDataSet2 = new TourTracer.TourTracerDataSet2();
+            this.tblDeletedToursBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tourTracerDataSet3 = new TourTracer.TourTracerDataSet3();
+            this.tbl_DeletedUsersTableAdapter = new TourTracer.TourTracerDataSet2TableAdapters.tbl_DeletedUsersTableAdapter();
+            this.tbl_DeletedToursTableAdapter = new TourTracer.TourTracerDataSet3TableAdapters.tbl_DeletedToursTableAdapter();
+            this.tbl_DeletedToursTableAdapter1 = new TourTracer.TourTracerDataSet4TableAdapters.tbl_DeletedToursTableAdapter();
             this.tbl_DeletedUsersTableAdapter1 = new TourTracer.TourTracerDataSet5TableAdapters.tbl_DeletedUsersTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.tblDeletedUsersBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSetBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblDeletedUsersBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblDeletedToursBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblDeletedToursBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblDeletedUsersBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblDeletedUsersBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblDeletedToursBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblDeletedToursBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblDeletedUsersBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -89,21 +98,11 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.label3.Location = new System.Drawing.Point(25, 273);
+            this.label3.Location = new System.Drawing.Point(25, 294);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(168, 31);
             this.label3.TabIndex = 2;
             this.label3.Text = "Silinen Turlar";
-            // 
-            // tblDeletedUsersBindingSource
-            // 
-            this.tblDeletedUsersBindingSource.DataMember = "tbl_DeletedUsers";
-            this.tblDeletedUsersBindingSource.DataSource = this.tourTracerDataSet2;
-            // 
-            // tourTracerDataSet2
-            // 
-            this.tourTracerDataSet2.DataSetName = "TourTracerDataSet2";
-            this.tourTracerDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tourTracerDataSetBindingSource
             // 
@@ -115,26 +114,9 @@
             this.tourTracerDataSet.DataSetName = "TourTracerDataSet";
             this.tourTracerDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // tblDeletedToursBindingSource
-            // 
-            this.tblDeletedToursBindingSource.DataMember = "tbl_DeletedTours";
-            this.tblDeletedToursBindingSource.DataSource = this.tourTracerDataSet3;
-            // 
-            // tourTracerDataSet3
-            // 
-            this.tourTracerDataSet3.DataSetName = "TourTracerDataSet3";
-            this.tourTracerDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tbl_DeletedUsersTableAdapter
-            // 
-            this.tbl_DeletedUsersTableAdapter.ClearBeforeFill = true;
-            // 
-            // tbl_DeletedToursTableAdapter
-            // 
-            this.tbl_DeletedToursTableAdapter.ClearBeforeFill = true;
-            // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToOrderColumns = true;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -146,12 +128,12 @@
             this.passwordDataGridViewTextBoxColumn,
             this.birthDateDataGridViewTextBoxColumn,
             this.roleDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.tblDeletedUsersBindingSource1;
+            this.dataGridView1.DataSource = this.tblDeletedUsersBindingSource2;
             this.dataGridView1.Location = new System.Drawing.Point(18, 61);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(1099, 185);
+            this.dataGridView1.Size = new System.Drawing.Size(1112, 209);
             this.dataGridView1.TabIndex = 3;
             // 
             // ıDDataGridViewTextBoxColumn
@@ -218,8 +200,19 @@
             this.roleDataGridViewTextBoxColumn.Name = "roleDataGridViewTextBoxColumn";
             this.roleDataGridViewTextBoxColumn.Width = 125;
             // 
+            // tblDeletedUsersBindingSource2
+            // 
+            this.tblDeletedUsersBindingSource2.DataMember = "tbl_DeletedUsers";
+            this.tblDeletedUsersBindingSource2.DataSource = this.tourTracerDataSet10;
+            // 
+            // tourTracerDataSet10
+            // 
+            this.tourTracerDataSet10.DataSetName = "TourTracerDataSet10";
+            this.tourTracerDataSet10.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // dataGridView2
             // 
+            this.dataGridView2.AllowUserToOrderColumns = true;
             this.dataGridView2.AutoGenerateColumns = false;
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -227,14 +220,13 @@
             this.startTimeDataGridViewTextBoxColumn,
             this.endTimeDataGridViewTextBoxColumn,
             this.staffIDDataGridViewTextBoxColumn,
-            this.priceDataGridViewTextBoxColumn,
-            this.cityIDDataGridViewTextBoxColumn});
-            this.dataGridView2.DataSource = this.tblDeletedToursBindingSource1;
+            this.priceDataGridViewTextBoxColumn});
+            this.dataGridView2.DataSource = this.tblDeletedToursBindingSource2;
             this.dataGridView2.Location = new System.Drawing.Point(31, 328);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(1086, 174);
+            this.dataGridView2.Size = new System.Drawing.Size(1099, 192);
             this.dataGridView2.TabIndex = 4;
             // 
             // ıDDataGridViewTextBoxColumn1
@@ -277,37 +269,75 @@
             this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
             this.priceDataGridViewTextBoxColumn.Width = 125;
             // 
-            // cityIDDataGridViewTextBoxColumn
+            // tblDeletedToursBindingSource2
             // 
-            this.cityIDDataGridViewTextBoxColumn.DataPropertyName = "CityID";
-            this.cityIDDataGridViewTextBoxColumn.HeaderText = "CityID";
-            this.cityIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.cityIDDataGridViewTextBoxColumn.Name = "cityIDDataGridViewTextBoxColumn";
-            this.cityIDDataGridViewTextBoxColumn.Width = 125;
+            this.tblDeletedToursBindingSource2.DataMember = "tbl_DeletedTours";
+            this.tblDeletedToursBindingSource2.DataSource = this.tourTracerDataSet11;
             // 
-            // tourTracerDataSet4
+            // tourTracerDataSet11
             // 
-            this.tourTracerDataSet4.DataSetName = "TourTracerDataSet4";
-            this.tourTracerDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.tourTracerDataSet11.DataSetName = "TourTracerDataSet11";
+            this.tourTracerDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tbl_DeletedUsersTableAdapter2
+            // 
+            this.tbl_DeletedUsersTableAdapter2.ClearBeforeFill = true;
+            // 
+            // tbl_DeletedToursTableAdapter2
+            // 
+            this.tbl_DeletedToursTableAdapter2.ClearBeforeFill = true;
             // 
             // tblDeletedToursBindingSource1
             // 
             this.tblDeletedToursBindingSource1.DataMember = "tbl_DeletedTours";
             this.tblDeletedToursBindingSource1.DataSource = this.tourTracerDataSet4;
             // 
-            // tbl_DeletedToursTableAdapter1
+            // tourTracerDataSet4
             // 
-            this.tbl_DeletedToursTableAdapter1.ClearBeforeFill = true;
+            this.tourTracerDataSet4.DataSetName = "TourTracerDataSet4";
+            this.tourTracerDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblDeletedUsersBindingSource1
+            // 
+            this.tblDeletedUsersBindingSource1.DataMember = "tbl_DeletedUsers";
+            this.tblDeletedUsersBindingSource1.DataSource = this.tourTracerDataSet5;
             // 
             // tourTracerDataSet5
             // 
             this.tourTracerDataSet5.DataSetName = "TourTracerDataSet5";
             this.tourTracerDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // tblDeletedUsersBindingSource1
+            // tblDeletedUsersBindingSource
             // 
-            this.tblDeletedUsersBindingSource1.DataMember = "tbl_DeletedUsers";
-            this.tblDeletedUsersBindingSource1.DataSource = this.tourTracerDataSet5;
+            this.tblDeletedUsersBindingSource.DataMember = "tbl_DeletedUsers";
+            this.tblDeletedUsersBindingSource.DataSource = this.tourTracerDataSet2;
+            // 
+            // tourTracerDataSet2
+            // 
+            this.tourTracerDataSet2.DataSetName = "TourTracerDataSet2";
+            this.tourTracerDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblDeletedToursBindingSource
+            // 
+            this.tblDeletedToursBindingSource.DataMember = "tbl_DeletedTours";
+            this.tblDeletedToursBindingSource.DataSource = this.tourTracerDataSet3;
+            // 
+            // tourTracerDataSet3
+            // 
+            this.tourTracerDataSet3.DataSetName = "TourTracerDataSet3";
+            this.tourTracerDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tbl_DeletedUsersTableAdapter
+            // 
+            this.tbl_DeletedUsersTableAdapter.ClearBeforeFill = true;
+            // 
+            // tbl_DeletedToursTableAdapter
+            // 
+            this.tbl_DeletedToursTableAdapter.ClearBeforeFill = true;
+            // 
+            // tbl_DeletedToursTableAdapter1
+            // 
+            this.tbl_DeletedToursTableAdapter1.ClearBeforeFill = true;
             // 
             // tbl_DeletedUsersTableAdapter1
             // 
@@ -328,18 +358,22 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frm_DeletedTours";
             this.Load += new System.EventHandler(this.frm_AdminShowsDeletedToursAndCustomers_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.tblDeletedUsersBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSetBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblDeletedUsersBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblDeletedToursBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblDeletedToursBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblDeletedUsersBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblDeletedUsersBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblDeletedToursBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblDeletedToursBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tblDeletedUsersBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -372,12 +406,17 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn endTimeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn staffIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cityIDDataGridViewTextBoxColumn;
         private TourTracerDataSet4 tourTracerDataSet4;
         private System.Windows.Forms.BindingSource tblDeletedToursBindingSource1;
         private TourTracerDataSet4TableAdapters.tbl_DeletedToursTableAdapter tbl_DeletedToursTableAdapter1;
         private TourTracerDataSet5 tourTracerDataSet5;
         private System.Windows.Forms.BindingSource tblDeletedUsersBindingSource1;
         private TourTracerDataSet5TableAdapters.tbl_DeletedUsersTableAdapter tbl_DeletedUsersTableAdapter1;
+        private TourTracerDataSet10 tourTracerDataSet10;
+        private System.Windows.Forms.BindingSource tblDeletedUsersBindingSource2;
+        private TourTracerDataSet10TableAdapters.tbl_DeletedUsersTableAdapter tbl_DeletedUsersTableAdapter2;
+        private TourTracerDataSet11 tourTracerDataSet11;
+        private System.Windows.Forms.BindingSource tblDeletedToursBindingSource2;
+        private TourTracerDataSet11TableAdapters.tbl_DeletedToursTableAdapter tbl_DeletedToursTableAdapter2;
     }
 }

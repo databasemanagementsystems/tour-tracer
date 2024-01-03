@@ -38,7 +38,6 @@
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.adminPanel = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -46,7 +45,6 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.panel1.Controls.Add(this.button7);
             this.panel1.Controls.Add(this.button6);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.button5);
@@ -117,7 +115,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button3.Location = new System.Drawing.Point(359, 36);
+            this.button3.Location = new System.Drawing.Point(478, 36);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(168, 75);
             this.button3.TabIndex = 2;
@@ -131,7 +129,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button2.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button2.Location = new System.Drawing.Point(182, 36);
+            this.button2.Location = new System.Drawing.Point(301, 36);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(170, 75);
             this.button2.TabIndex = 1;
@@ -145,7 +143,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button1.Location = new System.Drawing.Point(12, 36);
+            this.button1.Location = new System.Drawing.Point(131, 36);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(166, 75);
             this.button1.TabIndex = 0;
@@ -162,20 +160,6 @@
             this.adminPanel.Size = new System.Drawing.Size(1337, 715);
             this.adminPanel.TabIndex = 1;
             this.adminPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // button7
-            // 
-            this.button7.BackColor = System.Drawing.Color.PeachPuff;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button7.Font = new System.Drawing.Font("Microsoft YaHei UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button7.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button7.Location = new System.Drawing.Point(533, 36);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(168, 75);
-            this.button7.TabIndex = 9;
-            this.button7.Text = "Tur Ekle";
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // frm_AdminDashboardPage
             // 
@@ -205,6 +189,5 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
     }
 }

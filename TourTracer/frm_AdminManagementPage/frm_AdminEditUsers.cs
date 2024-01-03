@@ -14,6 +14,7 @@ namespace TourTracer
         {
             InitializeComponent();
         }
+
         private void frm_AdminEditUsers_Load(object sender, EventArgs e)
         {
             try
@@ -42,6 +43,7 @@ namespace TourTracer
                 MessageBox.Show("Veritabanı bağlantısı sırasında bir hata oluştu: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
         // Güncelle butonu
         private void button3_Click(object sender, EventArgs e)
         {
@@ -82,7 +84,6 @@ namespace TourTracer
             }
         }
 
-
         private void guncelletablosu_SelectionChanged(object sender, EventArgs e)
         {
             if (guncelletablosu.SelectedRows.Count > 0)
@@ -104,33 +105,53 @@ namespace TourTracer
                 password.Text = Convert.ToString(dataTable.Rows[selectedRowIndex]["Password"]);
             }
         }
-        private void RefreshDataGridView()
+
+        private void DELETEUSER_Click(object sender, EventArgs e)
         {
             try
             {
-                // Veri tabanından verileri çek
-                using (SqlConnection connection = new SqlConnection(connectionString))
+                if (guncelletablosu.SelectedRows.Count > 0)
                 {
-                    string query = "SELECT * FROM tbl_Users";
+                    int selectedRowIndex = guncelletablosu.SelectedRows[0].Index;
+                    DataTable dataTable = (DataTable)guncelletablosu.DataSource;
 
-                    using (SqlDataAdapter adapter = new SqlDataAdapter(query, connection))
+                    // Seçili turun ID'sini al
+                    int tourIDToDelete = Convert.ToInt32(dataTable.Rows[selectedRowIndex]["ID"]);
+
+                    // Bağlantı oluştur
+                    using (SqlConnection connection = new SqlConnection(connectionString))
                     {
-                        DataTable dataTable = new DataTable();
-                        adapter.Fill(dataTable);
+                        connection.Open();
 
-                        // DataGridView'e veri tablosunu bağla
-                        guncelletablosu.DataSource = dataTable;
+                        // SQL sorgusunu tanımla
+                        string deleteQuery = "DELETE FROM tbl_Users WHERE ID = @ID";
+
+                        // Parametreyi tanımla
+                        using (SqlCommand cmd = new SqlCommand(deleteQuery, connection))
+                        {
+                            cmd.Parameters.AddWithValue("@ID", tourIDToDelete);
+
+                            // Silme işlemini gerçekleştir
+                            cmd.ExecuteNonQuery();
+
+                            MessageBox.Show("Kullanıcı başarıyla silindi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+                        }
                     }
+                }
+                else
+                {
+                    MessageBox.Show("Lütfen bir kullanıcı seçin.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Veritabanı bağlantısı sırasında bir hata oluştu: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("!!! " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-        private void button4_Click(object sender, EventArgs e)
-        {
-            guncelletablosu.DataSource =  tblUsersBindingSource1;  
+
+
+
         }
     }
 }

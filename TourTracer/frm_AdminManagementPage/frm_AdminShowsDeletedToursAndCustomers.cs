@@ -17,14 +17,15 @@ namespace TourTracer
         {
             InitializeComponent();
         }
-        SqlConnection conn = new SqlConnection("Data Source=localhost;Initial Catalog=TourTracer;Integrated Security=True");
 
         private void frm_AdminShowsDeletedToursAndCustomers_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'tourTracerDataSet5.tbl_DeletedUsers' table. You can move, or remove it, as needed.
-            this.tbl_DeletedUsersTableAdapter1.Fill(this.tourTracerDataSet5.tbl_DeletedUsers);
-            // TODO: This line of code loads data into the 'tourTracerDataSet4.tbl_DeletedTours' table. You can move, or remove it, as needed.
-            this.tbl_DeletedToursTableAdapter1.Fill(this.tourTracerDataSet4.tbl_DeletedTours);
+            
+            // TODO: This line of code loads data into the 'tourTracerDataSet11.tbl_DeletedTours' table. You can move, or remove it, as needed.
+            this.tbl_DeletedToursTableAdapter2.Fill(this.tourTracerDataSet11.tbl_DeletedTours);
+            // TODO: This line of code loads data into the 'tourTracerDataSet10.tbl_DeletedUsers' table. You can move, or remove it, as needed.
+            this.tbl_DeletedUsersTableAdapter2.Fill(this.tourTracerDataSet10.tbl_DeletedUsers);
+
 
         }
     }
