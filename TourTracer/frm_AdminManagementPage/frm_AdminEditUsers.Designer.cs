@@ -93,13 +93,13 @@
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.Bisque;
+            this.button3.BackColor = System.Drawing.Color.SandyBrown;
             this.button3.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button3.Location = new System.Drawing.Point(257, 376);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(147, 85);
             this.button3.TabIndex = 31;
-            this.button3.Text = "Güncelle";
+            this.button3.Text = "GÜNCELLE";
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 

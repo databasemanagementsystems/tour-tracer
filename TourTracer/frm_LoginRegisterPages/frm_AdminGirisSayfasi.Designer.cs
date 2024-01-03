@@ -41,7 +41,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_GeriDön = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -184,26 +183,12 @@
             this.btn_GeriDön.UseVisualStyleBackColor = false;
             this.btn_GeriDön.Click += new System.EventHandler(this.btn_GeriDön_Click);
             // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button1.Font = new System.Drawing.Font("Microsoft YaHei UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.button1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.button1.Location = new System.Drawing.Point(327, 386);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(216, 38);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "GİRİŞ YAP";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // frm_AdminGirisSayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.ClientSize = new System.Drawing.Size(1061, 670);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.btn_GeriDön);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
@@ -239,6 +224,5 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btn_GeriDön;
-        private System.Windows.Forms.Button button1;
     }
 }

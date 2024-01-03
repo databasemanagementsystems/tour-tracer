@@ -132,10 +132,13 @@ namespace TourTracer
                 // Hesabı silme işlemini gerçekleştir
                 if (DeleteUserAccount())
                 {
-                    // Hesap silme başarılıysa, giriş ekranına yönlendir
-                    new frm_BaslangicEkrani().Show();
+                    // Hesap silme başarılıysa, mesajı göster ve giriş ekranına yönlendir
+                    
                     this.Close();
+                    MessageBox.Show("Hesap başarıyla silindi.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    
                 }
+               
                 else
                 {
                     MessageBox.Show("Hesap silme sırasında bir hata oluştu.", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -143,38 +146,77 @@ namespace TourTracer
             }
         }
 
+
+        // Kullanıcının rezervasyonlarını silen fonksiyon
+        private void DeleteUserBookings(int userID)
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection("Data Source=localhost;Initial Catalog=TourTracer;Integrated Security=True"))
+                {
+                    conn.Open();
+
+                    // Önce kullanıcıya ait rezervasyonları sil
+                    string deleteBookingsQuery = "DELETE FROM tbl_Bookings WHERE CustomerID = @UserID";
+
+                    using (SqlCommand cmd = new SqlCommand(deleteBookingsQuery, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@UserID", userID);
+                        cmd.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Rezervasyon silme sırasında bir hata oluştu: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
         private bool DeleteUserAccount()
         {
             try
             {
-                //bağlantı
-                SqlConnection conn = new SqlConnection("Data Source=localhost;Initial Catalog=TourTracer;Integrated Security=True");
-                conn.Open();
-
-                // Hesabı silme işlemini gerçekleştir (örneğin, veritabanından kullanıcıyı kaldırma)
-
-                // Örnek SQL sorgusu:
-                string query = "DELETE FROM tbl_Users WHERE ID = @UserID";
-
-                // SqlCommand ve parametreleri kullanarak sorguyu çalıştır
-
-                // Örneğin:
-                using (SqlCommand cmd = new SqlCommand(query, conn))
+                using (SqlConnection conn = new SqlConnection("Data Source=localhost;Initial Catalog=TourTracer;Integrated Security=True"))
                 {
-                    cmd.Parameters.AddWithValue("@UserID", user.ID); // loggedInUserID, silinecek kullanıcının ID'si
-                    cmd.ExecuteNonQuery();
+                    conn.Open();
+
+                    // Önce kullanıcıya ait rezervasyonları sil
+                    DeleteUserBookings(user.ID); // user nesnesinin nereden geldiğine dikkat edin
+
+                    // Ardından kullanıcıya ait turları sil
+                    string deleteToursQuery = "DELETE FROM tbl_Tours WHERE StaffID = @UserID";
+
+                    using (SqlCommand cmd = new SqlCommand(deleteToursQuery, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@UserID", user.ID); // user nesnesinin nereden geldiğine dikkat edin
+                        cmd.ExecuteNonQuery();
+                    }
+
+                    // Kullanıcı hesabını sil
+                    string deleteUserQuery = "DELETE FROM tbl_Users WHERE ID = @UserID";
+
+                    using (SqlCommand cmd = new SqlCommand(deleteUserQuery, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@UserID", user.ID); // user nesnesinin nereden geldiğine dikkat edin
+                        cmd.ExecuteNonQuery();
+                    }
                 }
-                conn.Close();
+                new frm_BaslangicEkrani().Show();
+                this.Close();
+
                 // Hesap başarıyla silindi ise true döndür
                 return true;
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Lütfen Önce Tur Rezervasyonlarınızı Siliniz " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Hesap silme sırasında bir hata oluştu: " + ex.Message, "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
-
         }
 
+
+
     }
+
 }
+

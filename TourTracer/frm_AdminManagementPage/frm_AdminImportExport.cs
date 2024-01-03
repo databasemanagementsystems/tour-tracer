@@ -225,9 +225,21 @@ namespace TourTracer
         //RESTORE BUTONU
         private void btn_restore_Click(object sender, EventArgs e)
         {
-            string connectionString = "Data Source=localhost;Initial Catalog=TourTracer;Integrated Security=True";
+            string connectionString = "Data Source=localhost;Initial Catalog=master;Integrated Security=True";
             try
             {
+                // Veritabanı kapatma işlemi
+                using (SqlConnection masterConnection = new SqlConnection(connectionString))
+                {
+                    masterConnection.Open();
+                    string closeDatabaseQuery = "USE master; ALTER DATABASE TourTracer SET SINGLE_USER WITH ROLLBACK IMMEDIATE;";
+
+                    using (SqlCommand closeCommand = new SqlCommand(closeDatabaseQuery, masterConnection))
+                    {
+                        closeCommand.ExecuteNonQuery();
+                    }
+                }
+
                 // Restore işlemi için dosya seçme penceresi
                 OpenFileDialog openFileDialog = new OpenFileDialog();
                 openFileDialog.Filter = "SQL Backup Files (*.bak)|*.bak";
@@ -262,7 +274,6 @@ namespace TourTracer
                 MessageBox.Show("Hata: " + ex.Message);
             }
         }
-
     }
-}
+    }
 
