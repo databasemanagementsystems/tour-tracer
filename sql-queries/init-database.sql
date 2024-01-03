@@ -128,6 +128,70 @@ CREATE TABLE tbl_DeletedTours (
 );
 GO
 
+-- sp_ListAllUsers List all Users in the database.
+CREATE PROCEDURE sp_ListAllUsers
+    AS
+BEGIN
+SELECT * FROM tbl_Users;
+END;
+GO
+
+-- sp_TopCustomer find the customer who has booked the most tours.
+CREATE PROCEDURE sp_TopCustomer
+    AS
+BEGIN
+SELECT TOP 1 u.FirstName, u.LastName, COUNT(b.CustomerID) as TourCount
+FROM tbl_Users u
+         INNER JOIN tbl_Bookings b ON u.ID = b.CustomerID
+GROUP BY u.FirstName, u.LastName
+ORDER BY TourCount DESC;
+END;
+GO
+
+-- sp_GetCustomersByCity List all Customers in a specific city.
+-- sp_GetCustomersByCity seçilen şehire ait turlara kayıt olan müşterilerin listesi
+CREATE PROCEDURE sp_GetCustomersByCity
+    @CityID int
+AS
+BEGIN
+SELECT u.FirstName, u.LastName, u.Email
+FROM tbl_Users u
+         INNER JOIN tbl_Bookings b ON u.ID = b.CustomerID
+         INNER JOIN tbl_Tours t ON b.TourID = t.ID
+WHERE t.CityID = @CityID AND u.Role = 'Customer'
+END;
+
+--Tüm turları listeleyen prosedür
+CREATE PROCEDURE GetAllTours
+    AS
+BEGIN
+SELECT * FROM tbl_Tours;
+END;
+GO
+
+-- sp_GetCustomersByCity List all Customers in a specific city.
+CREATE PROCEDURE sp_GetCustomersByCity
+    @CityName varchar(30)
+AS
+BEGIN
+SELECT
+    u.ID,
+    u.FirstName,
+    u.LastName,
+    u.Email
+FROM
+    tbl_Users u
+        INNER JOIN
+    tbl_Bookings b ON u.ID = b.CustomerID
+        INNER JOIN
+    tbl_Tours t ON b.TourID = t.ID
+        INNER JOIN
+    tbl_Cities c ON t.DestinationCityID = c.PlateNumber OR t.DepartureCityID = c.PlateNumber
+WHERE
+    c.CityName = @CityName;
+END;
+GO
+
 -- create tr_DeletedTour trigger
 CREATE TRIGGER tr_DeletedTour ON tbl_Tours
     AFTER DELETE
@@ -178,6 +242,45 @@ SELECT @Role=Role FROM deleted
 
     INSERT INTO tbl_DeletedUsers VALUES (@ID, @FirstName, @LastName, @Email, @PhoneNumber, @Password, @BirthDate, @Role)
 END;
+GO
+
+-- tr_CheckDuplicateBooking Checks the customer is already reserved in same tour
+CREATE TRIGGER tr_CheckDuplicateBooking
+    ON tbl_Bookings
+    AFTER INSERT
+AS
+BEGIN
+    -- Eğer yeni eklenen kayıt, aynı CustomerID ve TourID ile zaten varsa, hata döndür
+    IF EXISTS (
+        SELECT *
+        FROM tbl_Bookings b
+        INNER JOIN inserted i ON b.TourID = i.TourID AND b.CustomerID = i.CustomerID
+        WHERE b.ID <> i.ID
+    )
+BEGIN
+        RAISERROR('Bu tura zaten kayıtlısınız.', 16, 1);
+ROLLBACK TRANSACTION;
+END
+END;
+
+-- Create view for listing tours with meaningful information
+CREATE VIEW vw_CustomizedTours AS
+SELECT
+    t.ID,
+    t.Start_Time,
+    t.End_Time,
+    u.FirstName + ' ' + u.LastName AS StaffName,
+    t.Price,
+    depCity.CityName AS DepartureCity,
+    destCity.CityName AS DestinationCity
+FROM
+    tbl_Tours t
+        INNER JOIN
+    tbl_Users u ON t.StaffID = u.ID
+        INNER JOIN
+    tbl_Cities depCity ON t.DepartureCityID = depCity.PlateNumber
+        INNER JOIN
+    tbl_Cities destCity ON t.DestinationCityID = destCity.PlateNumber;
 
 
 
