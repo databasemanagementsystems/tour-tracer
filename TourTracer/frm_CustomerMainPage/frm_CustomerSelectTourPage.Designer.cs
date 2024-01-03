@@ -31,12 +31,8 @@
             this.components = new System.ComponentModel.Container();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ıDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.startTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.endTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.staffIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cityIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tblToursBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
+            this.tourTracerDataSet6 = new TourTracer.TourTracerDataSet6();
             this.tblToursBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tourTracerDataSet3 = new TourTracer.TourTracerDataSet3();
             this.label1 = new System.Windows.Forms.Label();
@@ -48,14 +44,34 @@
             this.tblToursBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.tbl_ToursTableAdapter1 = new TourTracer.TourTracerDataSet4TableAdapters.tbl_ToursTableAdapter();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tourTracerDataSet5 = new TourTracer.TourTracerDataSet5();
+            this.tblToursBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.tbl_ToursTableAdapter2 = new TourTracer.TourTracerDataSet5TableAdapters.tbl_ToursTableAdapter();
+            this.tbl_ToursTableAdapter3 = new TourTracer.TourTracerDataSet6TableAdapters.tbl_ToursTableAdapter();
+            this.tourTracerDataSet7 = new TourTracer.TourTracerDataSet7();
+            this.tblToursBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.tbl_ToursTableAdapter4 = new TourTracer.TourTracerDataSet7TableAdapters.tbl_ToursTableAdapter();
+            this.ıDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.startTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.endTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.staffIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.priceDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DepartureCityID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DestinationCityID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblToursBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblToursBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblToursBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblToursBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblToursBindingSource4)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView4
@@ -72,7 +88,10 @@
             // 
             // dataGridView1
             // 
-            this.dataGridView1.AllowUserToOrderColumns = true;
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AllowUserToResizeColumns = false;
+            this.dataGridView1.AllowUserToResizeRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.DeepSkyBlue;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -82,70 +101,27 @@
             this.endTimeDataGridViewTextBoxColumn,
             this.staffIDDataGridViewTextBoxColumn,
             this.priceDataGridViewTextBoxColumn,
-            this.cityIDDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.tblToursBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(75, 86);
+            this.DepartureCityID,
+            this.DestinationCityID});
+            this.dataGridView1.DataSource = this.tblToursBindingSource4;
+            this.dataGridView1.Location = new System.Drawing.Point(75, 82);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.dataGridView1.Size = new System.Drawing.Size(678, 372);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick_1);
             // 
-            // ıDDataGridViewTextBoxColumn
+            // tblToursBindingSource3
             // 
-            this.ıDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.ıDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.ıDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ıDDataGridViewTextBoxColumn.Name = "ıDDataGridViewTextBoxColumn";
-            this.ıDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.ıDDataGridViewTextBoxColumn.Width = 125;
+            this.tblToursBindingSource3.DataMember = "tbl_Tours";
+            this.tblToursBindingSource3.DataSource = this.tourTracerDataSet6;
             // 
-            // startTimeDataGridViewTextBoxColumn
+            // tourTracerDataSet6
             // 
-            this.startTimeDataGridViewTextBoxColumn.DataPropertyName = "Start_Time";
-            this.startTimeDataGridViewTextBoxColumn.HeaderText = "Start_Time";
-            this.startTimeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.startTimeDataGridViewTextBoxColumn.Name = "startTimeDataGridViewTextBoxColumn";
-            this.startTimeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.startTimeDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // endTimeDataGridViewTextBoxColumn
-            // 
-            this.endTimeDataGridViewTextBoxColumn.DataPropertyName = "End_Time";
-            this.endTimeDataGridViewTextBoxColumn.HeaderText = "End_Time";
-            this.endTimeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.endTimeDataGridViewTextBoxColumn.Name = "endTimeDataGridViewTextBoxColumn";
-            this.endTimeDataGridViewTextBoxColumn.ReadOnly = true;
-            this.endTimeDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // staffIDDataGridViewTextBoxColumn
-            // 
-            this.staffIDDataGridViewTextBoxColumn.DataPropertyName = "StaffID";
-            this.staffIDDataGridViewTextBoxColumn.HeaderText = "StaffID";
-            this.staffIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.staffIDDataGridViewTextBoxColumn.Name = "staffIDDataGridViewTextBoxColumn";
-            this.staffIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.staffIDDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // priceDataGridViewTextBoxColumn
-            // 
-            this.priceDataGridViewTextBoxColumn.DataPropertyName = "Price";
-            this.priceDataGridViewTextBoxColumn.HeaderText = "Price";
-            this.priceDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
-            this.priceDataGridViewTextBoxColumn.ReadOnly = true;
-            this.priceDataGridViewTextBoxColumn.Width = 125;
-            // 
-            // cityIDDataGridViewTextBoxColumn
-            // 
-            this.cityIDDataGridViewTextBoxColumn.DataPropertyName = "CityID";
-            this.cityIDDataGridViewTextBoxColumn.HeaderText = "CityID";
-            this.cityIDDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.cityIDDataGridViewTextBoxColumn.Name = "cityIDDataGridViewTextBoxColumn";
-            this.cityIDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.cityIDDataGridViewTextBoxColumn.Width = 125;
+            this.tourTracerDataSet6.DataSetName = "TourTracerDataSet6";
+            this.tourTracerDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // tblToursBindingSource
             // 
@@ -187,7 +163,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(75, 398);
+            this.button1.Location = new System.Drawing.Point(75, 497);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(678, 42);
             this.button1.TabIndex = 5;
@@ -211,11 +187,98 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(75, 379);
+            this.textBox1.Location = new System.Drawing.Point(75, 448);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(678, 22);
             this.textBox1.TabIndex = 6;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // tourTracerDataSet5
+            // 
+            this.tourTracerDataSet5.DataSetName = "TourTracerDataSet5";
+            this.tourTracerDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblToursBindingSource2
+            // 
+            this.tblToursBindingSource2.DataMember = "tbl_Tours";
+            this.tblToursBindingSource2.DataSource = this.tourTracerDataSet5;
+            // 
+            // tbl_ToursTableAdapter2
+            // 
+            this.tbl_ToursTableAdapter2.ClearBeforeFill = true;
+            // 
+            // tbl_ToursTableAdapter3
+            // 
+            this.tbl_ToursTableAdapter3.ClearBeforeFill = true;
+            // 
+            // tourTracerDataSet7
+            // 
+            this.tourTracerDataSet7.DataSetName = "TourTracerDataSet7";
+            this.tourTracerDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblToursBindingSource4
+            // 
+            this.tblToursBindingSource4.DataMember = "tbl_Tours";
+            this.tblToursBindingSource4.DataSource = this.tourTracerDataSet7;
+            // 
+            // tbl_ToursTableAdapter4
+            // 
+            this.tbl_ToursTableAdapter4.ClearBeforeFill = true;
+            // 
+            // ıDDataGridViewTextBoxColumn
+            // 
+            this.ıDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.ıDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.ıDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.ıDDataGridViewTextBoxColumn.Name = "ıDDataGridViewTextBoxColumn";
+            this.ıDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.ıDDataGridViewTextBoxColumn.Width = 60;
+            // 
+            // startTimeDataGridViewTextBoxColumn
+            // 
+            this.startTimeDataGridViewTextBoxColumn.DataPropertyName = "Start_Time";
+            this.startTimeDataGridViewTextBoxColumn.HeaderText = "Start_Time";
+            this.startTimeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.startTimeDataGridViewTextBoxColumn.Name = "startTimeDataGridViewTextBoxColumn";
+            // 
+            // endTimeDataGridViewTextBoxColumn
+            // 
+            this.endTimeDataGridViewTextBoxColumn.DataPropertyName = "End_Time";
+            this.endTimeDataGridViewTextBoxColumn.HeaderText = "End_Time";
+            this.endTimeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.endTimeDataGridViewTextBoxColumn.Name = "endTimeDataGridViewTextBoxColumn";
+            // 
+            // staffIDDataGridViewTextBoxColumn
+            // 
+            this.staffIDDataGridViewTextBoxColumn.DataPropertyName = "StaffID";
+            this.staffIDDataGridViewTextBoxColumn.HeaderText = "StaffID";
+            this.staffIDDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.staffIDDataGridViewTextBoxColumn.Name = "staffIDDataGridViewTextBoxColumn";
+            this.staffIDDataGridViewTextBoxColumn.Width = 90;
+            // 
+            // priceDataGridViewTextBoxColumn
+            // 
+            this.priceDataGridViewTextBoxColumn.DataPropertyName = "Price";
+            this.priceDataGridViewTextBoxColumn.HeaderText = "Price";
+            this.priceDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.priceDataGridViewTextBoxColumn.Name = "priceDataGridViewTextBoxColumn";
+            this.priceDataGridViewTextBoxColumn.Width = 90;
+            // 
+            // DepartureCityID
+            // 
+            this.DepartureCityID.DataPropertyName = "DepartureCityID";
+            this.DepartureCityID.HeaderText = "DepartureCityID";
+            this.DepartureCityID.MinimumWidth = 6;
+            this.DepartureCityID.Name = "DepartureCityID";
+            this.DepartureCityID.Width = 110;
+            // 
+            // DestinationCityID
+            // 
+            this.DestinationCityID.DataPropertyName = "DestinationCityID";
+            this.DestinationCityID.HeaderText = "DestinationCityID";
+            this.DestinationCityID.MinimumWidth = 6;
+            this.DestinationCityID.Name = "DestinationCityID";
+            this.DestinationCityID.Width = 110;
             // 
             // frm_CustomerSelectTourPage
             // 
@@ -234,12 +297,18 @@
             this.Load += new System.EventHandler(this.frm_CustomerSelectTourPage_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblToursBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblToursBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblToursBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblToursBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tourTracerDataSet7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblToursBindingSource4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -255,16 +324,26 @@
         private TourTracerDataSet3 tourTracerDataSet3;
         private System.Windows.Forms.BindingSource tblToursBindingSource;
         private TourTracerDataSet3TableAdapters.tbl_ToursTableAdapter tbl_ToursTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ıDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn startTimeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn endTimeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn staffIDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cityIDDataGridViewTextBoxColumn;
         private System.Windows.Forms.Button button1;
         private TourTracerDataSet4 tourTracerDataSet4;
         private System.Windows.Forms.BindingSource tblToursBindingSource1;
         private TourTracerDataSet4TableAdapters.tbl_ToursTableAdapter tbl_ToursTableAdapter1;
         private System.Windows.Forms.TextBox textBox1;
+        private TourTracerDataSet5 tourTracerDataSet5;
+        private System.Windows.Forms.BindingSource tblToursBindingSource2;
+        private TourTracerDataSet5TableAdapters.tbl_ToursTableAdapter tbl_ToursTableAdapter2;
+        private TourTracerDataSet6 tourTracerDataSet6;
+        private System.Windows.Forms.BindingSource tblToursBindingSource3;
+        private TourTracerDataSet6TableAdapters.tbl_ToursTableAdapter tbl_ToursTableAdapter3;
+        private TourTracerDataSet7 tourTracerDataSet7;
+        private System.Windows.Forms.BindingSource tblToursBindingSource4;
+        private TourTracerDataSet7TableAdapters.tbl_ToursTableAdapter tbl_ToursTableAdapter4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ıDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn startTimeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn endTimeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn staffIDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn priceDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DepartureCityID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DestinationCityID;
     }
 }

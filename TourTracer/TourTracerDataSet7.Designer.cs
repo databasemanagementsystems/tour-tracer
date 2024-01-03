@@ -20,9 +20,9 @@ namespace TourTracer {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("TourTracerDataSet3")]
+    [global::System.Xml.Serialization.XmlRootAttribute("TourTracerDataSet7")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class TourTracerDataSet3 : global::System.Data.DataSet {
+    public partial class TourTracerDataSet7 : global::System.Data.DataSet {
         
         private tbl_ToursDataTable tabletbl_Tours;
         
@@ -30,7 +30,7 @@ namespace TourTracer {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public TourTracerDataSet3() {
+        public TourTracerDataSet7() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -41,7 +41,7 @@ namespace TourTracer {
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        protected TourTracerDataSet3(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected TourTracerDataSet7(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -127,7 +127,7 @@ namespace TourTracer {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            TourTracerDataSet3 cln = ((TourTracerDataSet3)(base.Clone()));
+            TourTracerDataSet7 cln = ((TourTracerDataSet7)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -199,9 +199,9 @@ namespace TourTracer {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "TourTracerDataSet3";
+            this.DataSetName = "TourTracerDataSet7";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/TourTracerDataSet3.xsd";
+            this.Namespace = "http://tempuri.org/TourTracerDataSet7.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
             this.tabletbl_Tours = new tbl_ToursDataTable();
@@ -225,7 +225,7 @@ namespace TourTracer {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            TourTracerDataSet3 ds = new TourTracerDataSet3();
+            TourTracerDataSet7 ds = new TourTracerDataSet7();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -290,6 +290,8 @@ namespace TourTracer {
             private global::System.Data.DataColumn columnPrice;
             
             private global::System.Data.DataColumn columnDepartureCityID;
+            
+            private global::System.Data.DataColumn columnDestinationCityID;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -366,10 +368,17 @@ namespace TourTracer {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn DepartureCityIDColumn
-            {
+            public global::System.Data.DataColumn DepartureCityIDColumn {
                 get {
                     return this.columnDepartureCityID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn DestinationCityIDColumn {
+                get {
+                    return this.columnDestinationCityID;
                 }
             }
             
@@ -410,7 +419,7 @@ namespace TourTracer {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public tbl_ToursRow Addtbl_ToursRow(System.DateTime Start_Time, System.DateTime End_Time, int StaffID, decimal Price, int CityID) {
+            public tbl_ToursRow Addtbl_ToursRow(System.DateTime Start_Time, System.DateTime End_Time, int StaffID, decimal Price, int DepartureCityID, int DestinationCityID) {
                 tbl_ToursRow rowtbl_ToursRow = ((tbl_ToursRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
@@ -418,7 +427,8 @@ namespace TourTracer {
                         End_Time,
                         StaffID,
                         Price,
-                        CityID};
+                        DepartureCityID,
+                        DestinationCityID};
                 rowtbl_ToursRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowtbl_ToursRow);
                 return rowtbl_ToursRow;
@@ -453,7 +463,8 @@ namespace TourTracer {
                 this.columnEnd_Time = base.Columns["End_Time"];
                 this.columnStaffID = base.Columns["StaffID"];
                 this.columnPrice = base.Columns["Price"];
-                this.columnDepartureCityID = base.Columns["CityID"];
+                this.columnDepartureCityID = base.Columns["DepartureCityID"];
+                this.columnDestinationCityID = base.Columns["DestinationCityID"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -469,8 +480,10 @@ namespace TourTracer {
                 base.Columns.Add(this.columnStaffID);
                 this.columnPrice = new global::System.Data.DataColumn("Price", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPrice);
-                this.columnDepartureCityID = new global::System.Data.DataColumn("CityID", typeof(int), null, global::System.Data.MappingType.Element);
+                this.columnDepartureCityID = new global::System.Data.DataColumn("DepartureCityID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDepartureCityID);
+                this.columnDestinationCityID = new global::System.Data.DataColumn("DestinationCityID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDestinationCityID);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnID}, true));
                 this.columnID.AutoIncrement = true;
@@ -549,7 +562,7 @@ namespace TourTracer {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                TourTracerDataSet3 ds = new TourTracerDataSet3();
+                TourTracerDataSet7 ds = new TourTracerDataSet7();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -700,6 +713,22 @@ namespace TourTracer {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public int DestinationCityID {
+                get {
+                    try {
+                        return ((int)(this[this.tabletbl_Tours.DestinationCityIDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("\'tbl_Tours\' tablosundaki \'DestinationCityID\' sütunun değeri DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tabletbl_Tours.DestinationCityIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsStaffIDNull() {
                 return this.IsNull(this.tabletbl_Tours.StaffIDColumn);
             }
@@ -720,6 +749,18 @@ namespace TourTracer {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetDepartureCityIDNull() {
                 this[this.tabletbl_Tours.DepartureCityIDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsDestinationCityIDNull() {
+                return this.IsNull(this.tabletbl_Tours.DestinationCityIDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetDestinationCityIDNull() {
+                this[this.tabletbl_Tours.DestinationCityIDColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -758,7 +799,7 @@ namespace TourTracer {
         }
     }
 }
-namespace TourTracer.TourTracerDataSet3TableAdapters {
+namespace TourTracer.TourTracerDataSet7TableAdapters {
     
     
     /// <summary>
@@ -887,11 +928,12 @@ namespace TourTracer.TourTracerDataSet3TableAdapters {
             tableMapping.ColumnMappings.Add("End_Time", "End_Time");
             tableMapping.ColumnMappings.Add("StaffID", "StaffID");
             tableMapping.ColumnMappings.Add("Price", "Price");
-            tableMapping.ColumnMappings.Add("CityID", "CityID");
+            tableMapping.ColumnMappings.Add("DepartureCityID", "DepartureCityID");
+            tableMapping.ColumnMappings.Add("DestinationCityID", "DestinationCityID");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[tbl_Tours] WHERE (([ID] = @Original_ID) AND ([Start_Time] = @Original_Start_Time) AND ([End_Time] = @Original_End_Time) AND ((@IsNull_StaffID = 1 AND [StaffID] IS NULL) OR ([StaffID] = @Original_StaffID)) AND ([Price] = @Original_Price) AND ((@IsNull_CityID = 1 AND [CityID] IS NULL) OR ([CityID] = @Original_CityID)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM [dbo].[tbl_Tours] WHERE (([ID] = @Original_ID) AND ([Start_Time] = @Original_Start_Time) AND ([End_Time] = @Original_End_Time) AND ((@IsNull_StaffID = 1 AND [StaffID] IS NULL) OR ([StaffID] = @Original_StaffID)) AND ([Price] = @Original_Price) AND ((@IsNull_DepartureCityID = 1 AND [DepartureCityID] IS NULL) OR ([DepartureCityID] = @Original_DepartureCityID)) AND ((@IsNull_DestinationCityID = 1 AND [DestinationCityID] IS NULL) OR ([DestinationCityID] = @Original_DestinationCityID)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Start_Time", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Start_Time", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
@@ -899,38 +941,42 @@ namespace TourTracer.TourTracerDataSet3TableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_StaffID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "StaffID", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_StaffID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "StaffID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Price", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Price", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_CityID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CityID", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CityID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CityID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_DepartureCityID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DepartureCityID", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_DepartureCityID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DepartureCityID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_DestinationCityID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DestinationCityID", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_DestinationCityID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DestinationCityID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.InsertCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO [dbo].[tbl_Tours] ([Start_Time], [End_Time], [StaffID], [Price], [Cit" +
-                "yID]) VALUES (@Start_Time, @End_Time, @StaffID, @Price, @CityID);\r\nSELECT ID, St" +
-                "art_Time, End_Time, StaffID, Price, CityID FROM tbl_Tours WHERE (ID = SCOPE_IDEN" +
-                "TITY())";
+            this._adapter.InsertCommand.CommandText = @"INSERT INTO [dbo].[tbl_Tours] ([Start_Time], [End_Time], [StaffID], [Price], [DepartureCityID], [DestinationCityID]) VALUES (@Start_Time, @End_Time, @StaffID, @Price, @DepartureCityID, @DestinationCityID);
+SELECT ID, Start_Time, End_Time, StaffID, Price, DepartureCityID, DestinationCityID FROM tbl_Tours WHERE (ID = SCOPE_IDENTITY())";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Start_Time", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Start_Time", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@End_Time", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "End_Time", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@StaffID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "StaffID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Price", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Price", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CityID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CityID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DepartureCityID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DepartureCityID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DestinationCityID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DestinationCityID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand = new global::System.Data.SqlClient.SqlCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[tbl_Tours] SET [Start_Time] = @Start_Time, [End_Time] = @End_Time, [StaffID] = @StaffID, [Price] = @Price, [CityID] = @CityID WHERE (([ID] = @Original_ID) AND ([Start_Time] = @Original_Start_Time) AND ([End_Time] = @Original_End_Time) AND ((@IsNull_StaffID = 1 AND [StaffID] IS NULL) OR ([StaffID] = @Original_StaffID)) AND ([Price] = @Original_Price) AND ((@IsNull_CityID = 1 AND [CityID] IS NULL) OR ([CityID] = @Original_CityID)));
-SELECT ID, Start_Time, End_Time, StaffID, Price, CityID FROM tbl_Tours WHERE (ID = @ID)";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE [dbo].[tbl_Tours] SET [Start_Time] = @Start_Time, [End_Time] = @End_Time, [StaffID] = @StaffID, [Price] = @Price, [DepartureCityID] = @DepartureCityID, [DestinationCityID] = @DestinationCityID WHERE (([ID] = @Original_ID) AND ([Start_Time] = @Original_Start_Time) AND ([End_Time] = @Original_End_Time) AND ((@IsNull_StaffID = 1 AND [StaffID] IS NULL) OR ([StaffID] = @Original_StaffID)) AND ([Price] = @Original_Price) AND ((@IsNull_DepartureCityID = 1 AND [DepartureCityID] IS NULL) OR ([DepartureCityID] = @Original_DepartureCityID)) AND ((@IsNull_DestinationCityID = 1 AND [DestinationCityID] IS NULL) OR ([DestinationCityID] = @Original_DestinationCityID)));
+SELECT ID, Start_Time, End_Time, StaffID, Price, DepartureCityID, DestinationCityID FROM tbl_Tours WHERE (ID = @ID)";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Start_Time", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Start_Time", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@End_Time", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "End_Time", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@StaffID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "StaffID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Price", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Price", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@CityID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CityID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DepartureCityID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DepartureCityID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@DestinationCityID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DestinationCityID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_ID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Start_Time", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Start_Time", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_End_Time", global::System.Data.SqlDbType.Date, 0, global::System.Data.ParameterDirection.Input, 0, 0, "End_Time", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_StaffID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "StaffID", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_StaffID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "StaffID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_Price", global::System.Data.SqlDbType.Money, 0, global::System.Data.ParameterDirection.Input, 0, 0, "Price", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_CityID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CityID", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_CityID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "CityID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_DepartureCityID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DepartureCityID", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_DepartureCityID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DepartureCityID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@IsNull_DestinationCityID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DestinationCityID", global::System.Data.DataRowVersion.Original, true, null, "", "", ""));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@Original_DestinationCityID", global::System.Data.SqlDbType.Int, 0, global::System.Data.ParameterDirection.Input, 0, 0, "DestinationCityID", global::System.Data.DataRowVersion.Original, false, null, "", "", ""));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.SqlClient.SqlParameter("@ID", global::System.Data.SqlDbType.Int, 4, global::System.Data.ParameterDirection.Input, 0, 0, "ID", global::System.Data.DataRowVersion.Current, false, null, "", "", ""));
         }
         
@@ -947,7 +993,8 @@ SELECT ID, Start_Time, End_Time, StaffID, Price, CityID FROM tbl_Tours WHERE (ID
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ID, Start_Time, End_Time, StaffID, Price, CityID FROM dbo.tbl_Tours";
+            this._commandCollection[0].CommandText = "SELECT ID, Start_Time, End_Time, StaffID, Price, DepartureCityID, DestinationCity" +
+                "ID FROM dbo.tbl_Tours";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -955,7 +1002,7 @@ SELECT ID, Start_Time, End_Time, StaffID, Price, CityID FROM tbl_Tours WHERE (ID
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Fill, true)]
-        public virtual int Fill(TourTracerDataSet3.tbl_ToursDataTable dataTable) {
+        public virtual int Fill(TourTracerDataSet7.tbl_ToursDataTable dataTable) {
             this.Adapter.SelectCommand = this.CommandCollection[0];
             if ((this.ClearBeforeFill == true)) {
                 dataTable.Clear();
@@ -968,9 +1015,9 @@ SELECT ID, Start_Time, End_Time, StaffID, Price, CityID FROM tbl_Tours WHERE (ID
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Select, true)]
-        public virtual TourTracerDataSet3.tbl_ToursDataTable GetData() {
+        public virtual TourTracerDataSet7.tbl_ToursDataTable GetData() {
             this.Adapter.SelectCommand = this.CommandCollection[0];
-            TourTracerDataSet3.tbl_ToursDataTable dataTable = new TourTracerDataSet3.tbl_ToursDataTable();
+            TourTracerDataSet7.tbl_ToursDataTable dataTable = new TourTracerDataSet7.tbl_ToursDataTable();
             this.Adapter.Fill(dataTable);
             return dataTable;
         }
@@ -978,14 +1025,14 @@ SELECT ID, Start_Time, End_Time, StaffID, Price, CityID FROM tbl_Tours WHERE (ID
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(TourTracerDataSet3.tbl_ToursDataTable dataTable) {
+        public virtual int Update(TourTracerDataSet7.tbl_ToursDataTable dataTable) {
             return this.Adapter.Update(dataTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
-        public virtual int Update(TourTracerDataSet3 dataSet) {
+        public virtual int Update(TourTracerDataSet7 dataSet) {
             return this.Adapter.Update(dataSet, "tbl_Tours");
         }
         
@@ -1008,7 +1055,7 @@ SELECT ID, Start_Time, End_Time, StaffID, Price, CityID FROM tbl_Tours WHERE (ID
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_ID, System.DateTime Original_Start_Time, System.DateTime Original_End_Time, global::System.Nullable<int> Original_StaffID, decimal Original_Price, global::System.Nullable<int> Original_CityID) {
+        public virtual int Delete(int Original_ID, System.DateTime Original_Start_Time, System.DateTime Original_End_Time, global::System.Nullable<int> Original_StaffID, decimal Original_Price, global::System.Nullable<int> Original_DepartureCityID, global::System.Nullable<int> Original_DestinationCityID) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_ID));
             this.Adapter.DeleteCommand.Parameters[1].Value = ((System.DateTime)(Original_Start_Time));
             this.Adapter.DeleteCommand.Parameters[2].Value = ((System.DateTime)(Original_End_Time));
@@ -1021,13 +1068,21 @@ SELECT ID, Start_Time, End_Time, StaffID, Price, CityID FROM tbl_Tours WHERE (ID
                 this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             this.Adapter.DeleteCommand.Parameters[5].Value = ((decimal)(Original_Price));
-            if ((Original_CityID.HasValue == true)) {
+            if ((Original_DepartureCityID.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[7].Value = ((int)(Original_CityID.Value));
+                this.Adapter.DeleteCommand.Parameters[7].Value = ((int)(Original_DepartureCityID.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[6].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[7].Value = global::System.DBNull.Value;
+            }
+            if ((Original_DestinationCityID.HasValue == true)) {
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((object)(0));
+                this.Adapter.DeleteCommand.Parameters[9].Value = ((int)(Original_DestinationCityID.Value));
+            }
+            else {
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((object)(1));
+                this.Adapter.DeleteCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1049,7 +1104,7 @@ SELECT ID, Start_Time, End_Time, StaffID, Price, CityID FROM tbl_Tours WHERE (ID
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(System.DateTime Start_Time, System.DateTime End_Time, global::System.Nullable<int> StaffID, decimal Price, global::System.Nullable<int> CityID) {
+        public virtual int Insert(System.DateTime Start_Time, System.DateTime End_Time, global::System.Nullable<int> StaffID, decimal Price, global::System.Nullable<int> DepartureCityID, global::System.Nullable<int> DestinationCityID) {
             this.Adapter.InsertCommand.Parameters[0].Value = ((System.DateTime)(Start_Time));
             this.Adapter.InsertCommand.Parameters[1].Value = ((System.DateTime)(End_Time));
             if ((StaffID.HasValue == true)) {
@@ -1059,11 +1114,17 @@ SELECT ID, Start_Time, End_Time, StaffID, Price, CityID FROM tbl_Tours WHERE (ID
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             this.Adapter.InsertCommand.Parameters[3].Value = ((decimal)(Price));
-            if ((CityID.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((int)(CityID.Value));
+            if ((DepartureCityID.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((int)(DepartureCityID.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
+            }
+            if ((DestinationCityID.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[5].Value = ((int)(DestinationCityID.Value));
+            }
+            else {
+                this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -1085,7 +1146,7 @@ SELECT ID, Start_Time, End_Time, StaffID, Price, CityID FROM tbl_Tours WHERE (ID
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(System.DateTime Start_Time, System.DateTime End_Time, global::System.Nullable<int> StaffID, decimal Price, global::System.Nullable<int> CityID, int Original_ID, System.DateTime Original_Start_Time, System.DateTime Original_End_Time, global::System.Nullable<int> Original_StaffID, decimal Original_Price, global::System.Nullable<int> Original_CityID, int ID) {
+        public virtual int Update(System.DateTime Start_Time, System.DateTime End_Time, global::System.Nullable<int> StaffID, decimal Price, global::System.Nullable<int> DepartureCityID, global::System.Nullable<int> DestinationCityID, int Original_ID, System.DateTime Original_Start_Time, System.DateTime Original_End_Time, global::System.Nullable<int> Original_StaffID, decimal Original_Price, global::System.Nullable<int> Original_DepartureCityID, global::System.Nullable<int> Original_DestinationCityID, int ID) {
             this.Adapter.UpdateCommand.Parameters[0].Value = ((System.DateTime)(Start_Time));
             this.Adapter.UpdateCommand.Parameters[1].Value = ((System.DateTime)(End_Time));
             if ((StaffID.HasValue == true)) {
@@ -1095,33 +1156,47 @@ SELECT ID, Start_Time, End_Time, StaffID, Price, CityID FROM tbl_Tours WHERE (ID
                 this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             this.Adapter.UpdateCommand.Parameters[3].Value = ((decimal)(Price));
-            if ((CityID.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(CityID.Value));
+            if ((DepartureCityID.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(DepartureCityID.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(Original_ID));
-            this.Adapter.UpdateCommand.Parameters[6].Value = ((System.DateTime)(Original_Start_Time));
-            this.Adapter.UpdateCommand.Parameters[7].Value = ((System.DateTime)(Original_End_Time));
+            if ((DestinationCityID.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((int)(DestinationCityID.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Original_ID));
+            this.Adapter.UpdateCommand.Parameters[7].Value = ((System.DateTime)(Original_Start_Time));
+            this.Adapter.UpdateCommand.Parameters[8].Value = ((System.DateTime)(Original_End_Time));
             if ((Original_StaffID.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[9].Value = ((int)(Original_StaffID.Value));
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[10].Value = ((int)(Original_StaffID.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[10].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[10].Value = ((decimal)(Original_Price));
-            if ((Original_CityID.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((int)(Original_CityID.Value));
+            this.Adapter.UpdateCommand.Parameters[11].Value = ((decimal)(Original_Price));
+            if ((Original_DepartureCityID.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(Original_DepartureCityID.Value));
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
-                this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(ID));
+            if ((Original_DestinationCityID.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((int)(Original_DestinationCityID.Value));
+            }
+            else {
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
+                this.Adapter.UpdateCommand.Parameters[15].Value = global::System.DBNull.Value;
+            }
+            this.Adapter.UpdateCommand.Parameters[16].Value = ((int)(ID));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -1142,8 +1217,8 @@ SELECT ID, Start_Time, End_Time, StaffID, Price, CityID FROM tbl_Tours WHERE (ID
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(System.DateTime Start_Time, System.DateTime End_Time, global::System.Nullable<int> StaffID, decimal Price, global::System.Nullable<int> CityID, int Original_ID, System.DateTime Original_Start_Time, System.DateTime Original_End_Time, global::System.Nullable<int> Original_StaffID, decimal Original_Price, global::System.Nullable<int> Original_CityID) {
-            return this.Update(Start_Time, End_Time, StaffID, Price, CityID, Original_ID, Original_Start_Time, Original_End_Time, Original_StaffID, Original_Price, Original_CityID, Original_ID);
+        public virtual int Update(System.DateTime Start_Time, System.DateTime End_Time, global::System.Nullable<int> StaffID, decimal Price, global::System.Nullable<int> DepartureCityID, global::System.Nullable<int> DestinationCityID, int Original_ID, System.DateTime Original_Start_Time, System.DateTime Original_End_Time, global::System.Nullable<int> Original_StaffID, decimal Original_Price, global::System.Nullable<int> Original_DepartureCityID, global::System.Nullable<int> Original_DestinationCityID) {
+            return this.Update(Start_Time, End_Time, StaffID, Price, DepartureCityID, DestinationCityID, Original_ID, Original_Start_Time, Original_End_Time, Original_StaffID, Original_Price, Original_DepartureCityID, Original_DestinationCityID, Original_ID);
         }
     }
     
@@ -1238,7 +1313,7 @@ SELECT ID, Start_Time, End_Time, StaffID, Price, CityID FROM tbl_Tours WHERE (ID
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateUpdatedRows(TourTracerDataSet3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateUpdatedRows(TourTracerDataSet7 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._tbl_ToursTableAdapter != null)) {
                 global::System.Data.DataRow[] updatedRows = dataSet.tbl_Tours.Select(null, null, global::System.Data.DataViewRowState.ModifiedCurrent);
@@ -1257,7 +1332,7 @@ SELECT ID, Start_Time, End_Time, StaffID, Price, CityID FROM tbl_Tours WHERE (ID
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateInsertedRows(TourTracerDataSet3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
+        private int UpdateInsertedRows(TourTracerDataSet7 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allAddedRows) {
             int result = 0;
             if ((this._tbl_ToursTableAdapter != null)) {
                 global::System.Data.DataRow[] addedRows = dataSet.tbl_Tours.Select(null, null, global::System.Data.DataViewRowState.Added);
@@ -1275,7 +1350,7 @@ SELECT ID, Start_Time, End_Time, StaffID, Price, CityID FROM tbl_Tours WHERE (ID
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private int UpdateDeletedRows(TourTracerDataSet3 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
+        private int UpdateDeletedRows(TourTracerDataSet7 dataSet, global::System.Collections.Generic.List<global::System.Data.DataRow> allChangedRows) {
             int result = 0;
             if ((this._tbl_ToursTableAdapter != null)) {
                 global::System.Data.DataRow[] deletedRows = dataSet.tbl_Tours.Select(null, null, global::System.Data.DataViewRowState.Deleted);
@@ -1317,7 +1392,7 @@ SELECT ID, Start_Time, End_Time, StaffID, Price, CityID FROM tbl_Tours WHERE (ID
         ///</summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public virtual int UpdateAll(TourTracerDataSet3 dataSet) {
+        public virtual int UpdateAll(TourTracerDataSet7 dataSet) {
             if ((dataSet == null)) {
                 throw new global::System.ArgumentNullException("dataSet");
             }

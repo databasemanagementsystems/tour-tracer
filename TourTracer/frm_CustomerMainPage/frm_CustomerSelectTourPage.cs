@@ -27,9 +27,11 @@ namespace TourTracer
 
         private void frm_CustomerSelectTourPage_Load(object sender, EventArgs e)
         {
-            // TODO: Bu kod satırı 'tourTracerDataSet3.tbl_Tours' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
-            this.tbl_ToursTableAdapter.Fill(this.tourTracerDataSet3.tbl_Tours);
-
+            // TODO: Bu kod satırı 'tourTracerDataSet7.tbl_Tours' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
+            this.tbl_ToursTableAdapter4.Fill(this.tourTracerDataSet7.tbl_Tours);
+            // TODO: Bu kod satırı 'tourTracerDataSet6.tbl_Tours' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
+            this.tbl_ToursTableAdapter3.Fill(this.tourTracerDataSet6.tbl_Tours);
+            // TODO: Bu kod satırı 'tourTracerDataSet5.tbl_Tours' tablosuna veri yükler. Bunu gerektiği şekilde taşıyabilir, veya kaldırabilirsiniz.
         }
 
 
@@ -56,12 +58,12 @@ namespace TourTracer
                         // Örnek sorgu:
                         // if (!IsTourAlreadyBooked(TourID, userID, connection))
                         // {
-                        string query = "INSERT INTO tbl_Bookings (TourID, ID) VALUES (@TourID, @ID)";
+                        string query = "INSERT INTO tbl_Bookings (TourID, CustomerID) VALUES (@TourID, @CustomerID)";
 
                         using (SqlCommand command = new SqlCommand(query, connection))
                         {
                             command.Parameters.AddWithValue("@TourID", TourID);
-                            command.Parameters.AddWithValue("@ID", userID);
+                            command.Parameters.AddWithValue("@CustomerID", userID);
 
                             int rowsAffected = command.ExecuteNonQuery();
 
@@ -111,6 +113,11 @@ namespace TourTracer
 
         }
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
 
         }

@@ -15,5 +15,6 @@ CREATE TABLE tbl_DeletedTours (
     End_Time date,
     StaffID int,
     Price money,
-    CityID int
+    DepartureCityID int,
+    DestinationCityID int
 );

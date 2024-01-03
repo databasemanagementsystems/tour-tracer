@@ -289,7 +289,7 @@ namespace TourTracer {
             
             private global::System.Data.DataColumn columnPrice;
             
-            private global::System.Data.DataColumn columnCityID;
+            private global::System.Data.DataColumn columnDepartureCityID;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
@@ -366,9 +366,9 @@ namespace TourTracer {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn CityIDColumn {
+            public global::System.Data.DataColumn DepartureCityIDColumn {
                 get {
-                    return this.columnCityID;
+                    return this.columnDepartureCityID;
                 }
             }
             
@@ -452,7 +452,7 @@ namespace TourTracer {
                 this.columnEnd_Time = base.Columns["End_Time"];
                 this.columnStaffID = base.Columns["StaffID"];
                 this.columnPrice = base.Columns["Price"];
-                this.columnCityID = base.Columns["CityID"];
+                this.columnDepartureCityID = base.Columns["CityID"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -468,8 +468,8 @@ namespace TourTracer {
                 base.Columns.Add(this.columnStaffID);
                 this.columnPrice = new global::System.Data.DataColumn("Price", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPrice);
-                this.columnCityID = new global::System.Data.DataColumn("CityID", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCityID);
+                this.columnDepartureCityID = new global::System.Data.DataColumn("CityID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDepartureCityID);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnID}, true));
                 this.columnID.AutoIncrement = true;
@@ -683,17 +683,17 @@ namespace TourTracer {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public int CityID {
+            public int DepartureCityID {
                 get {
                     try {
-                        return ((int)(this[this.tabletbl_Tours.CityIDColumn]));
+                        return ((int)(this[this.tabletbl_Tours.DepartureCityIDColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
                         throw new global::System.Data.StrongTypingException("\'tbl_Tours\' tablosundaki \'CityID\' sütunun değeri DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tabletbl_Tours.CityIDColumn] = value;
+                    this[this.tabletbl_Tours.DepartureCityIDColumn] = value;
                 }
             }
             
@@ -711,14 +711,14 @@ namespace TourTracer {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsCityIDNull() {
-                return this.IsNull(this.tabletbl_Tours.CityIDColumn);
+            public bool IsDepartureCityIDNull() {
+                return this.IsNull(this.tabletbl_Tours.DepartureCityIDColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetCityIDNull() {
-                this[this.tabletbl_Tours.CityIDColumn] = global::System.Convert.DBNull;
+            public void SetDepartureCityIDNull() {
+                this[this.tabletbl_Tours.DepartureCityIDColumn] = global::System.Convert.DBNull;
             }
         }
         

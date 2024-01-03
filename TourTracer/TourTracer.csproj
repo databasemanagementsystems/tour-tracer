@@ -280,6 +280,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TourTracerDataSet4.xsd</DependentUpon>
     </Compile>
+    <Compile Include="TourTracerDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TourTracerDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TourTracerDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TourTracerDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TourTracerDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TourTracerDataSet7.xsd</DependentUpon>
+    </Compile>
     <Compile Include="User.cs" />
     <EmbeddedResource Include="frm_AdminManagementPage\frm_AdminImportExport.resx">
       <DependentUpon>frm_AdminImportExport.cs</DependentUpon>
@@ -411,6 +426,39 @@
     </None>
     <None Include="TourTracerDataSet4.xss">
       <DependentUpon>TourTracerDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="TourTracerDataSet5.xsc">
+      <DependentUpon>TourTracerDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="TourTracerDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TourTracerDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TourTracerDataSet5.xss">
+      <DependentUpon>TourTracerDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="TourTracerDataSet6.xsc">
+      <DependentUpon>TourTracerDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="TourTracerDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TourTracerDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TourTracerDataSet6.xss">
+      <DependentUpon>TourTracerDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="TourTracerDataSet7.xsc">
+      <DependentUpon>TourTracerDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="TourTracerDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TourTracerDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TourTracerDataSet7.xss">
+      <DependentUpon>TourTracerDataSet7.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
