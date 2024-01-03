@@ -53,7 +53,7 @@
             this.CustomerPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CustomerPanel.Location = new System.Drawing.Point(286, 0);
             this.CustomerPanel.Name = "CustomerPanel";
-            this.CustomerPanel.Size = new System.Drawing.Size(838, 749);
+            this.CustomerPanel.Size = new System.Drawing.Size(1414, 749);
             this.CustomerPanel.TabIndex = 9;
             this.CustomerPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
@@ -62,7 +62,7 @@
             this.CustomerPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.CustomerPanel1.Location = new System.Drawing.Point(0, 132);
             this.CustomerPanel1.Name = "CustomerPanel1";
-            this.CustomerPanel1.Size = new System.Drawing.Size(838, 617);
+            this.CustomerPanel1.Size = new System.Drawing.Size(1414, 617);
             this.CustomerPanel1.TabIndex = 1;
             this.CustomerPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint_1);
             // 
@@ -73,7 +73,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(838, 132);
+            this.panel1.Size = new System.Drawing.Size(1414, 132);
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -189,7 +189,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1124, 749);
+            this.ClientSize = new System.Drawing.Size(1700, 749);
             this.Controls.Add(this.CustomerPanel);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

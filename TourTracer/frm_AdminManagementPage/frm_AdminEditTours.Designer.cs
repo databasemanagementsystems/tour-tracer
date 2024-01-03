@@ -64,10 +64,10 @@
             this.GÜNCELLE = new System.Windows.Forms.Button();
             this.tbl_ToursTableAdapter2 = new TourTracer.TourTracerDataSet13TableAdapters.tbl_ToursTableAdapter();
             this.DELETE = new System.Windows.Forms.Button();
+            this.turekle = new System.Windows.Forms.Button();
             this.tourTracerDataSet6 = new TourTracer.TourTracerDataSet6();
             this.tblCitiesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tbl_CitiesTableAdapter = new TourTracer.TourTracerDataSet6TableAdapters.tbl_CitiesTableAdapter();
-            this.turekle = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.tourdatagrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tblToursBindingSource2)).BeginInit();
@@ -114,11 +114,11 @@
             this.departureCityIDDataGridViewTextBoxColumn,
             this.destinationCityIDDataGridViewTextBoxColumn});
             this.tourdatagrid.DataSource = this.tblToursBindingSource2;
-            this.tourdatagrid.Location = new System.Drawing.Point(613, 115);
+            this.tourdatagrid.Location = new System.Drawing.Point(622, 114);
             this.tourdatagrid.Name = "tourdatagrid";
             this.tourdatagrid.RowHeadersWidth = 51;
             this.tourdatagrid.RowTemplate.Height = 24;
-            this.tourdatagrid.Size = new System.Drawing.Size(473, 302);
+            this.tourdatagrid.Size = new System.Drawing.Size(658, 302);
             this.tourdatagrid.TabIndex = 8;
             this.tourdatagrid.SelectionChanged += new System.EventHandler(this.tourdatagrid_SelectionChanged);
             // 
@@ -383,6 +383,19 @@
             this.DELETE.UseVisualStyleBackColor = false;
             this.DELETE.Click += new System.EventHandler(this.DELETE_Click);
             // 
+            // turekle
+            // 
+            this.turekle.BackColor = System.Drawing.Color.Chartreuse;
+            this.turekle.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.turekle.ForeColor = System.Drawing.SystemColors.Info;
+            this.turekle.Location = new System.Drawing.Point(28, 342);
+            this.turekle.Name = "turekle";
+            this.turekle.Size = new System.Drawing.Size(170, 49);
+            this.turekle.TabIndex = 59;
+            this.turekle.Text = "TUR EKLE";
+            this.turekle.UseVisualStyleBackColor = false;
+            this.turekle.Click += new System.EventHandler(this.turekle_Click);
+            // 
             // tourTracerDataSet6
             // 
             this.tourTracerDataSet6.DataSetName = "TourTracerDataSet6";
@@ -396,19 +409,6 @@
             // tbl_CitiesTableAdapter
             // 
             this.tbl_CitiesTableAdapter.ClearBeforeFill = true;
-            // 
-            // turekle
-            // 
-            this.turekle.BackColor = System.Drawing.Color.Chartreuse;
-            this.turekle.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.turekle.ForeColor = System.Drawing.SystemColors.Info;
-            this.turekle.Location = new System.Drawing.Point(28, 342);
-            this.turekle.Name = "turekle";
-            this.turekle.Size = new System.Drawing.Size(170, 49);
-            this.turekle.TabIndex = 59;
-            this.turekle.Text = "TUR EKLE";
-            this.turekle.UseVisualStyleBackColor = false;
-            this.turekle.Click += new System.EventHandler(this.turekle_Click);
             // 
             // frm_AdminEditTours
             // 

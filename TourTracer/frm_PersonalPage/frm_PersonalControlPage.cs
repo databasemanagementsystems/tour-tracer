@@ -63,5 +63,10 @@ namespace TourTracer
         {
             AddControls(new frm_AdminEditUsers());
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

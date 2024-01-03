@@ -235,11 +235,11 @@
             this.birthDateDataGridViewTextBoxColumn,
             this.roleDataGridViewTextBoxColumn});
             this.guncelletablosu.DataSource = this.tblUsersBindingSource1;
-            this.guncelletablosu.Location = new System.Drawing.Point(637, 117);
+            this.guncelletablosu.Location = new System.Drawing.Point(628, 134);
             this.guncelletablosu.Name = "guncelletablosu";
             this.guncelletablosu.RowHeadersWidth = 51;
             this.guncelletablosu.RowTemplate.Height = 24;
-            this.guncelletablosu.Size = new System.Drawing.Size(778, 344);
+            this.guncelletablosu.Size = new System.Drawing.Size(642, 344);
             this.guncelletablosu.TabIndex = 33;
             this.guncelletablosu.SelectionChanged += new System.EventHandler(this.guncelletablosu_SelectionChanged);
             // 
@@ -394,7 +394,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1535, 500);
+            this.ClientSize = new System.Drawing.Size(1535, 631);
             this.Controls.Add(this.DELETEUSER);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.userID);

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="TourTracerDataSet15" targetNamespace="http://tempuri.org/TourTracerDataSet15.xsd" xmlns:mstns="http://tempuri.org/TourTracerDataSet15.xsd" xmlns="http://tempuri.org/TourTracerDataSet15.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="TourTracerConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="TourTracerConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.TourTracer.Properties.Settings.GlobalReference.Default.TourTracerConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="vw_CustomizedToursTableAdapter" GeneratorDataComponentClassName="vw_CustomizedToursTableAdapter" Name="vw_CustomizedTours" UserDataComponentName="vw_CustomizedToursTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="TourTracerConnectionString (Settings)" DbObjectName="TourTracer.dbo.vw_CustomizedTours" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, Start_Time, End_Time, StaffName, Price, DepartureCity, DestinationCity FROM dbo.vw_CustomizedTours</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="Start_Time" DataSetColumn="Start_Time" />
+              <Mapping SourceColumn="End_Time" DataSetColumn="End_Time" />
+              <Mapping SourceColumn="StaffName" DataSetColumn="StaffName" />
+              <Mapping SourceColumn="Price" DataSetColumn="Price" />
+              <Mapping SourceColumn="DepartureCity" DataSetColumn="DepartureCity" />
+              <Mapping SourceColumn="DestinationCity" DataSetColumn="DestinationCity" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="TourTracerDataSet15" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="TourTracerDataSet15" msprop:Generator_DataSetName="TourTracerDataSet15">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="vw_CustomizedTours" msprop:Generator_RowEvHandlerName="vw_CustomizedToursRowChangeEventHandler" msprop:Generator_RowDeletedName="vw_CustomizedToursRowDeleted" msprop:Generator_RowDeletingName="vw_CustomizedToursRowDeleting" msprop:Generator_RowEvArgName="vw_CustomizedToursRowChangeEvent" msprop:Generator_TablePropName="vw_CustomizedTours" msprop:Generator_RowChangedName="vw_CustomizedToursRowChanged" msprop:Generator_RowChangingName="vw_CustomizedToursRowChanging" msprop:Generator_TableClassName="vw_CustomizedToursDataTable" msprop:Generator_RowClassName="vw_CustomizedToursRow" msprop:Generator_TableVarName="tablevw_CustomizedTours" msprop:Generator_UserTableName="vw_CustomizedTours">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="Start_Time" msprop:Generator_ColumnPropNameInRow="Start_Time" msprop:Generator_ColumnPropNameInTable="Start_TimeColumn" msprop:Generator_ColumnVarNameInTable="columnStart_Time" msprop:Generator_UserColumnName="Start_Time" type="xs:dateTime" />
+              <xs:element name="End_Time" msprop:Generator_ColumnPropNameInRow="End_Time" msprop:Generator_ColumnPropNameInTable="End_TimeColumn" msprop:Generator_ColumnVarNameInTable="columnEnd_Time" msprop:Generator_UserColumnName="End_Time" type="xs:dateTime" />
+              <xs:element name="StaffName" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="StaffName" msprop:Generator_ColumnPropNameInTable="StaffNameColumn" msprop:Generator_ColumnVarNameInTable="columnStaffName" msprop:Generator_UserColumnName="StaffName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="101" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Price" msprop:Generator_ColumnPropNameInRow="Price" msprop:Generator_ColumnPropNameInTable="PriceColumn" msprop:Generator_ColumnVarNameInTable="columnPrice" msprop:Generator_UserColumnName="Price" type="xs:decimal" />
+              <xs:element name="DepartureCity" msprop:Generator_ColumnPropNameInRow="DepartureCity" msprop:Generator_ColumnPropNameInTable="DepartureCityColumn" msprop:Generator_ColumnVarNameInTable="columnDepartureCity" msprop:Generator_UserColumnName="DepartureCity">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DestinationCity" msprop:Generator_ColumnPropNameInRow="DestinationCity" msprop:Generator_ColumnPropNameInTable="DestinationCityColumn" msprop:Generator_ColumnVarNameInTable="columnDestinationCity" msprop:Generator_UserColumnName="DestinationCity">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="30" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:vw_CustomizedTours" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

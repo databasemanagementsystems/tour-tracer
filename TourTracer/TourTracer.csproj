@@ -148,6 +148,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frm_CustomerMainPage\CustomerEditTours.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CustomerMainPage\CustomerEditTours.Designer.cs">
+      <DependentUpon>CustomerEditTours.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CustomerMainPage\CustomerSelectTour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CustomerMainPage\CustomerSelectTour.Designer.cs">
+      <DependentUpon>CustomerSelectTour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_CustomerMainPage\CustomerInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_CustomerMainPage\CustomerInfo.Designer.cs">
+      <DependentUpon>CustomerInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm_AdminManagementPage\frm_AdminImportExport.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,29 +202,11 @@
     <Compile Include="frm_LoginRegisterPages\frm_BaslangicEkrani.Designer.cs">
       <DependentUpon>frm_BaslangicEkrani.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm_CustomerMainPage\frm_CustomerEditTourPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_CustomerMainPage\frm_CustomerEditTourPage.Designer.cs">
-      <DependentUpon>frm_CustomerEditTourPage.cs</DependentUpon>
-    </Compile>
     <Compile Include="frm_CustomerMainPage\frm_CustomerMainPage.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frm_CustomerMainPage\frm_CustomerMainPage.Designer.cs">
       <DependentUpon>frm_CustomerMainPage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_CustomerMainPage\frm_CustomerProfilePage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_CustomerMainPage\frm_CustomerProfilePage.Designer.cs">
-      <DependentUpon>frm_CustomerProfilePage.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm_CustomerMainPage\frm_CustomerSelectTourPage.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frm_CustomerMainPage\frm_CustomerSelectTourPage.Designer.cs">
-      <DependentUpon>frm_CustomerSelectTourPage.cs</DependentUpon>
     </Compile>
     <Compile Include="frm_AdminManagementPage\frm_AdminShowsDeletedToursAndCustomers.cs">
       <SubType>Form</SubType>
@@ -276,6 +276,26 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TourTracerDataSet13.xsd</DependentUpon>
     </Compile>
+    <Compile Include="TourTracerDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TourTracerDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TourTracerDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TourTracerDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TourTracerDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TourTracerDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="TourTracerDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TourTracerDataSet17.xsd</DependentUpon>
+    </Compile>
     <Compile Include="TourTracerDataSet2.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -316,6 +336,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TourTracerDataSet9.xsd</DependentUpon>
     </Compile>
+    <Compile Include="User.cs" />
+    <EmbeddedResource Include="frm_CustomerMainPage\CustomerEditTours.resx">
+      <DependentUpon>CustomerEditTours.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CustomerMainPage\CustomerSelectTour.resx">
+      <DependentUpon>CustomerSelectTour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_CustomerMainPage\CustomerInfo.resx">
+      <DependentUpon>CustomerInfo.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_AdminManagementPage\frm_AdminImportExport.resx">
       <DependentUpon>frm_AdminImportExport.cs</DependentUpon>
     </EmbeddedResource>
@@ -334,17 +364,8 @@
     <EmbeddedResource Include="frm_LoginRegisterPages\frm_BaslangicEkrani.resx">
       <DependentUpon>frm_BaslangicEkrani.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frm_CustomerMainPage\frm_CustomerEditTourPage.resx">
-      <DependentUpon>frm_CustomerEditTourPage.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="frm_CustomerMainPage\frm_CustomerMainPage.resx">
       <DependentUpon>frm_CustomerMainPage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_CustomerMainPage\frm_CustomerProfilePage.resx">
-      <DependentUpon>frm_CustomerProfilePage.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm_CustomerMainPage\frm_CustomerSelectTourPage.resx">
-      <DependentUpon>frm_CustomerSelectTourPage.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_AdminManagementPage\frm_AdminShowsDeletedToursAndCustomers.resx">
       <DependentUpon>frm_AdminShowsDeletedToursAndCustomers.cs</DependentUpon>
@@ -448,6 +469,50 @@
     </None>
     <None Include="TourTracerDataSet13.xss">
       <DependentUpon>TourTracerDataSet13.xsd</DependentUpon>
+    </None>
+    <None Include="TourTracerDataSet14.xsc">
+      <DependentUpon>TourTracerDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="TourTracerDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TourTracerDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TourTracerDataSet14.xss">
+      <DependentUpon>TourTracerDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="TourTracerDataSet15.xsc">
+      <DependentUpon>TourTracerDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="TourTracerDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TourTracerDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TourTracerDataSet15.xss">
+      <DependentUpon>TourTracerDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="TourTracerDataSet16.xsc">
+      <DependentUpon>TourTracerDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="TourTracerDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TourTracerDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TourTracerDataSet16.xss">
+      <DependentUpon>TourTracerDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="TourTracerDataSet17.xsc">
+      <DependentUpon>TourTracerDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="TourTracerDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TourTracerDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TourTracerDataSet17.xss">
+      <DependentUpon>TourTracerDataSet17.xsd</DependentUpon>
     </None>
     <None Include="TourTracerDataSet2.xsc">
       <DependentUpon>TourTracerDataSet2.xsd</DependentUpon>
